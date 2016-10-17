@@ -91,7 +91,7 @@ def main():
 
     links.join()
     
-    print("Printing links!")
+    # Printing out all of the links
     print(links_visited)
 
 if __name__ == '__main__':
