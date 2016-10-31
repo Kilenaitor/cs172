@@ -3,17 +3,22 @@ from bs4 import BeautifulSoup
 from queue import Queue
 import threading
 import sys
+import os
+
 
 # Disable warnings for https
 #urllib3.disable_warnings()
 
-#hash for visited links
+# Hashset for visited links
 hashSet = set()
 # Queue to handle links
 links = Queue(5000)
+# Number of links visited
 visited = 0
+# Number of hops
 hops = 0
-# links_visited = []
+# directory
+directory = ""
 keep_going = True
 
 #link class has url and depth
@@ -43,13 +48,38 @@ def crawl(link):
     soup = BeautifulSoup(html, 'html.parser')
 
     
-    # TODO: Filter out malformed/incomplete links
-    
+     
     # Parse and store page
     
-    #If hop is 0 return
-    print("{} {} {}".format(hops-link.depth, len(hashSet), links.qsize()))
+    # If in hashset, return
+    if (link.url in hashSet):
+        return
+    
+    scheme = ""
+    domain = ""
+    endIndex = link.url.index("/",8)
+    if (link.url[:7] == "http://"):
+        scheme = "http://"
+        domain = link.url[7:endIndex]
+    else:
+        scheme = "https://"
+        domain = link.url[8:endIndex] 
+
+    domainDir = "{}/{}".format(directory,domain)
+    # If domain doesn't have a dir in output_dir, make one 
+    if ( not os.path.exists(domainDir)):
+        os.makedirs(domainDir)
+    
+    i = 0
+    while os.path.exists("{}/{}_%s.html".format(domainDir,domain) % i):
+        i+=1
+
+    # Download to dir  
+    with open("{}/{}_%s.html".format(domainDir,domain) % i,'w') as fid:
+        fid.write(str(html))
+
     hashSet.add(link.url)
+    
     if (hops - link.depth <= 0):
         return
         
@@ -61,17 +91,21 @@ def crawl(link):
         if (not keep_going):
             break  
         url = pageLink.get('href')
+
+        # Filter out or fix malformed/incomplete links
+        if (url.startswith('/')):
+            url = scheme + domain + url
+
+
         if (url is None or not url.startswith('http://')):
             continue
-              
-        # print( hashSet)
   
         #check if url is in hashset
         if (url not in hashSet):
             links.put( Link(url, link.depth +1))
 
 def crawler():
-    while True:  
+  while True:  
         global visited
         print("Crawling and parsing #" + str(visited)) 
         visited += 1
@@ -90,37 +124,36 @@ def main():
         until all of the levels are exhausted
     '''
     global hops
+    global directory
     # Make sure they provide a seeds file
     if (len(sys.argv) <= 1):
         print("{}\n\n{}".format(
             'Usage:',
-            'python3 crawler.py <list of files>',
+            'python3 crawler.py <seed-File:seed.txt> <num-pages:1000> <hops-away: 6> <output-dir>',
         ))
         sys.exit(1)
-
-    
-    numPages = 0
-    while True: 
-        numPages = input('Enter number of pages: ')
-        if( not isinstance(numPages,int) ): break
-        print ('Response is not an integer')
-
-    hops = 0
-    while True: 
-        hops = input('Enter number of hops: ')
-        if( not isinstance(hops,int) ): break
-        print ('Response is not an integer')
-    hops = int(hops)
     
     # Seeds file is the first argument (not the python file name)
     links_list = sys.argv[1]
+    num_pages = int(sys.argv[2])
+    hops = int(sys.argv[3])   
+    output_dir = sys.argv[4] 
+    directory = output_dir
 
-    # Open the file and put every line in the queue
+    # Create output_dir if it doesn't exist
+    if ( not os.path.exists(output_dir)):
+        os.makedirs(output_dir)
+
+    # If hops equals 0, return
+    if ( hops == 0):
+        return
+
+    # Open the file and put num_pages of lines in the queue
     with open(links_list, 'r') as f:
         pages = 0
         for line in f:
-            if (pages <= int(numPages)):
-                links.put( Link(line.rstrip(),0))
+            if (pages < int(num_pages)):
+                links.put( Link(line.rstrip(),1))
                 pages += 1
             else:
                 break
@@ -139,6 +172,6 @@ def main():
     # Printing out all of the links
     print("\n".join(str(e) for e in hashSet))
 
-if __name__ == '__main__':
+if (__name__ == '__main__'):
     main()
 
