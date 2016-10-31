@@ -39,6 +39,11 @@ def crawl(link):
         link, etc.
     '''
     global hashSet
+
+    # If in hashset, return
+    if (link.url in hashSet):
+        return
+
     # Setup urllib3
     http = urllib3.PoolManager(timeout=2.0)
     r = http.request('GET', link.url)
@@ -49,12 +54,7 @@ def crawl(link):
 
     
      
-    # Parse and store page
-    
-    # If in hashset, return
-    if (link.url in hashSet):
-        return
-    
+    # Parse and store page    
     scheme = ""
     domain = ""
     endIndex = link.url.index("/",8)
@@ -92,12 +92,14 @@ def crawl(link):
             break  
         url = pageLink.get('href')
 
+        if ( url is None):
+            continue
+
         # Filter out or fix malformed/incomplete links
         if (url.startswith('/')):
             url = scheme + domain + url
 
-
-        if (url is None or not url.startswith('http://')):
+        if (not url.startswith('http://')):
             continue
   
         #check if url is in hashset
