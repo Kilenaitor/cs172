@@ -78,6 +78,13 @@ class Crawler():
         if self.has_visited(link.url):
             return
 
+        # Check if we are already at max pages to crawl
+        if len(self.visited_links) >= self.num_pages:
+            self.keep_going = False
+        # If we're done, return
+        if not self.keep_going:
+            return
+
         # Setup urllib3
         r = self.http.request('GET', link.url)
         # Decode everything with utf8 support
@@ -95,6 +102,10 @@ class Crawler():
         else:
             scheme = "https://"
             domain = link.url[8:endIndex]
+
+        # We only want pages that end in .edu
+        if not domain.endswith('.edu'):
+            return
 
         domainDir = "{}/{}".format(self.directory, domain)
         # If domain doesn't have a dir in output_dir, make one
@@ -117,10 +128,6 @@ class Crawler():
 
         # Adds link to the queue
         for pageLink in soup.find_all('a'):
-            if len(self.visited_links) >= self.num_pages:
-                self.keep_going = False
-            if not self.keep_going:
-                break
 
             url = pageLink.get('href')
             if url is None:
@@ -131,9 +138,6 @@ class Crawler():
                 url = scheme + domain + url
 
             if not url.startswith('http://'):
-                continue
-
-            if not domain.endswith('.edu'):
                 continue
 
             #check if url is in hashset
