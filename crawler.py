@@ -133,6 +133,9 @@ class Crawler():
             if not url.startswith('http://'):
                 continue
 
+            if not domain.endswith('.edu'):
+                continue
+
             #check if url is in hashset
             if url not in self.visited_links:
                 self.links_queue.put(Link(url, link.depth+1), False)
