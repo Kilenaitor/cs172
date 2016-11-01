@@ -31,7 +31,7 @@ class Crawler():
         # Hashset for visited links
         self.visited_links = set()
         # Queue to handle links
-        self.links_queue = Queue(5000)
+        self.links_queue = Queue()
         # Number of links visited
         self.visited = 0
         # Number of hops
@@ -51,7 +51,7 @@ class Crawler():
     def enqueue_link(self, link):
         ''' Add a link to the queue externally
         '''
-        self.links_queue.put(link)
+        self.links_queue.put(link, False)
 
     def start_crawling(self):
         ''' Starts crawling with specified number of threads.
@@ -135,7 +135,7 @@ class Crawler():
 
             #check if url is in hashset
             if url not in self.visited_links:
-                self.links_queue.put(Link(url, link.depth+1))
+                self.links_queue.put(Link(url, link.depth+1), False)
 
     def crawler_daemon(self):
         ''' Takes a link off the parse queue, crawls and saves the page,
@@ -144,7 +144,8 @@ class Crawler():
         while True:
             link = self.links_queue.get()
             try:
-                self.crawl(link)
+                if self.keep_going:
+                    self.crawl(link)
             except Exception as e:
                 print('Error: {}'.format(e))
                 pass
