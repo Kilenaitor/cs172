@@ -13,7 +13,7 @@
             {% for hit in hits %}
                 <li>
                     <a href="/{{ hit.path }}">{{ hit.title }}</a> <br />
-                    {{ hit.body|slice:":255" }}
+                    {{ hit.body|slice:":100" }}
                 </li>
             {% endfor %}
             </ol>

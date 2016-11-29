@@ -33,10 +33,15 @@ for url in os.listdir('articles/static/'):
 
             for script in soup(["script", "style"]):
                 script.extract()
-            text = soup.get_text()
-            lines = (line.strip() for line in text.splitlines())
-            chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
-            text = '\n'.join(chunk for chunk in chunks if chunk)
+
+            body = soup.find('body')
+            if body is None:
+                text = ""
+            else:
+                text = body.get_text()
+                lines = (line.strip() for line in text.splitlines())
+                chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
+                text = '\n'.join(chunk for chunk in chunks if chunk)
             writer.add_document(title=title, path=path[9:], body=text)
 
 writer.commit()
