@@ -7,5 +7,8 @@ urllib3 == 1.18
 # Used for indexing and parsing documents
 Whoosh == 2.7.4
 
+# Used for searching
+Django-Haystack == 2.5.1
+
 # Used for web framework
 Django == 1.10.3
