@@ -12,7 +12,7 @@
             <ol>
             {% for hit in hits %}
                 <li>
-                    <a href="/{{ hit.path }}">{{ hit.title }}</a> <br />
+                    <a href="/{{ hit.path }}">{{ hit.title }}</a> (Score: {{ hit.score|floatformat:3 }}) <br />
                     {{ hit.body|slice:":100" }}
                 </li>
             {% endfor %}
