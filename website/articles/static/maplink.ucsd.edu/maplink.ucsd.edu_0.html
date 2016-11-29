@@ -1,0 +1,345 @@
+
+<!DOCTYPE doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="initial-scale=1" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta content="IE=EmulateIE9" http-equiv="X-UA-Compatible">
+<title>UC San Diego :: MapLink</title>
+<link href="//www.ucsd.edu/common/cwp/active-cherry/base-min.css" rel="stylesheet"/>
+<script src="//www.ucsd.edu/common/cwp/active-cherry/base-min.js"></script>
+<script src="//www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Maplink" name="webapp.name"/>
+<meta content="/maps" name="webapp.url"/>
+<meta content="/cwp/feedback/maps/maplink" name="feedback.url"/>
+<meta content="none" name="display.search"/>
+<script>
+<!-- redirect if user is on a smaller screen"; only on load -->
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+if (document.documentElement.clientWidth < 965) {
+	// redirect if "traffic=1" is NOT passed
+	if (document.URL.indexOf("ovrrdr=1") === -1 && document.URL.indexOf("traffic=1") === -1) {
+		
+		// check if "isisCode" is in the URL
+		var isisCode = getParameterByName('isisCode');
+		
+		if (isisCode === "") {
+			if (window.location.protocol != "https:") {
+				window.location="http://m.ucsd.edu/maps/";
+			} else {
+				window.location="https://m.ucsd.edu/maps/";
+			}
+		} else {
+			if (window.location.protocol != "https:") {
+				window.location="http://m.ucsd.edu/maps?isisCode="+isisCode;
+			} else {
+				window.location="https://m.ucsd.edu/maps?isisCode="+isisCode;
+			}
+		}
+	}
+}
+
+</script>
+<link href="https://uxt.ucsd.edu/common/jquery-ui/1.8.6/jquery-ui-1.8.6.custom.min.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="prettyPhoto.css" rel="stylesheet" type="text/css"/>
+<link href="maplink.css" rel="stylesheet" type="text/css"/>
+<style>
+.concertina ul { padding: 0 0 0 1em; }
+.concertina li { list-style-type: none; margin: 0; padding: 5px 0px; }
+.concertina button { display: block; text-align: left; width: 99%; border: none; cursor: pointer; }
+.concertina-reeds li { margin: 0 0.5em; }
+.concertina-reeds li button { color: #016691; display: block; text-align-left; width: 99%; border: none; background: transparent; cursor: pointer; } 	
+.concertina-hidden { display: none; visibility: hidden; cursor: pointer; }
+
+.modaloverlay { width: 99%; height: 0%; z-index: 31337; overflow-y: auto; border: 1px solid; }
+.closebutton { margin: 5px; float: right; }
+
+#leftbar_footer { width: 100%; }
+#tabs { overflow-y: auto; height: 90%; position: relative; }
+#maplink { height: 100%; }
+body #tdr_title_content { max-width: 98%; }
+
+
+@media screen and (max-width: 980px) {
+
+	.leftbar {
+		width: 96%;
+		height: 95%;
+		float: left;
+	}
+	
+	#leftbar_wrapper {
+		width: 38%;
+	}
+	
+	#map_container {
+		width: 57%;
+		height: 95%;
+	}
+	
+	.leftbutton {
+		width: 100%;
+	}
+	
+	.rightbutton {
+		float: inherit;
+		clear: left;
+	}
+	
+	#map_controls {
+		margin-left: 4px;
+	}
+	
+}
+
+.button {
+	*padding-left: 0;
+	*padding-right: 0;
+}
+
+</style>
+</meta></meta></meta></meta></head>
+<body>
+<!-- env -->
+<!-- emergency -->
+<div id="uc-emergency"></div>
+<!-- skip to content -->
+<a class="skip-link" href="#tdr_content">Skip to content</a>
+<!-- login -->
+<div id="tdr_login" style="display: none"></div>
+<script type="text/javascript">
+(function($) {
+    $(document).ready(function() {
+        $.ajax({
+            url: "https://a4.ucsd.edu/tritON/resources/bugscript.jsp?target=https%3A%2F%2Fwww.ucsd.edu&jsoncallback=?",
+            dataType: 'jsonp',
+            jsonpCallback: 'a4sso',
+            success: function(data) {
+                if (data.eduUcsdActLoggedin) {
+                    var url = "<div id=\"tdr_login_content\">You are logged in | <a href=\"/security/logout?url=";
+                    url += "http://www.ucsd.edu";
+                    url += "\">Log Out</a></div>";
+                    $("#tdr_login").empty();
+                    $("#tdr_login").append(url);
+                    $("#tdr_login").attr("style", "display:block");
+                }
+            },
+            error: function(jqXHR, textStatus) {
+                console.log("error trying to communicate with a4 sso: " + textStatus);
+            }
+        });
+    });
+})(jQuery);
+</script>
+<!-- title -->
+<div id="tdr_title">
+<div id="tdr_title_content">
+<a href="http://www.ucsd.edu" id="tdr_title_ucsd_title">UC San Diego</a>
+<div id="tdr_title_page_title">
+<a href="/maps">Maplink </a>
+</div>
+<a class="search-button" id="tdr_title_search_link" style="display: none">Search</a>
+<a id="tdr_title_menu_link">Menu</a>
+</div>
+</div>
+<div id="tdr_nav" style="display: ">
+<div id="tdr_nav_content">
+<ul id="tdr_nav_list">
+</ul>
+</div>
+</div>
+<div id="tdr_search" style="display: none">
+<div id="tdr_search_content">
+<form action="http://act.ucsd.edu/cwp/tools/search-redir" method="get">
+<label for="search-scope">Search</label> <select id="search-scope" name="search-scope">
+<option value="default_collection">All UCSD Sites</option>
+<option value="faculty-staff">Faculty/Staff Directory</option>
+</select> <label for="search-term" id="search-term-label">Search Term</label> <input id="search-term" name="search-term" size="20" type="search"/> <input class="search-button" type="submit" value="Search"/>
+</form>
+</div>
+</div>
+<div id="tdr_crumbs" style="display: ">
+<div id="tdr_crumbs_content">
+<ul>
+</ul>
+</div>
+</div>
+<div class="tdr_fonts itag_webapp" id="fw_content">
+<div id="maplink" style="">
+<div id="leftbar_wrapper" style="">
+<div class="leftbar" id="leftbar">
+<ul id="tabnav">
+<li><a href="#tab1" id="placesTab">Places</a></li>
+<li><a href="#tab2" id="savedTab">Marked</a></li>
+<!-- 
+				<li><a id="transitTab" href="#tab3">Shuttles</a></li>
+				 -->
+</ul>
+<div id="tabs" style="">
+<div id="tab1">
+<div id="leftbar_main">
+<div id="searchform" style="clear: both;">
+<h4>Search</h4>
+<p id="searchboxwrapper">
+<input id="map_search" name="map_search" style="width: 163px;" title="Search locations" type="text"/>
+<button id="searchboxclear" tabindex="0" title="Clear search" type="button"></button>
+</p>
+<button class="button primary" id="gosearch">Go</button>
+<br/><select id="regions" style="margin: 5px auto;"></select>
+</div>
+<div class="linkstyled" id="leftbar_results" style="clear: both;">
+</div>
+<div style="clear: both;">
+<h4 id="catlabel">Browse by Category</h4>
+<ul class="concertina" id="browse">
+</ul>
+</div>
+</div>
+</div>
+<div id="tab2">
+<div id="pin_panel_container" style="float: left; clear: left;">
+<ul class="linkstyled" id="pin_panel" title="List of saved locations"></ul>
+</div>
+</div>
+<!-- 
+				<div id="tab3">
+				</div>	
+				 -->
+</div>
+</div>
+<div class="modaloverlay" id="leftbar_overlay" style="overflow-y: auto;">
+<div id="leftbar_overlay_content" style="margin: 5px 10px;"></div>
+</div>
+</div>
+<div id="clicker" style="">«</div>
+<div id="map_container" style="">
+<div class="noprint" id="map_controls" style="">
+<div class="leftbutton" style="">
+<input class="button" id="trafficBtn" type="button" value="Traffic"/>
+<input class="button" id="bikeBtn" type="button" value="Bike Routes"/>
+<input class="button" id="linkBtn" type="button" value="Link To Map"/>
+<input class="button" id="panicBtn" type="button" value="Reset Map"/>
+</div>
+<div class="linkstyled rightbutton" style="">
+<button class="icon print" id="printBtn" style="margin-right: 15px;">Printable</button>
+<button class="icon pencil" id="feedbackBtn" style="margin-right: 5px;">Comments</button>
+</div>
+</div>
+<div id="map_canvas" style="width: 100%; height: 99%;" tabindex="0">
+</div>
+</div>
+</div>
+<div id="dialog_details" tabindex="0">
+</div>
+<div id="dialog_access" tabindex="0">
+</div>
+<div id="dialog_misc" style="display: none; min-width: 250px;" tabindex="0">
+<label for="mapUrl">Paste link in email or IM:</label>
+<input id="mapUrl" size="40" type="text" value=""/>
+<button class="button" id="mapPreview">Preview map</button> <button class="button" id="mapClip">Copy to clipboard</button>
+</div>
+<div style="width: 100%; text-align: center; margin-top: 20px; font-size: 9px;">Copyright © 2012 Regents of the University of California. <a href="http://www.ucsd.edu/_about/legal/index.html">Terms and conditions</a></div>
+<script src="//uxt.ucsd.edu/common/jquery-ui/1.8.6/jquery-ui-1.8.6.custom.min.js" type="text/javascript"></script>
+<script src="http://maps.googleapis.com/maps/api/js?v=3.7&amp;sensor=true®ion=US&amp;key=AIzaSyBasktLWuWer19i7JqKRbsFelS6E6euWJE" type="text/javascript">
+</script>
+<script src="jquery.cookie.js" type="text/javascript"></script>
+<script src="jquery.prettyPhoto.js" type="text/javascript"></script>
+<script src="jquery.pajinate.js" type="text/javascript"></script>
+<script src="maplabel.js" type="text/javascript"></script>
+<script src="markerclusterer.js" type="text/javascript"></script>
+<script src="simpleiconoverlay.js" type="text/javascript"></script>
+<!-- 
+<script type="text/javascript" src="shuttlebus.js"></script>
+ -->
+<script src="concertina.js" type="text/javascript"></script>
+<script src="maplink3.js" type="text/javascript"></script>
+<!-- Put these here because they don't interact with anything in maplink3.js -->
+<!-- Thus they logically belong here. So stick that in your best practices pipe and smoke it. -->
+<script>
+
+$("#clicker").click(function() {
+	$("#maplink").toggleClass("hidebar");
+	google.maps.event.trigger(map, "resize");
+	if ($("#maplink").hasClass("hidebar")) {
+		$("#clicker").html("&raquo;");
+	} else {
+		$("#clicker").html("&laquo;");
+	}
+});
+
+if ($("#shuttles")) {
+	$("#shuttles").change(function() {
+		for (var i=0; i < busIcons.length; i++) {
+			busIcons[i].setMap(null);
+		}
+		clearRoutes();
+		window.clearInterval(busInterval);
+		var val = $("#shuttles").val();
+		if (val != "") {
+			plotroutes(val);
+			plotbus(true);
+			busInterval = window.setInterval(plotbus, 30000);
+		}
+	});
+}
+
+
+leftbarTabs = $("#leftbar").tabs();
+$("#leftbar_overlay").toggle(false);
+
+// From someone on stackoverflow
+$('#map_canvas').keyup(function(event) {
+    var o = 128; // half a tile's width 
+    switch(event.which) {
+        case 37: // leftArrow
+            map.panBy(-o,0);
+            break;
+        case 38: // upArrow
+            map.panBy(0,-o);
+            break;
+        case 39: // rightArrow
+            map.panBy(o,0);
+            break;
+        case 40: // downArrow
+            map.panBy(0,o);
+            break;
+        case 109: // numpad -
+        case 189: // -
+            map.setZoom(map.getZoom()-1);
+            break;
+        case 107: // numpad +
+        case 187: // =
+            map.setZoom(map.getZoom()+1);
+            break;
+    }
+});
+
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24480055-22']);
+  _gaq.push(['_setDomainName', 'ucsd.edu']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</div>
+<!-- footer -->
+</body>
+</html>

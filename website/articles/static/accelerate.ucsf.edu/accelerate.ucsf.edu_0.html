@@ -1,0 +1,566 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+
+<html dir="ltr" lang="en" version="HTML+RDFa 1.1" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+<meta charset="utf-8"/>
+<link href="http://accelerate.ucsf.edu/files/images/accfav.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+<link href="/node/199" rel="canonical"/>
+<meta content="Drupal 7 (http://drupal.org)" name="Generator"/>
+<link href="/node/199" rel="shortlink"/>
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="width" name="MobileOptimized">
+<meta content="true" name="HandheldFriendly">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="on" http-equiv="cleartype">
+<meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<title>Accelerate | CTSI Services for Researchers</title>
+<link href="http://accelerate.ucsf.edu/uploads/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://accelerate.ucsf.edu/uploads/css/css_hTLrwzbU9bZhjvzx-j5entbJFEHkjJyd6RgHEla8FhA.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://accelerate.ucsf.edu/uploads/css/css_3cQRgZjpHrBDPuzQKMENxdGI-FSlxkFsIIdHfo1vPrA.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://accelerate.ucsf.edu/uploads/css/css_Wu8npAzy16WmnnnWKxpexfgsAryolGGaX6yO3GWA5bU.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700" media="all" rel="stylesheet" type="text/css"/>
+<link href="//fonts.googleapis.com/css?family=Rosarivo:400,400italic&amp;subset=latin,latin-ext" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://accelerate.ucsf.edu/uploads/css/css_1eTr4a6WpqE12HsyF1azOIWE_XD0IcyoY26_hIQq6bE.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://accelerate.ucsf.edu/uploads/css/css_0BZJuvmqqLSTHvLp2-uMPcGdq_orTGoGQYXx1cZ_eTU.css" media="print" rel="stylesheet" type="text/css"/>
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="http://accelerate.ucsf.edu/sites/accelerate.ucsf.edu/themes/custom/aubamboo/css/ie8-fixes.css?ocsi07" media="all" />
+<![endif]-->
+<!--[if IE 9]>
+<link type="text/css" rel="stylesheet" href="http://accelerate.ucsf.edu/sites/accelerate.ucsf.edu/themes/custom/aubamboo/css/ie9-fixes.css?ocsi07" media="all" />
+<![endif]-->
+<script src="http://accelerate.ucsf.edu/uploads/js/js_OKeCwkv74_Arj-XTFvk5raD5ho-wMA6Yziy9sT28j2U.js" type="text/javascript"></script>
+<script src="http://accelerate.ucsf.edu/uploads/js/js__O-zqtRQJaTiPnioUNmvSiT8uuFt-QV5v6Od9R57AJM.js" type="text/javascript"></script>
+<script src="http://accelerate.ucsf.edu/uploads/js/js_I8yX6RYPZb7AtMcDUA3QKDZqVkvEn35ED11_1i7vVpc.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-1142388-1", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+</script>
+<script src="http://accelerate.ucsf.edu/uploads/js/js_x0YFpKsxKQZWfuehRQraBqhlSq47aHYRr7DpHI9ymZw.js" type="text/javascript"></script>
+<script src="http://accelerate.ucsf.edu/uploads/js/js_B4zabzb5P5JqnmaB539ojeW1vJM9HfGpFIA657diUXk.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"aubamboo","theme_token":"g5q6hEcakGHKNREqtOH-EXSZ9FG73KXCJuU5z1x8oq0","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/themes\/custom\/ctsibamboo\/js\/profiletip.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/beautytips\/js\/jquery.bt.min.js":1,"sites\/all\/modules\/contrib\/beautytips\/js\/beautytips.min.js":1,"sites\/all\/modules\/contrib\/beautytips\/other_libs\/excanvas_r3\/excanvas.compiled.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.menu.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.autocomplete.min.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/custom\/ctsibamboo\/js\/vh.js":1,"sites\/all\/themes\/custom\/ctsibamboo\/js\/easyResponsiveTabs.js":1,"sites\/accelerate.ucsf.edu\/themes\/custom\/aubamboo\/js\/au.js":1,"sites\/accelerate.ucsf.edu\/themes\/custom\/aubamboo\/js\/jquery.autocomplete.js":1,"sites\/all\/themes\/contrib\/bamboo\/js\/scripts.js":1,"1":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.menu.css":1,"misc\/ui\/jquery.ui.autocomplete.css":1,"modules\/aggregator\/aggregator.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/logintoboggan\/logintoboggan.css":1,"modules\/node\/node.css":1,"modules\/poll\/poll.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"\/\/fonts.googleapis.com\/css?family=Open+Sans:400italic,600italic,700italic,400,600,700":1,"\/\/fonts.googleapis.com\/css?family=Rosarivo:400,400italic\u0026subset=latin,latin-ext":1,"sites\/all\/themes\/custom\/ctsibamboo\/css\/menu.css":1,"sites\/all\/themes\/contrib\/bamboo\/css\/normalize.css":1,"sites\/all\/themes\/contrib\/bamboo\/css\/style.css":1,"sites\/all\/themes\/contrib\/bamboo\/css\/design.css":1,"sites\/all\/themes\/custom\/ctsibamboo\/css\/responsive.css":1,"sites\/all\/themes\/custom\/ctsibamboo\/css\/opcolors.css":1,"sites\/all\/themes\/custom\/ctsibamboo\/css\/entypo.css":1,"sites\/all\/themes\/custom\/ctsibamboo\/css\/vh.css":1,"sites\/all\/themes\/custom\/ctsibamboo\/css\/easy-responsive-tabs.css":1,"sites\/accelerate.ucsf.edu\/themes\/custom\/aubamboo\/css\/au.css":1,"sites\/all\/themes\/custom\/ctsibamboo\/css\/print.css":1,"sites\/accelerate.ucsf.edu\/themes\/custom\/aubamboo\/css\/ie8-fixes.css":1,"sites\/accelerate.ucsf.edu\/themes\/custom\/aubamboo\/css\/ie9-fixes.css":1}},"beautytipStyles":{"default":{"fill":"#FFFBE4","strokeStyle":"#4D4D4D","width":"220px","cssStyles":{"color":"#4d4d4d","fontSize":"13px"}},"plain":[],"netflix":{"positions":["right","left"],"fill":"#FFF","padding":5,"shadow":true,"shadowBlur":12,"strokeStyle":"#B9090B","spikeLength":50,"spikeGirth":60,"cornerRadius":10,"centerPointY":0.1,"overlap":-8,"cssStyles":{"fontSize":"12px","fontFamily":"arial,helvetica,sans-serif"}},"facebook":{"fill":"#F7F7F7","padding":8,"strokeStyle":"#B7B7B7","cornerRadius":0,"cssStyles":{"fontFamily":"\u0022lucida grande\u0022,tahoma,verdana,arial,sans-serif","fontSize":"11px"}},"transparent":{"fill":"rgba(0, 0, 0, .8)","padding":20,"strokeStyle":"#CC0","strokeWidth":3,"spikeLength":40,"spikeGirth":40,"cornerRadius":40,"cssStyles":{"color":"#FFF","fontWeight":"bold"}},"big-green":{"fill":"#00FF4E","padding":20,"strokeWidth":0,"spikeLength":40,"spikeGirth":40,"cornerRadius":15,"cssStyles":{"fontFamily":"\u0022lucida grande\u0022,tahoma,verdana,arial,sans-serif","fontSize":"14px"}},"google-maps":{"positions":["top","bottom"],"fill":"#FFF","padding":15,"strokeStyle":"#ABABAB","strokeWidth":1,"spikeLength":65,"spikeGirth":40,"cornerRadius":25,"centerPointX":0.9,"cssStyles":[]},"hulu":{"fill":"#F4F4F4","strokeStyle":"#666666","spikeLength":20,"spikeGirth":10,"width":350,"overlap":0,"centerPointY":1,"cornerRadius":0,"cssStyles":{"fontFamily":"\u0022Lucida Grande\u0022,Helvetica,Arial,Verdana,sans-serif","fontSize":"12px","padding":"10px 14px"},"shadow":true,"shadowColor":"rgba(0,0,0,.5)","shadowBlur":8,"shadowOffsetX":4,"shadowOffsetY":4},"profiles":{"fill":"#506480","strokeWidth":0,"width":"8.8em","padding":"5px","cornerRadius":6,"spikeGirth":10,"spikeLength":5,"shadow":false,"cssClass":"profiles-bt","cssStyles":{"color":"#FFF","fontFamily":"tahoma, arial, sans serif","fontWeight":"bold","fontSize":"0.9em"}}},"beautytips":{"beautytips_manager_custom_1":{"cssSelect":".hovertip","style":"default","trigger":"hover","shrinkToFit":false,"ajaxDisableLink":false,"positions":["right","top","bottom","left"],"contentSelector":"$(this).attr(\u0027title\u0027)","list":["trigger","shrinkToFit","positions","contentSelector"]},"beautytips_manager_custom_2":{"cssSelect":"a.profile-tip","style":"profiles","trigger":"hover","shrinkToFit":false,"ajaxDisableLink":false,"contentSelector":"$(this).attr(\u0027title\u0027)","list":["trigger","shrinkToFit","contentSelector"]}},"better_exposed_filters":{"views":{"featured_service":{"displays":{"block_1":{"filters":[]}}}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"}});
+//--><!]]>
+</script>
+<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</meta></meta></meta></meta></meta></meta></head>
+<body class="html front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-199 node-type-page site-name-hidden bg-gray-gradient color-palette-dark-rust header-font-sans-serif body-font-sans-serif sidebar-right imagecaption is-node theme-logo-none">
+<div id="skip-link">
+<a class="element-invisible element-focusable" href="#main-content">Skip to main content</a>
+</div>
+<header class="container" id="head" role="banner">
+<div id="ucsf-links">
+<div class="region region-ucsf-links">
+<div class="block block-block" id="block-block-41">
+<div class="block-inner clearfix">
+<div class="block-content">
+<div class="container ucsf">
+<div class="sixteen columns">
+<ul class="ucsfnav"><li>
+<a href="http://www.ucsf.edu/" id="ucsf" title="University of California San Francisco">University of California San Francisco</a>
+</li>
+</ul><ul class="ucsfnav ucsfnav-right no-phone no-phone-ls"><li>
+<a href="http://www.ucsf.edu/about" title="About UCSF">About UCSF</a>
+</li>
+<li>
+<a href="http://www.ucsf.edu/ucsf/search" title="Search UCSF">Search UCSF</a>
+</li>
+<li>
+<a href="http://www.ucsfhealth.org" title="UCSF Medical Center">UCSF Medical Center</a>
+</li>
+</ul></div>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+<hgroup class="sixteen columns alpha omega">
+<div id="brand">
+<div class="region region-brand">
+<div class="block block-boxes block-boxes-simple" id="block-boxes-global-brand">
+<div class="block-inner clearfix">
+<div class="block-content">
+<div class="boxes-box" id="boxes-box-global_brand"><div class="boxes-box-content"><div class="site-logo au-global"><h1><a href="http://accelerate.ucsf.edu/"><img alt="UCSF Accelerate" src="http://accelerate.ucsf.edu/files/images/AUlogo.png"/><br/><span>Access services to enable research</span></a></h1></div>
+</div></div> </div>
+</div>
+</div>
+</div>
+</div>
+<div id="logo">
+</div>
+<div id="site-title-wrapper">
+<h1 id="site-title">
+<a href="/" title="Home">
+</a>
+</h1>
+</div>
+<div id="top-links">
+<div class="region region-top-links">
+<div class="block block-boxes block-boxes-simple poweredby" id="block-boxes-hp-about-ctsi">
+<div class="block-inner clearfix">
+<div class="block-content">
+<div class="boxes-box" id="boxes-box-hp_about_ctsi"><div class="boxes-box-content"><p><img alt="CTSI" src="http://accelerate.ucsf.edu/files/images/ctsi16.png" style="vertical-align:-2px"/> <a href="http://ctsi.ucsf.edu">Powered by CTSI</a></p></div></div> </div>
+</div>
+</div>
+</div>
+</div>
+</hgroup>
+</header>
+<div class="container" id="menu-wrapper">
+<nav class="sixteen columns alpha omega" id="main-menu" role="navigation">
+<div class="menu-navigation-container">
+<!-- Theme native drop downs and mobile menu-->
+<div id="nav-wrap">
+<!-- region to place search form inside navbar -->
+<div class="region region-main-menu">
+<div class="block block-menu" id="block-menu-menu-ctsi-main-navig">
+<div class="block-inner clearfix">
+<div class="block-content">
+<ul class="menu"><li class="first expanded"><a class="active" href="/" title="Accelerate Home">Home</a><ul class="menu"><li class="first collapsed"><a class="active" href="/" title="">Home</a></li>
+<li class="expanded"><a href="/about">About Accelerate</a><ul class="menu"><li class="first leaf"><a href="/about/clinical-and-translational" title="">What is Clinical &amp; Translational Science?</a></li>
+<li class="leaf"><a href="/about/ctsi-renewal-planning">CTSI Renewal Planning</a></li>
+<li class="leaf"><a href="/about/poster-instructions">Poster Production</a></li>
+<li class="leaf"><a href="/legal" title="">Terms &amp; Conditions</a></li>
+<li class="last collapsed"><a href="/newsletter" title="">CTSI Newsletter Archives</a></li>
+</ul></li>
+<li class="leaf"><a href="/cite">NIH Funding Acknowledgment</a></li>
+<li class="last leaf"><a href="/navigation" title="">Ask Us</a></li>
+</ul></li>
+<li class="expanded"><a href="/research" title="">Conducting Research</a><ul class="menu"><li class="first leaf"><a href="/research">Overview</a></li>
+<li class="expanded"><a href="/consult">Request a Consultation</a><ul class="menu"><li class="first leaf"><a href="/research/cs-recharge">Consultation Services Recharge Policy</a></li>
+<li class="leaf"><a href="/research/bbm-consult" title="">Biobehavioral Measurement</a></li>
+<li class="leaf"><a href="/research/bi-consult" title="">Bioinformatics</a></li>
+<li class="leaf"><a href="/research/biostat-consult" title="">Biostatistics</a></li>
+<li class="leaf"><a href="/research/ctgov-consult" title="">ClinicalTrials.gov</a></li>
+<li class="leaf"><a href="/research/ce-consult" title="">Community-Engaged Research</a></li>
+<li class="leaf"><a href="/research/celdac-consult" title="">Comparative Effectiveness Research Large Dataset</a></li>
+<li class="leaf"><a href="/research/data-consult" title="">Data Management</a></li>
+<li class="leaf"><a href="/research/design-consult" title="">Data Safety Monitoring Board</a></li>
+<li class="leaf"><a href="/research/dhealth-consult" title="">Digital Health Services (including mHealth)</a></li>
+<li class="leaf"><a href="/research/ethics-consult" title="">Ethics</a></li>
+<li class="leaf"><a href="/research/ids-consult" title="">Implementation &amp; Dissemination Science</a></li>
+<li class="leaf"><a href="/research/sfbaycrn-consult" title="">Practice-Based Research Design and Recruitment (SF Bay CRN)</a></li>
+<li class="leaf"><a href="/research/pcd-consult" title="">Preclinical Development</a></li>
+<li class="leaf"><a href="/research/protocol-consult" title="">Protocol Development</a></li>
+<li class="leaf"><a href="/research/radiology-consultation" title="">Radiology and Biomedical Imaging Research</a></li>
+<li class="collapsed"><a href="/research/prs-consult" title="">Recruitment Services</a></li>
+<li class="leaf"><a href="/research/rks-consult" title="">Regulatory Knowledge</a></li>
+<li class="leaf"><a href="/research/sciwrite-consult" title="">Scientific Writing</a></li>
+<li class="collapsed"><a href="/research/design-consult" title="">Study Design &amp; Implementation </a></li>
+<li class="leaf"><a href="/research/threds-ars">THREDS Request</a></li>
+<li class="last leaf"><a href="/research/vadata-consult" title="">VA Data Core</a></li>
+</ul></li>
+<li class="expanded"><a href="/research/crs">Clinical Research Services</a><ul class="menu"><li class="first leaf"><a href="/research/crs/nursing">Nursing</a></li>
+<li class="leaf"><a href="/research/crs/phlebotomy">Phlebotomy</a></li>
+<li class="leaf"><a href="/research/crs/spl">Sample Processing</a></li>
+<li class="leaf"><a href="/research/crs/body-composition">Body Composition &amp; Exercise</a></li>
+<li class="leaf"><a href="/research/crs/facilities">Facilities &amp; Contacts</a></li>
+<li class="leaf"><a href="/research/crs/guidelines">Guidelines &amp; Application Process</a></li>
+<li class="leaf"><a href="/research/crs/faq">Frequently Asked Questions</a></li>
+<li class="leaf"><a href="/research/crs/forms">CRS Forms</a></li>
+<li class="leaf"><a href="/research/crs-recharge">Recharge Rates - Current</a></li>
+<li class="leaf"><a href="/research/crs/resources">Resources for Grant Applications</a></li>
+<li class="last leaf"><a href="/research/crs/scientific-review">Scientific Review Only</a></li>
+</ul></li>
+<li class="collapsed"><a href="/research/recruitment">Recruitment Services</a></li>
+<li class="expanded"><a href="/research/community">Work with Community</a><ul class="menu"><li class="first leaf"><a href="/research/community-manuals">Guides and Resource Manuals</a></li>
+<li class="leaf"><a href="/research/community-pubs">Articles, Reports, and Books</a></li>
+<li class="last collapsed"><a href="/research/community-tools" title="">Presentations and Tools</a></li>
+</ul></li>
+<li class="collapsed"><a href="/research/informatics">Informatics Resources</a></li>
+<li class="expanded"><a href="/research/cer" title="Comparative Effectiveness Research (CER) Resources">Comparative Effectiveness Research (CER) Resources</a><ul class="menu"><li class="first leaf"><a href="/research/cer-consultation">Consultation Services of Special Interest for CER</a></li>
+<li class="leaf"><a href="/research/cer-archived-presentations">Archived Symposia and Presentations on CER and PCORI</a></li>
+<li class="leaf"><a href="/research/cer-external-resources">External Resources for CER</a></li>
+<li class="last leaf"><a href="/cer/news">CER Announcements</a></li>
+</ul></li>
+<li class="collapsed"><a href="/research/large-datasets" title="">Work with Large Datasets</a></li>
+<li class="last leaf"><a href="/navigation" title="">Ask A Question</a></li>
+</ul></li>
+<li class="expanded"><a href="/training">Training</a><ul class="menu"><li class="first leaf"><a href="/training" title="">Overview</a></li>
+<li class="leaf"><a href="/training/browse-ucsf-opportunities">UCSF Opportunities Matrix</a></li>
+<li class="collapsed"><a href="/training/online-education">CTSI Online Education</a></li>
+<li class="collapsed"><a href="/training/ids">Training in Implementation Science</a></li>
+<li class="expanded"><a href="/training/mtp">Mentor Training Program (MTP)</a><ul class="menu"><li class="first expanded"><a href="/training/mdp-seminar1" title="MDP Seminar: Defining Mentorship from the Beginning">Defining Mentorship from the Beginning</a><ul class="menu"><li class="first leaf"><a href="/training/mdp-seminar1-definitions">Mentor Definitions for Mentoring Junior Faculty</a></li>
+<li class="leaf"><a href="/training/mdp-seminar1-meeting">Mentoring Meeting and Individual Development Plan</a></li>
+<li class="leaf"><a href="/training/mdp-seminar1-development">Guidelines for Development of Researchers in Clinical and Translational Research</a></li>
+<li class="collapsed"><a href="/training/mdp-seminar1-checklists">Mentoring Checklists</a></li>
+<li class="leaf"><a href="/training/mdp-seminar1-negotiations">Negotiations-Tools for Mentors and Mentees</a></li>
+<li class="leaf"><a href="/training/mdp-seminar1-cases" title="">Case Scenarios</a></li>
+<li class="last leaf"><a href="/training/mdp-seminar1-information">More Information</a></li>
+</ul></li>
+<li class="expanded"><a href="/training/mdp-seminar2" title="MDP Seminar: Rewards &amp; Challenges of Mentorship">Rewards &amp; Challenges of Mentorship</a><ul class="menu"><li class="first leaf"><a href="/training/mdp-seminar2-rewards">Rewards of Being a Mentor</a></li>
+<li class="leaf"><a href="/training/mdp-seminar2-challenges">Challenges of Being a Mentor</a></li>
+<li class="last leaf"><a href="/training/mdp-seminar2-cases" title="">Case Scenarios</a></li>
+</ul></li>
+<li class="expanded"><a href="/training/mdp-seminar3" title="">Communicating Effectively with Mentees</a><ul class="menu"><li class="first leaf"><a href="/training/mdp-seminar3-communication">Principles of Effective Communication</a></li>
+<li class="leaf"><a href="/training/mdp-seminar3-ei">Emotional Intelligence</a></li>
+<li class="leaf"><a href="/training/mdp-seminar3-decision-tree">Assessing Problems with the Decision Tree</a></li>
+<li class="leaf"><a href="/training/mdp-seminar3-cases" title="">Case Scenarios</a></li>
+<li class="last leaf"><a href="/training/mdp-seminar3-information"> More Information</a></li>
+</ul></li>
+<li class="expanded"><a href="/training/mdp-seminar4" title="MDP Seminar: Balancing Work-Life">Balancing Work-Life</a><ul class="menu"><li class="first leaf"><a href="/training/mdp-seminar4-worklife">The Balancing Act Between Personal and Professional Life</a></li>
+<li class="leaf"><a href="/training/mdp-seminar4-cases" title="">Case Scenarios</a></li>
+<li class="last leaf"><a href="/training/mdp-seminar4-resources">Additional Resources</a></li>
+</ul></li>
+<li class="expanded"><a href="/training/mdp-seminar5" title="MDP Seminar: Understanding Diversity among Mentees">Understanding Diversity among Mentees</a><ul class="menu"><li class="first leaf"><a href="/training/mdp-seminar5-diversity">Diversity among Mentees - Awareness of Difference</a></li>
+<li class="leaf"><a href="/training/mdp-seminar5-support">Financial Support for Mentees of Disadvantaged and Underrepresented Groups</a></li>
+<li class="leaf"><a href="/training/mdp-seminar5-cases" title="">Case Scenarios</a></li>
+<li class="last leaf"><a href="/training/mdp-seminar5-information">Additional Resources</a></li>
+</ul></li>
+<li class="expanded"><a href="/training/mdp-seminar6" title="MDP Seminar: Understanding Economic and Fiscal Realities for Successful Academic Careers">Understanding Economic and Fiscal Realities for Successful Academic Careers</a><ul class="menu"><li class="first leaf"><a href="/training/mdp-seminar6-cases" title="">Case Scenarios</a></li>
+<li class="last leaf"><a href="/training/mdp-seminar6-information">Additional Resources</a></li>
+</ul></li>
+<li class="expanded"><a href="/training/mdp-seminar7" title="MDP Seminar:  Grants and the Institutional Review Board">Grants and the Institutional Review Board</a><ul class="menu"><li class="first leaf"><a href="/training/mdp-seminar7-grants">Grant Resources</a></li>
+<li class="leaf"><a href="/training/mdp-seminar7-writing">NIH Grant Writing Strategies</a></li>
+<li class="leaf"><a href="/training/mdp-seminar7-review" title="">NIH Review Process</a></li>
+<li class="leaf"><a href="/training/mdp-seminar7-contracts">NIH Research Contracts</a></li>
+<li class="leaf"><a href="/training/mdp-seminar7-irb">What Is the Institutional Review Board (IRB)?</a></li>
+<li class="leaf"><a href="/training/mdp-seminar7-cases" title="">Case Scenarios</a></li>
+<li class="last leaf"><a href="/training/mdp-seminar7-information">Additional Resources</a></li>
+</ul></li>
+<li class="expanded"><a href="/training/mdp-seminar8" title="MDP Seminar: Understanding Academic Advancement Policies">Understanding Academic Advancement Policies</a><ul class="menu"><li class="first leaf"><a href="/training/mdp-seminar8-advancement">Understanding Academic Advancement Policies</a></li>
+<li class="leaf"><a href="/training/mdp-seminar8-cases" title="">Case Scenarios</a></li>
+<li class="last leaf"><a href="/training/mdp-seminar8-information" title="">Additional Resources</a></li>
+</ul></li>
+<li class="collapsed"><a href="/training/mdp-seminar9" title="MDP Seminar: Leadership Skills &amp; Opportunities – How to Build a Research Team">Leadership Skills &amp; Opportunities – How to Build a Research Team</a></li>
+<li class="last collapsed"><a href="/training/mdp-cases">All Case Scenarios</a></li>
+</ul></li>
+<li class="expanded"><a href="/training/yearlong-inquiry-program">Yearlong Inquiry Program (YIP)</a><ul class="menu"><li class="first last collapsed"><a href="/training/predoctoral-fellowship-international">Doris Duke Charitable Foundation International Clinical Research Fellowship</a></li>
+</ul></li>
+<li class="expanded"><a href="/training/faculty">Faculty Opportunities</a><ul class="menu"><li class="first leaf"><a href="/training/kl2" title="CTSI KL2 Scholars Program">CTSI KL2 Scholars Program</a></li>
+<li class="collapsed"><a href="/training/k-scholar-application" title="CTSI K-Scholars Program">CTSI K Scholars Program: Apply with an Outside Career Development Award</a></li>
+<li class="last leaf"><a href="/funding/diversity-supplement-info-for-trainee" title="">NIH Diversity Supplement</a></li>
+</ul></li>
+<li class="leaf"><a href="/training/resident">Resident Opportunities</a></li>
+<li class="last expanded"><a href="/training/student">Trainee Opportunities</a><ul class="menu"><li class="first leaf"><a href="/training/designing-clinical-research-clinical-trainees" title="">Designing Clinical Research for Clinical Trainees (DCR-CT) Online Course</a></li>
+<li class="leaf"><a href="/training/yearlong-inquiry-program" title="">Clinical &amp; Translational Research Fellowship</a></li>
+<li class="leaf"><a href="/training/catalyst-internship">Catalyst Awards Internship Program</a></li>
+<li class="leaf"><a href="/funding/diversity-supplement-info-for-trainee" title="">NIH Diversity Supplement Info for Trainees</a></li>
+<li class="leaf"><a href="/training/pup">Pre-Health Undergraduate Program (PUP)</a></li>
+<li class="last leaf"><a href="/training/prescient" title="PRESCIENT">Precision Health Science TL1 Postdoctoral Fellowship Training Program</a></li>
+</ul></li>
+</ul></li>
+<li class="expanded"><a href="/funding">Funding</a><ul class="menu"><li class="first leaf"><a href="/funding" title="">Overview</a></li>
+<li class="collapsed"><a href="/funding/rap">CTSI-Sponsored RAP Funding</a></li>
+<li class="leaf"><a href="/funding/catalyst">Catalyst Award</a></li>
+<li class="leaf"><a href="/funding/grant-writing-guidance" title="Grant Writing Guidance">Grant Writing Guidance</a></li>
+<li class="collapsed"><a href="/funding/k-library" title="">K Proposal Library</a></li>
+<li class="collapsed"><a href="/funding/t32-library" title="">T32 Proposal Library</a></li>
+<li class="collapsed"><a href="/funding/career-development-awards">Faculty Career Development Awards</a></li>
+<li class="collapsed"><a href="/funding/fellow">Postdoctoral Funding</a></li>
+<li class="last leaf"><a href="/funding/funding-for-residents">Resident Funding</a></li>
+</ul></li>
+<li class="last expanded"><a href="/community">For Community Partners</a><ul class="menu"><li class="first leaf"><a href="/community" title="">Overview</a></li>
+<li class="leaf"><a href="/community/linkage" title="">Linkage Service</a></li>
+<li class="leaf"><a href="/community/training" title="">Training for Community Members</a></li>
+<li class="leaf"><a href="/community/sfbaycrn">Collaborative Research Network</a></li>
+<li class="last leaf"><a href="/community/working-with-researchers">Working with Researchers</a></li>
+</ul></li>
+</ul> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<!-- end main-menu -->
+<div class="container" id="content-wrapper">
+<!--above breadcrumbs-->
+<div class="sixteen columns" id="hero-first">
+<div class="region region-hero-first">
+<div class="block block-boxes container block-boxes-simple container hpsearch" id="block-boxes-hp-blogs">
+<div class="block-inner clearfix">
+<div class="block-content">
+<div class="boxes-box" id="boxes-box-hp_blogs"><div class="boxes-box-content"><style>
+<!--/*--><![CDATA[/* ><!--*/
+
+.region-hero-first { background-color: #EDEDEE; background-image: none; padding-left: 0; height: auto; }
+.region-hero-first .block-content { margin-top: 30px; }
+#askus { font-size:1.4em; color: #4d4d4d; display: block; margin-right: -30px; }
+ #askus:hover { color: #4d4d4d; text-decoration: none; }
+#askus span {  color: #F48024; }
+#askus:hover span { color: #F26D04; text-decoration: underline; }
+
+/*--><!]]>*/
+</style><div class="form-item eleven columns">
+<form action="http://accelerate.ucsf.edu/search/node" class="search-form" id="hero-search-form" method="get" style="width:80%;margin: 0 auto;padding-right: 10px;">
+<h2 style="margin-top:0"><a class="hovertip info" title="Quickly locate our main resources: matches appear below as you type. If there are no matches, hit return to search all site content.">Resource Finder</a></h2>
+<input autofocus="" class="form-text" id="search" name="keys" style="width:100%" type="text"/></form>
+</div>
+<div class="form-item five columns">
+<div style="margin:0 auto 30px;width:262px;">
+<a href="http://accelerate.ucsf.edu/navigation" id="askus"><img alt="Questions?" src="http://accelerate.ucsf.edu/uploads/askus.png" style="float:left;padding-right:8px;vertical-align:middle;"/>Questions? Ask a <br/><span>Research Navigator</span></a>
+</div></div></div></div> </div>
+</div>
+</div>
+</div>
+</div>
+<!--below breadcrumbs-->
+<div class="sixteen columns" id="hero-second">
+<div class="region region-hero-second">
+<div class="block block-boxes block-boxes-simple container" id="block-boxes-hp-main-services">
+<div class="block-inner clearfix">
+<div class="block-content">
+<div class="boxes-box" id="boxes-box-hp_main_services"><div class="boxes-box-content"><div class="ad one-third column">
+<a href="http://accelerate.ucsf.edu/consult"><h2>Research Consultation</h2>
+<p>Get help with Biostatistics, Study Design, Implementation &amp; more</p></a>
+</div>
+<div class="ad one-third column">
+<a href="http://accelerate.ucsf.edu/research/crs"><h2>Clinical Research</h2>
+<p>Services include Inpatient, Outpatient, Nursing, Sample Processing &amp; more</p></a>
+</div>
+<div class="ad one-third column">
+<a href="http://accelerate.ucsf.edu/training/browse-ucsf-opportunities"><h2>Training Opportunities</h2>
+<p>Develop your clinical &amp; translational research skills</p></a>
+</div>
+<!--
+<div class="ad one-third column">
+<a href="http://accelerate.ucsf.edu/research/cer"><h2 style="line-height: 1.2em; margin-bottom: 0">Comparative Effectiveness Research Resources</h2>
+<p>Advice, example grants & more</p></a>
+</div>
+--></div></div> </div>
+</div>
+</div>
+</div>
+</div>
+<div id="preface-wrapper">
+<div class="one-third column preface-area">
+<div class="region region-preface-first">
+<div class="block block-boxes block-boxes-simple" id="block-boxes-hp-preface1">
+<div class="block-inner clearfix">
+<div class="block-content">
+<div class="boxes-box" id="boxes-box-hp_preface1"><div class="boxes-box-content"><h2>How To...</h2>
+<ul class="howto"><li><a href="http://accelerate.ucsf.edu/research/recruitment">Recruit Study Participants</a></li>
+<li><a href="http://accelerate.ucsf.edu/funding/grant-writing-guidance">Write a Grant Proposal</a></li>
+<li><a href="http://accelerate.ucsf.edu/research/community">Work with Community</a></li>
+<li><a href="http://accelerate.ucsf.edu/research/industry-faq">Work with Industry</a></li>
+</ul><p class="seemore"><a href="http://accelerate.ucsf.edu/research">And more</a></p></div></div> </div>
+</div>
+</div>
+</div>
+</div>
+<div class="one-third column preface-area">
+<div class="region region-preface-second">
+<div class="block block-boxes block-boxes-simple" id="block-boxes-hp-preface3">
+<div class="block-inner clearfix">
+<div class="block-content">
+<div class="boxes-box" id="boxes-box-hp_preface3"><div class="boxes-box-content"><h2>Data Resources</h2>
+<ul class="howto"><li><a href="http://accelerate.ucsf.edu/informatics">Informatics Tools</a></li>
+<li><a href="http://accelerate.ucsf.edu/research/data-consult">Data Management Consultation</a></li>
+<li><a href="http://accelerate.ucsf.edu/research/cer">Comparative Effectiveness Research</a></li>
+<li><a href="http://accelerate.ucsf.edu/research/celdac">Large Dataset Inventory</a></li>
+</ul><p class="seemore"><a href="http://accelerate.ucsf.edu/research">And more</a></p></div></div> </div>
+</div>
+</div>
+</div>
+</div>
+<div class="one-third column preface-area">
+<div class="region region-preface-third">
+<div class="block block-boxes block-boxes-simple" id="block-boxes-hp-preface2">
+<div class="block-inner clearfix">
+<div class="block-content">
+<div class="boxes-box" id="boxes-box-hp_preface2"><div class="boxes-box-content"><!--
+<h2>Tell Us What You Think</h2>
+<p style="padding-top:0.8em;margin-left:30px"><img src="http://accelerate.ucsf.edu/files/images/fivestar.png" style="margin:0" /></p>
+<p style="margin: 0 30px">Explore and rate our <a href="http://accelerate.ucsf.edu/funding/grant-writing-guidance#proposal">libraries of successful proposals</a></p>
+
+-->
+<h2>Important Dates</h2>
+<div class="calendar clearfix">
+<div class="when">
+<div class="month">DEC</div>
+<div class="day">6</div>
+</div>
+<p><a href="http://ctsi.ucsf.edu/calendar/about-ctsi/developing-academic-research-clinical-therapies">Developing Academic Research into Clinical Therapies</a> </p>
+</div>
+<div class="calendar clearfix">
+<div class="when">
+<div class="month">JAN</div>
+<div class="day">3</div>
+</div>
+<p><a href="http://ctsi.ucsf.edu/calendar/about-ctsi/ctsi-k-scholar-program-call-applications-0">CTSI K Scholar Program - Call for Applications</a></p>
+</div>
+<p class="seemore" style="margin-top:4px"><a href="http://ctsi.ucsf.edu/calendar">See more events &amp; deadlines</a></p></div></div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="eleven columns" id="content">
+<section class="page" id="post-content" role="main">
+<div id="content_top"> <div class="region region-content-top">
+<section class="block block-views featured-service" id="block-views-featured-service-block-1">
+<div class="block-inner clearfix">
+<h2>Featured CTSI Service</h2>
+<div class="block-content">
+<div class="view view-featured-service view-id-featured_service view-display-id-block_1 view-dom-id-2eaf7fe48311d073a96a0a0cdb23d780">
+<div class="view-content">
+<div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+<div class="views-field views-field-body"> <div class="field-content"><a href="http://accelerate.ucsf.edu/research/bi-consult"><img alt="Bioinformatics Data Analysis" class="no-phone" src="http://accelerate.ucsf.edu/files/images/dna.jpg" style="float:left;vertical-align: bottom;padding:8px 20px 15px 0;"/></a>
+<h3 style="padding-top:20px"><a href="http://accelerate.ucsf.edu/research/bi-consult">Bioinformatics Data Analysis Consultation Service</a></h3>
+<p>Get  advice and assistance with analysis for data deriving from genomics, proteomics, microarrays, sequence and other high throughput biotechnologies, as well as general biological data mining.</p>
+</div> </div> </div>
+</div>
+</div> </div>
+</div>
+</section>
+</div>
+</div>
+<h1 class="page-title">Accelerate</h1>
+<div class="tabs-wrapper"></div>
+<div class="region region-content">
+<div class="block block-system" id="block-system-main">
+<div class="block-inner clearfix">
+<div class="block-content">
+<article about="/node/199" class="node node-page node-full clearfix" id="node-199" role="article" typeof="sioc:Item foaf:Document">
+<span class="rdf-meta element-hidden" content="Accelerate" property="dc:title"></span><span class="rdf-meta element-hidden" content="0" datatype="xsd:integer" property="sioc:num_replies"></span>
+<div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"></div></div></div>
+<div class="clearfix">
+<nav class="links node-links clearfix"></nav>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- /#main -->
+</div>
+<aside class="sidebar five columns" id="sidebar-first" role="complementary">
+<div class="region region-sidebar-first">
+<section class="block block-boxes plain block-boxes-simple" id="block-boxes-hp-essential">
+<div class="block-inner clearfix">
+<h2>Other Essential Resources</h2>
+<div class="block-content">
+<div class="boxes-box" id="boxes-box-hp_essential"><div class="boxes-box-content"><ul id="essential"><li id="cores"><a href="http://cores.ucsf.edu">UCSF Cores Search</a></li>
+<li id="profiles"><a href="http://profiles.ucsf.edu">UCSF Profiles</a></li>
+<li id="ops"><a href="http://open-proposals.ucsf.edu">UCSF Open Proposals</a></li>
+<li id="rap"><a href="http://rap.ucsf.edu">Research Allocation Program (RAP)</a></li>
+<li id="hub"><a href="http://hub.ucsf.edu">Clinical Research Resource HUB</a></li>
+</ul></div></div> </div>
+</div>
+</section>
+</div>
+</aside><!-- /#sidebar-first -->
+</div>
+<div class="container" id="acknowledgement-wrapper">
+<div class="sixteen columns" id="acknowledgement">
+<div class="region region-acknowledgement">
+<div class="block block-block" id="block-block-13">
+<div class="block-inner clearfix">
+<div class="block-content">
+<p>Accelerate is managed by the UCSF
+<a href="http://ctsi.ucsf.edu" target="_blank">Clinical and Translational Science Institute (CTSI)</a>, part of the Clinical and Translational Science Award program funded by the National Center for Advancing Translational Sciences (Grant Number UL1 TR001872) at the National Institutes of Health (NIH).</p>
+<p><a class="cite" href="http://accelerate.ucsf.edu/cite"><em>Cite</em> CTSI</a> <span style="font-weight:bold;">NIH Funding Acknowledgment</span>: <em>Important</em> — All publications resulting from the utilization of CTSI resources are required to credit the CTSI grant by including the <a href="http://accelerate.ucsf.edu/cite" title="Get the official CTSI citation text">NIH Funding Acknowledgment</a> and must comply with <a href="http://publicaccess.nih.gov/" title="Visit the PubMed Central website">NIH Public Access Policy</a>.</p> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="container" id="colophon">
+<div class="sixteen columns footer-area">
+<div class="region region-footer-first">
+<div class="block block-boxes block-boxes-simple footer-search" id="block-boxes-global-footer-search">
+<div class="block-inner clearfix">
+<div class="block-content">
+<div class="boxes-box" id="boxes-box-global_footer_search"><div class="boxes-box-content"><form accept-charset="UTF-8" action="http://accelerate.ucsf.edu/search" class="search-form" id="footer-search-form" method="post">
+<div class="form-item form-item-search-block-form">
+<label class="element-invisible" for="edit-keys">Search </label>
+<input class="form-text" id="edit-keys" maxlength="128" name="keys" size="15" type="text" value=""/><input class="form-submit" id="edit-submit" name="op" type="submit" value="Go"/></div>
+</form></div></div> </div>
+</div>
+</div>
+<div class="block block-block" id="block-block-270">
+<div class="block-inner clearfix">
+<div class="block-content">
+<div class="container sitemap no-phone">
+<div class="columns eight alpha omega leftfifty">
+<div style="width:50%; float:left">
+<ul><h3><a href="http://accelerate.ucsf.edu/research">Research Resources</a></h3>
+<li><a href="http://accelerate.ucsf.edu/consult">Request a Consultation</a></li>
+<li><a href="http://accelerate.ucsf.edu/research/crs">Clinical Research Services</a></li>
+<li><a href="http://accelerate.ucsf.edu/research/industry-faq">Work with Industry</a></li>
+<li><a href="http://accelerate.ucsf.edu/research/community">Work with Community</a></li>
+<li><a href="http://accelerate.ucsf.edu/informatics">Informatics Resources</a></li>
+<li><a href="http://accelerate.ucsf.edu/research/cer">Comparative Effectiveness Research (CER) Resources</a></li>
+<li><a href="http://accelerate.ucsf.edu/research/large-datasets">Work with Large Datasets</a></li>
+<li><a href="http://accelerate.ucsf.edu/navigation">Talk to a Research Navigator</a></li>
+</ul>
+</div>
+<div style="width:50%; float:left">
+<ul><h3><a href="http://accelerate.ucsf.edu/training">Training</a></h3>
+<li><a href="http://accelerate.ucsf.edu/training/browse-ucsf-opportunities">Browse UCSF Opportunities</a></li>
+<li><a href="http://accelerate.ucsf.edu/training/training">Training in Clinical Research (TICR)</a></li>
+<li><a href="http://accelerate.ucsf.edu/training/online-education">CTSI Online Education Curriculum</a></li>
+<li style="margin-right:-10px"><a href="http://accelerate.ucsf.edu/training/ids">Training in Implementation Science</a></li>
+<li> <a href="http://accelerate.ucsf.edu/training/mtp">Mentor Training Program (MTP)</a> </li>
+<li> <a href="http://accelerate.ucsf.edu/training/yearlong-inquiry-program">Yearlong Inquiry Program (YIP)</a> </li>
+<li><a href="http://accelerate.ucsf.edu/training/faculty">Faculty Opportunities</a></li>
+<li> <a href="http://accelerate.ucsf.edu/training/resident">Resident Opportunities</a></li>
+<li> <a href="http://accelerate.ucsf.edu/training/student">Trainee Opportunities</a></li>
+</ul>
+</div>
+</div>
+<div class="columns eight alpha omega">
+<div style="width:50%; float:left">
+<ul><h3><a href="http://accelerate.ucsf.edu/funding">Funding</a></h3>
+<li><a href="http://accelerate.ucsf.edu/funding/rap">CTSI-Sponsored RAP Funding</a></li>
+<li><a href="http://accelerate.ucsf.edu/funding/catalyst">Catalyst Awards</a></li>
+<li><a href="http://accelerate.ucsf.edu/funding/grant-writing-guidance">Grant Writing Guidance</a></li>
+<li><a href="http://accelerate.ucsf.edu/training/grants-library">K Proposal Library</a></li>
+<li><a href="http://accelerate.ucsf.edu/training/t32-library">T32 Proposal Library</a></li>
+<li> <a href="http://accelerate.ucsf.edu/funding/career-development-awards">Faculty Career Development Awards</a></li>
+<li> <a href="http://accelerate.ucsf.edu/funding/fellow">Postdoctoral Funding</a></li>
+<li> <a href="http://accelerate.ucsf.edu/funding/funding-for-residents">Resident Funding</a></li>
+</ul>
+</div>
+<div style="width:50%; float:left">
+<ul><h3><a href="http://accelerate.ucsf.edu/community">For Community Partners</a></h3>
+<li><a href="http://accelerate.ucsf.edu/community/ce-research-consult">Request a Consultation</a></li>
+<li><a href="http://accelerate.ucsf.edu/community/linkage">Linkage Service</a></li>
+<li><a href="http://accelerate.ucsf.edu/community/training">Training</a></li>
+<li><a href="http://accelerate.ucsf.edu/community/sfbaycrn">Collaborative Research Network (SF Bay CRN)</a></li>
+<li><a href="http://accelerate.ucsf.edu/community/working-with-researchers">Working with Researchers</a> </li></ul>
+<ul>
+<h3><a href="http://accelerate.ucsf.edu/about">About Accelerate</a></h3>
+</ul>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+<div class="block block-system block-menu" id="block-system-user-menu">
+<div class="block-inner clearfix">
+<div class="block-content">
+<ul class="menu"><li class="first leaf"><a class="active" href="/" title="">Home</a></li>
+<li class="leaf"><a href="/sitemap" title="">Site Map</a></li>
+<li class="leaf"><a href="/ctsi_saml_login" title="">UCSF Login</a></li>
+<li class="leaf"><a href="/user/login" title="">non-UCSF Login</a></li>
+<li class="last leaf"><a href="/navigation" title="">Ask Us</a></li>
+</ul> </div>
+</div>
+</div>
+<div class="block block-block" id="block-block-318">
+<div class="block-inner clearfix">
+<div class="block-content">
+<p style="margin-bottom: 0;">The University of California Copyright ©2016 The Regents of the University of California. <span class="nowrap">All Rights Reserved.</span></p>
+<p>Services on this website are for the use of UCSF researchers, CTSI affiliates, industry and community members who wish to establish explicit ties to UCSF.</p> </div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+//CrazyEgg click tracking
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/2559.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+</footer>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"0e3a89a5d6","applicationID":"11150742","transactionName":"M1wDZUFYCBVYBUNZWAoWNENaFg8IXQNPHkcMSQ==","queueTime":0,"applicationTime":103,"ttGuid":"","agentToken":"","atts":"HxsAEwlCGxs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

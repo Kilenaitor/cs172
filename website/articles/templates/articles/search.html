@@ -1,0 +1,23 @@
+{% load i18n %}
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation-rtl.min.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+</head>
+
+<body>
+    <div class='row' style="display: flex; justify-content: center; align-items: center;">
+        <div class='small-8 columns'>
+            <h1> Results </h1>
+            <h3> Query: {{ query }} </h3>
+            <ol>
+            {% for hit in hits %}
+                <li>
+                    <a href="/{{ hit.path }}">{{ hit.title }}</a> <br />
+                    {{ hit.body|slice:":255" }}
+                </li>
+            {% endfor %}
+            </ol>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.js"></script>
+</body>

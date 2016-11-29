@@ -1,0 +1,487 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>University of California San Diego Extension - Continuing Education</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="ZGXCZLiWnB+ZAjwosG+yAHNArsID1O3Dhi5w4NTBxfw=" name="verify-v1"/>
+<meta content="ucsd extension, extension, UCSD, extended studies, extended studies and public programs, la jolla, university of california, san diego, class, classes, certificates, masters degee, advanced degree, extension online education, online learning, online courses, distance learning, computer based training, e-learning, elearning, adult education, adult learning, degree, osha training institute" name="keywords"/>
+<meta content="The University of California San Diego Extension serves your educational needs. Searchable course catalog, programs of study, and registration." name="description"/>
+<script src="js/global.js?v=8-15-13" type="text/javascript"></script>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="/JavaScript/utilities.js" type="text/javascript"></script>
+<link href="/css/screen.css?v=10-25-13" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/css/print.css?version=1-27-12" media="print" rel="stylesheet" type="text/css"/>
+<link href="/css/iPhone.css" media="only screen and (max-device-width: 480px)" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/javascript">
+	<!-- hide from older browsers
+	function autoSubmit()	{
+		document.keywordSearchForm.submit();
+	}
+	// end hiding -->
+</script>
+</link></head>
+<body>
+<div id="everything">
+<script type="text/javascript">
+$(document).ready(function(){
+	$("ul#profilenav").hide(); 
+	$("li#login").hover(
+        function () {
+		$("ul#profilenav").show();
+		return false;
+        },function() {
+					$("ul#profilenav").delay(2000).hide("slow");
+					return false;
+		});//hover
+});// document ready
+</script>
+<div id="header">
+<div id="utilnav">
+<ul id="universalnav">
+<li id="cart"><a href="/cart/index.cfm?vAction=view">    (0)</a></li>
+<li>
+<a href="https://extension.ucsd.edu/logInOut/index.cfm?vAction=login&amp;vDestination=/index.cfm?">Log In</a>
+<li><a href="https://myextension.ucsd.edu">My Extension</a></li>
+</li></ul>
+<ul id="othernav">
+<li><a href="/Student/index.cfm?vAction=maps">Maps &amp; Locations</a></li>
+<li><a href="/Student/index.cfm?vAction=subscriptions">Subscriptions</a></li>
+</ul>
+</div>
+<a href="/" id="headerLogo"><img alt="uc san diego extension" border="0" height="65" src="/images/uc_san_diego_extension_logo_color_trans_400x65.png" width="400"/><br/></a>
+</div>
+<div id="nav">
+<script>
+/* Check for empty searches */
+function formCheck() 
+    {
+        if ((document.search.searchCriteria.value == "") || (document.search.searchCriteria.value == "Site Search")) 
+        {
+        alert("Please enter a word or phrase for your search.");
+        return false;
+        }
+    }
+</script>
+<div id="leftnav">
+<ul id="nowBtn">
+<li id="enrollnow"><a href="http://extension.ucsd.edu/cart/index.cfm?vAction=view">ENROLL NOW!</a></li>
+</ul>
+<ul class="lvl1">
+<li><a href="/studyarea/index.cfm">Areas of Interest</a>
+</li>
+<li><a href="/online/index.cfm">Online Courses</a>
+</li>
+<li><a href="/student/index.cfm">Student Resources</a>
+</li>
+<li><a href="/international/index.cfm">International</a></li>
+<li><a href="/corporate/index.cfm">Custom Training</a>
+</li>
+<li><a href="/universityoutreach/index.cfm">University Outreach</a></li>
+<li><a href="/about/index.cfm">About</a>
+</li>
+</ul>
+</div>
+<script src="//www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+  google.load('search', '1');
+  google.setOnLoadCallback(function() {
+    google.search.CustomSearchControl.attachAutoCompletion(
+      '000341731471453744056:2ovca7szhlw',
+      document.getElementById('q'),
+      'cse-search-box');
+  });
+</script>
+<form action="/index.cfm" id="cse-search-box">
+<input name="vAction" type="Hidden" value="siteSearchResults">
+<p style="margin:0 0 0 5px; padding:0;"><br>
+<input autocomplete="off" gl="us" id="q" name="q" style="width:75px !important;" type="text"/> <input class="submit_btn" name="sa" type="submit" value="Search"/></br></p>
+</input></form>
+<p align="right" style="margin-top:0;"><a href="/studyarea/index.cfm?vAction=pcf" style="font-size:9px;">Advanced Search</a></p>
+</div>
+<div id="section">
+<script src="/js/jquery.cookie.js" type="text/javascript"></script>
+<script src="/js/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+// Jquery plugin to allow for url variable checking
+$.extend({
+  getUrlVars: function(){
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+      hash = hashes[i].split('=');
+      vars.push(hash[0]);
+      vars[hash[0]] = hash[1];
+    }
+    return vars;
+  },
+  getUrlVar: function(name){
+    return $.getUrlVars()[name];
+  }
+});
+
+$(document).ready(function() {
+	// Redirect only if there is a corresponding mobile page.
+	// This is also a list of pages that run this code.
+	function getMobileUrl() {
+		currentHostname = $(location).attr('host');
+		currentPathname = $(location).attr('pathname');
+		currentQueryString = $(location).attr('search');
+		if(currentPathname.indexOf("studyarea") >= 0) {
+			if($.getUrlVar("vAction") == "saDetail" || $.getUrlVar("vAction") == "saCourses") {
+				mobileQueryString = "?vAction=aosDetail&vStudyAreaID=" + $.getUrlVar("vStudyAreaID");
+			} else if($.getUrlVar("vAction") == "singleCourse") {
+				mobileQueryString = "?vAction=courseDetail&vStudyAreaID=" + $.getUrlVar("vStudyAreaID") + "&vCourse=" + $.getUrlVar("vCourse");
+			} else {
+				mobileQueryString = "?vAction=aosList";
+			}
+		} else if(currentPathname.indexOf("programs") >= 0) {
+			if($.getUrlVar("vAction") == "certDetail") {
+				mobileQueryString = "?vAction=certDetail&vStudyAreaID=" + $.getUrlVar("vStudyAreaID") + "&vCertificateID=" + $.getUrlVar("vCertificateID");
+			} else {
+				mobileQueryString = "?vAction=aosList";
+			}
+		} else if(currentPathname.indexOf("about") >= 0) {
+			if($.getUrlVar("vAction") == "calendar") {
+				mobileQueryString = "?vAction=dates";
+			} else {
+				mobileQueryString = "?vAction=aboutExtension";
+			}
+		} else if($.getUrlVar("vAction") == "maps") {
+			mobileQueryString = "?vAction=maps";
+		} else if($.getUrlVar("vAction") == "contactUs") {
+			mobileQueryString = "?vAction=contactUs";
+		} else if($.getUrlVar("vAction") == "faq") {
+			mobileQueryString = "?vAction=faqs";
+		} else if(currentPathname.indexOf("universityoutreach") >= 0) {
+			mobileQueryString = "?vAction=univOutreach";
+		} else {
+			mobileQueryString = "";
+		}
+		mobileUrl = "http://m." + currentHostname + "/index.cfm" + mobileQueryString;
+		return mobileUrl;
+	}
+
+	// pop over modal dialog box options
+	$('#dialog').dialog({
+		modal: true,
+		bgiframe: true,
+		width: 406,
+		autoOpen: false
+	});
+
+	// pop over modal dialog box logic
+	function promptForMobilePref() {
+		$("#dialog").dialog('option', 'buttons', {
+			"Go to Mobile Site" : function() {
+				setCookie("Y");
+				theUrl = getMobileUrl();
+				redirect(theUrl);
+			},
+			"Go to Full Site" : function() {
+				setCookie("N");
+				$(this).dialog("close");
+			}
+		});
+		$("#dialog").dialog("open");
+		$('.ui-dialog :button').blur();
+	}
+	
+	function setCookie(pref){
+		thePref = pref;
+		$.cookie('mobileCookie', thePref, { expires: 120, path: '/' });
+	}
+	
+	function redirect(theUrl) {
+		window.location.assign(theUrl);
+	}
+	
+	function readCookie() {
+		cookieValue = $.cookie('mobileCookie');
+		return cookieValue
+	}
+	
+	function removeCookie() {
+		$.removeCookie('mobileCookie', { path: '/' });
+	}
+
+	// Main Program
+		// Catch incoming clicks from mobile site. Set these to "N" without prompting.
+		if ($.getUrlVar("mobile") == "N") {
+			setCookie("N");
+		}
+	
+		// Promt user to redirect if mobile device. Use 'Mozilla' to test in Safari and FireFox.
+		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			cookiePref = readCookie();
+			if(cookiePref == null) {
+				promptForMobilePref();
+			}
+			else if(cookiePref == "Y") {
+				theUrl = getMobileUrl();
+				if(theUrl != "") {
+					redirect(theUrl);
+				}
+			}
+			else {
+			}
+		}
+	
+		// Catch outgoing clicks on the "mobile site" link in the footer. Set these to "Y" without prompting.
+		$('a#mobileSite').click(function() {
+			setCookie("Y");
+			return true;
+		});
+
+	// Diagnostic Helpers - Comment Out When Done
+	$('#cookieRemover').click(function() {
+		removeCookie();
+		return false;
+    });
+	$('#cookieSetY').click(function() {
+		setCookie("Y");
+		return false;
+    });
+	$('#cookieSetN').click(function() {
+		setCookie("N");
+		return false;
+    });
+		
+/*
+	cookieValue = $.cookie('mobileCookie');
+	$('span#cookieStatus').html(cookieValue);
+
+	currentHostname = $(location).attr('host');
+	$('span#currentHostname').html(currentHostname);
+
+	currentPathname = $(location).attr('pathname');
+	$('span#currentPathname').html(currentPathname);
+
+	currentQueryString = $(location).attr('search');
+	$('span#currentQueryString').html(currentQueryString);
+*/
+});
+
+</script>
+<link href="/css/jquery-ui-1.8.23.custom.css" media="screen" rel="stylesheet" type="text/css"/>
+<div id="dialog" style="display:none;" title="Mobile device detected.">
+<p>Would you like to view this page in a mobile device format or continue to the full site?</p>
+</div>
+<div id="pageimages">
+<div id="imageL">
+<a href="http://extension50.ucsd.edu/timeline.cfm" target="_blank"><img alt="UC San Diego Extension 50th Anniversary" border="0" height="143" src="/images/bannerimages/50thTimelineL.jpg" width="406"/></a><br/>
+</div>
+<div id="imageR"><a href="/programs/index.cfm?vAction=certDetail&amp;vCertificateID=227&amp;vStudyAreaID=108" target="_self"><img alt="Integrative Nutrition Certificate" border="0" height="143" src="/images/bannerimages/healthcareR.jpg" width="202"/></a></div>
+</div>
+<div class="twocol">
+<h1 style="margin-bottom:0;">Choose a Place to Start</h1>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top" width="200">
+<ul class="arrows">
+<li><a href="about/index.cfm?vAction=newtoextension">New To Extension</a></li>
+<li><a href="student/index.cfm">Returning Students</a></li>
+<li><a href="about/index.cfm?vAction=grads">Undergraduate and Graduate Programs</a></li>
+</ul>
+</td>
+<td valign="top">
+<ul class="arrows">
+<li><a href="corporate/index.cfm">Employers</a></li>
+<li><a href="International/index.cfm">International Students</a></li>
+<li><a href="about/index.cfm?vAction=preCollege">Pre-College Programs</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<div class="twocol" style="float:left;">
+<h1>Free Information Sessions</h1>
+<ul class="tightleft">
+<li><a href="studyarea/index.cfm?vAction=singleCourse&amp;vCourse=INFO-70032&amp;vStudyAreaID=102"> 12/02/16 - Lean Six Sigma Information Session (Black/Green Belt)</a></li>
+<li><a href="studyarea/index.cfm?vAction=singleCourse&amp;vCourse=INFO-70000&amp;vStudyAreaID=111"> 12/13/16 - Legal Education Information Session</a></li>
+<li><a href="studyarea/index.cfm?vAction=singleCourse&amp;vCourse=INFO-70109&amp;vStudyAreaID=101"> 01/09/17 - UC San Diego Jazz Camp - Information Session</a></li>
+<li><a href="studyarea/index.cfm?vAction=singleCourse&amp;vCourse=INFO-70087&amp;vStudyAreaID=105"> 01/09/17 - Digital Media Content Creation Professional Certificate - Information Session</a></li>
+<li><a href="studyarea/index.cfm?vAction=singleCourse&amp;vCourse=INFO-70027&amp;vStudyAreaID=110"> 01/09/17 - Translation &amp; Interpretation Program Information Session</a></li>
+</ul>
+<p><a class="more" href="/studyarea/index.cfm?vAction=infosessions">View All</a></p>
+</div>
+<div class="twocol" style="float:left;">
+<h1>Extension News on WordPress</h1>
+<ul class="tightleft">
+<li><a href="https://ucsandiegoextension.wordpress.com/2016/11/22/50-voices-of-the-future-mike-stevenson-on-the-craft-of-brewing/">
+        50 Voices of the Future: Mike Stevenson on the craft of brewing</a></li>
+<li><a href="https://ucsandiegoextension.wordpress.com/2016/11/18/secrets-to-his-success-a-screenwriter-helps-students-get-ready-for-their-close-up/">
+        Secrets to his success A screenwriter helps students get ready for  their close up</a></li>
+<li><a href="https://ucsandiegoextension.wordpress.com/2016/11/15/50-voices-of-the-future-elizabeth-komives-on-keeping-humans-healthy/">
+        50 Voices of the Future: Elizabeth Komives on keeping humans healthy</a></li>
+<li><a href="https://ucsandiegoextension.wordpress.com/2016/11/11/bringing-wellbeing-to-the-world-deepak-chopra-teams-up-with-uc-san-diego-on-new-uc-wellbeing-channel/">
+        Bringing wellbeing to the world: Deepak Chopra teams up with UC San Diego on new UC Wellbeing Channel</a></li>
+<li><a href="https://ucsandiegoextension.wordpress.com/2016/11/08/50-voices-of-the-future-blair-thornley-on-finding-artistic-inspiration/">
+        50 Voices of the Future: Blair Thornley on finding artistic inspiration</a></li>
+</ul>
+<p><a class="more" href="http://ucsandiegoextension.wordpress.com/" target="_new">View All</a></p>
+<p><a class="more" href="/about/index.cfm?vAction=mediaRoom">Media Room</a></p>
+</div></div>
+<div class="onecol">
+<h1>Choose an Area of Interest</h1>
+<ul class="tightleft" id="aosList">
+<li><a href="http://academicconnections.ucsd.edu/" target="_blank">Academic Connections</a></li>
+<li><a href="/studyarea/index.cfm?vAction=saDetail&amp;vStudyAreaID=101" target="_self">Arts &amp; Humanities</a></li>
+<li><a href="/studyarea/index.cfm?vAction=saDetail&amp;vStudyAreaID=102" target="_self">Business &amp; Leadership</a></li>
+<li><a href="/studyarea/index.cfm?vAction=saDetail&amp;vStudyAreaID=103" target="_self">Data Analysis &amp; Mathematics</a></li>
+<li><a href="/studyarea/index.cfm?vAction=saDetail&amp;vStudyAreaID=104" target="_self">Degree Credit</a></li>
+<li><a href="/studyarea/index.cfm?vAction=saDetail&amp;vStudyAreaID=105" target="_self">Digital Arts</a></li>
+<li><a href="/studyarea/index.cfm?vAction=saDetail&amp;vStudyAreaID=106" target="_self">Education</a></li>
+<li><a href="/studyarea/index.cfm?vAction=saDetail&amp;vStudyAreaID=107" target="_self">Environment &amp; Sustainability</a></li>
+<li><a href="/studyarea/index.cfm?vAction=saDetail&amp;vStudyAreaID=108" target="_self">Healthcare</a></li>
+<li><a href="http://extension.ucsd.edu/department/elp/" target="_blank">International Programs</a></li>
+<li><a href="/studyarea/index.cfm?vAction=saDetail&amp;vStudyAreaID=110" target="_self">Languages</a></li>
+<li><a href="/studyarea/index.cfm?vAction=saDetail&amp;vStudyAreaID=111" target="_self">Law</a></li>
+<li><a href="http://osha.ucsd.edu/" target="_blank">Occupational Safety &amp; Health</a></li>
+<li><a href="http://olli.ucsd.edu/" target="_blank">Osher Lifelong Learning Institute</a></li>
+<li><a href="http://precollege.ucsd.edu/" target="_blank">Pre-College</a></li>
+<li><a href="/studyarea/index.cfm?vAction=saDetail&amp;vStudyAreaID=115" target="_self">Sciences</a></li>
+<li><a href="/studyarea/index.cfm?vAction=saDetail&amp;vStudyAreaID=116" target="_self">Technology</a></li>
+<li><a href="/studyarea/index.cfm?vAction=saDetail&amp;vStudyAreaID=117" target="_self">Writing</a></li>
+</ul>
+</div>
+<div class="threecol">
+<div class="onecol" style="float:left;margin-right:2px;">
+<h1>Our Instructors</h1>
+<a href="../about/index.cfm?vAction=ourInstructors"><img align="left" alt="Our Instructors" border="0" class="thumbnail" height="75" src="../images/instructorThumbs/instructor4.jpg" width="75"/></a><p>Meet the expert instructors who earn UC San Diego Extension's national reputation for excellence and apply to share your unique skills &amp; knowledge with our students.</p>
+<p style="clear:left"><a class="more" href="../about/index.cfm?vAction=ourInstructors">Search Instructors</a></p>
+<p><a class="more" href="/about/index.cfm?vAction=teach">Teach for Us</a></p>
+</div>
+<div class="onecol" style="float:left;">
+<h1>University Outreach</h1>
+<p style="padding-left:0;margin-right:2px;"><a href="http://academicconnections.ucsd.edu" target="_blank"><img align="left" alt="Various Thumbnail Images" border="0" class="thumbnail" height="75" src="../images/publicProgThumbs/ac.jpg" width="75"/></a><a href="http://academicconnections.ucsd.edu" target="_blank">Academic Connections</a> offers pre-college students a real campus experience.</p>
+<p style="clear:left"><a class="more" href="/universityoutreach/index.cfm">View All</a></p>
+</div>
+<div class="onecol">
+<style type="text/css">
+.submit_btn2 {padding:8px 10px;margin-bottom:10px;display:block;font-weight:bold;border:none;line-height:1;color:#fff;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#182979), to(#4e71b8));
+	background-image: -moz-linear-gradient(19% 75% 90deg,#4E71B8, #182979);
+	background-color:#182979;
+	-webkit-border-radius: .75em;
+	-moz-border-radius: .75em;
+	-o-border-radius: .75em;
+	border-radius: .75em;
+}
+.submit_btn2:hover {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#C59902), to(#FACA00));
+	background-image: -moz-linear-gradient(19% 75% 90deg,#FACA00, #C59902);
+	background-color:#FACA00;
+}
+.submit_btn2:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#C59902), to(#FACA00));
+	background-image: -moz-linear-gradient(19% 75% 90deg,#FACA00, #C59902);
+	background-color:#FACA00;
+	-webkit-box-shadow:inset 0 0 5px #666;
+	-moz-box-shadow:inset 0 0 5px #666;
+	box-shadow:inset 0 0 5px #666;
+}
+</style>
+<h2>Email Newsletters</h2>
+<div class="afterh2" style="background:url(/images/emailSignup.png) no-repeat 100% 0; border-left:solid 1px #DEDEDE;border-bottom:solid 1px #DEDEDE;padding-bottom:5px;">
+<form action="/index.cfm" id="bullseye" method="post" name="bullseye">
+<p><label for="email">Receive emails about upcoming events and courses.</label></p>
+<p><input id="name" name="email" placeholder="Email Address" style="width:180px;" type="text"/></p>
+<p><input class="submit_btn2" id="emailSignupBtnSubmit" name="emailSignupBtnSubmit" style="margin:auto 0;" type="submit" value="Sign Up"/></p>
+<input name="new_subscription_ids" type="hidden" value="1294287,1294288,1294289,1294290,1294291,1294294,1294295,1294296,1294297,1294298,1294299,1294300,1294301,1294302,1294304,1294305,1294306,1294307,1294308,1294309,1294310,1294311,1294312,1294314,1294315,1294316,1294317,1294318,1294319,1294320,1294321,1294322,1294323,1294324,1294325,1294326,1294327,1294328,1294329,1294330,1294331,1294332,1294333,1294334,1294335,1294336,1294337,1294338,1294339,1294340,1294341,1294342,1294343,1294344,1294345,1294346,1294347,1294348,1294349,1294350,1294351,1294352,1294353,1294354,1294355,1294356,1294357,1294358,1294359,1294360,1294361,1294362,1294363,1294364,1294365,1294366,1294367,1294368">
+<input name="vAction" type="hidden" value="bullseyeApi"/>
+</input></form>
+</div>
+<a href="/about/index.cfm?vAction=socialmediadirectory"><img border="0" height="84" src="images/socialMediaDirectoryAd.jpg" width="202"/></a><br>
+</br></div>
+</div>
+<!-- end main content -->
+<!-- SiteCatalyst code version: H.10.
+Copyright 1997-2007 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="javascript" src="http://extension.ucsd.edu/js/omniture.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName="Extension Home"
+s.server=""
+s.channel=""
+s.pageType=""
+s.prop1=""
+s.prop2=""
+s.prop3=""
+s.prop4=""
+s.prop5=""
+s.prop10=""
+/* Conversion Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events=""
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+s.eVar7=""
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="javascript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img alt="" border="0" height="1" src="http://ucsdextprod.112.2O7.net/b/ss/ucsdextprod/1/H.11--NS/0" width="1"/></a></noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.10. -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15687083-19']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1068901677;
+var google_conversion_label = "DzZKCK3eqgQQrcrY_QM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script src="//www.googleadservices.com/pagead/conversion.js" type="text/javascript">
+</script>
+<noscript>
+<div style="display:inline;">
+<img alt="" height="1" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1068901677/?value=0&amp;label=DzZKCK3eqgQQrcrY_QM&amp;guid=ON&amp;script=0" style="border-style:none;" width="1"/>
+</div>
+</noscript>
+</div>
+<div class="spacer"></div>
+<div id="footerbar">
+<ul>
+<li><a href="http://extension.ucsd.edu/index.cfm?vAction=contactUs">Contact</a></li>
+<li><a href="http://extension.ucsd.edu/index.cfm?vAction=sitemap">Site Map</a></li>
+<li><a href="http://extension.ucsd.edu/about/index.cfm?vAction=calendar">Calendar</a></li>
+<li><a href="http://extension.ucsd.edu/privacy" target="_blank">Privacy Policy</a></li>
+<li><a href="http://m.extension.ucsd.edu/" id="mobileSite">Mobile Site</a></li>
+<li><a href="https://instructorlink.ucsd.edu/" target="_blank">InstructorLink</a></li>
+</ul>
+</div>
+</div>
+<div class="spacer"></div>
+<div id="footer">
+<p>Copyright ©2016 Regents of the University of California. All rights reserved.</p>
+<p><a href="http://ucsd.edu" target="_blank"><img alt="UC San Diego" border="0" height="20" src="/images/uc_san_diego_logo_100x20.png" style="margin-bottom:-5px;" width="100"/></a> Official web page of the University of California, San Diego.</p>
+</div>
+</body>
+</html>

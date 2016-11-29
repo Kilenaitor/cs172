@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html dir="ltr" version="XHTML+RDFa 1.0" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="http://www.ucsfdentalcenter.org/misc/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+<meta content="Drupal 7 (http://drupal.org)" name="generator"/>
+<link href="http://www.ucsfdentalcenter.org/" rel="canonical"/>
+<link href="http://www.ucsfdentalcenter.org/" rel="shortlink"/>
+<title>Dental Center</title>
+<link href="http://www.ucsfdentalcenter.org/sites/default/files/css/css_kShW4RPmRstZ3SpIC-ZvVGNFVAi0WEMuCnI0ZkYIaFw.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://www.ucsfdentalcenter.org/sites/default/files/css/css_p2x3DFLB0btLsxtlASMFgla_5cNYwE3MVqnhImKY_Ic.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://www.ucsfdentalcenter.org/sites/default/files/css/css_yOxk0wZ_XV7pe7Mv0681c4KDce7tEc9pxawE6ctK1bA.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://www.ucsfdentalcenter.org/sites/default/files/css/css_j-Gal3nRWwehm-0-L6wSTVvf1848YTaMNPxkMbYT1zo.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://www.ucsfdentalcenter.org/sites/default/files/css/css_y_O635TPOUp39QLIFlMeIrHOGtxTNdZPr1S1gAprlGI.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="http://www.ucsfdentalcenter.org/sites/default/files/css/css_ZgM08HZStvRL6ZNNIKufA8sd47VqX2wK22rmbfa_9VY.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://www.ucsfdentalcenter.org/sites/default/files/css/css_PxsPpITToy8ZnO0bJDA1TEC6bbFpGTfSWr2ZP8LuFYo.css" media="all" rel="stylesheet" type="text/css"/>
+<script src="http://www.ucsfdentalcenter.org/sites/default/files/js/js_MpKfe1sTh5JIVGCZ17DsAuT1rqAC38MLLlkjqjQ1X_k.js" type="text/javascript"></script>
+<script src="http://www.ucsfdentalcenter.org/sites/default/files/js/js_CwA9uD2kYGc1ubylea-Ul8iN5PWYS40GWBA4ue9Bo4w.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script src="http://www.ucsfdentalcenter.org/sites/default/files/js/js_j40pRrFT-aGhTuEMaD7KRvmOX4hvgexTMd8tja8myCQ.js" type="text/javascript"></script>
+<script src="http://www.ucsfdentalcenter.org/sites/default/files/js/js_mEGA-lkaqzKTJb0LnmIlSIvq7SSVWKJgsdzqLCdsx1g.js" type="text/javascript"></script>
+<script src="http://www.ucsfdentalcenter.org/sites/default/files/js/js_XEGoVnbTl-vmOWa1RfOd9VCrrY4rZGQ6l8GzQMF2Yn0.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"dentc","theme_token":"Ql61BkF_E2TfZtJ7ewQIiWmpn8Wmvx3hDQDtfUk-_88","js":{"sites\/all\/modules\/contrib\/picture\/picturefill2\/picturefill.min.js":1,"sites\/all\/modules\/contrib\/picture\/picture.min.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets-spotlight.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.tabs.min.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"0":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_images\/panopoly-images.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_admin\/panopoly-admin.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_magic\/panopoly-magic.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_theme\/js\/panopoly-accordion.js":1,"profiles\/panopoly\/modules\/contrib\/caption_filter\/js\/caption-filter.js":1,"profiles\/panopoly\/libraries\/jquery.imagesloaded\/jquery.imagesloaded.min.js":1,"sites\/all\/themes\/dentc\/kalastatic\/assets\/vendor\/bootstrap-sass-twbs\/assets\/javascripts\/bootstrap.min.js":1,"sites\/all\/themes\/dentc\/kalastatic\/assets\/vendor\/matchHeight\/dist\/jquery.matchHeight.js":1,"sites\/all\/themes\/dentc\/kalastatic\/build\/js\/components\/search.js":1,"sites\/all\/themes\/dentc\/kalastatic\/build\/js\/components\/matchHeight.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"profiles\/panopoly\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/panopoly\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/contrib\/office_hours\/office_hours.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_admin\/panopoly-admin-navbar.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_core\/css\/panopoly-dropbutton.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_magic\/css\/panopoly-magic.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_theme\/css\/panopoly-featured.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_theme\/css\/panopoly-accordian.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_theme\/css\/panopoly-layouts.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets-spotlight.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_wysiwyg\/panopoly-wysiwyg.css":1,"sites\/all\/modules\/contrib\/picture\/picture_wysiwyg.css":1,"profiles\/panopoly\/modules\/contrib\/radix_layouts\/radix_layouts.css":1,"modules\/user\/user.css":1,"profiles\/panopoly\/modules\/contrib\/views\/css\/views.css":1,"profiles\/panopoly\/modules\/contrib\/caption_filter\/caption-filter.css":1,"profiles\/panopoly\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/panopoly\/modules\/contrib\/panels\/css\/panels.css":1,"http:\/\/maxcdn.bootstrapcdn.com\/font-awesome\/4.1.0\/css\/font-awesome.min.css":1,"sites\/all\/themes\/kalatheme\/css\/tweaks.css":1,"sites\/all\/themes\/kalatheme\/css\/panopoly.css":1,"sites\/all\/themes\/dentc\/kalastatic\/build\/styles\/main.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_images\/panopoly-images.css":1}},"CToolsModal":{"modalSize":{"type":"scale","width":".9","height":".9","addWidth":0,"addHeight":0,"contentRight":25,"contentBottom":75},"modalOptions":{"opacity":".55","background-color":"#FFF"},"animationSpeed":"fast","modalTheme":"CToolsModalDialog","throbberTheme":"CToolsModalThrobber"},"panopoly_magic":{"pane_add_preview_mode":"single"},"urlIsAjaxTrusted":{"\/search":true}});
+//--><!]]>
+</script>
+<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('footer');
+   </script>
+  <![endif]-->
+</head>
+<body class="html front not-logged-in no-sidebars page-node page-node- page-node-259 node-type-dentc-page region-content">
+<!-- Google Tag Manager -->
+<noscript><iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-P4P4XJ" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;j.type='text/javascript';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P4P4XJ');</script>
+<!-- End Google Tag Manager -->
+<div id="skip-link">
+<a class="element-focusable sr-only" href="#main-content">Skip to main content</a>
+</div>
+<div id="page-wrapper"><div id="page">
+<!-- Page Header -->
+<header class="navbar navbar-default ">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span aria-hidden="true" class="icon-bar"></span>
+<span aria-hidden="true" class="icon-bar"></span>
+<span aria-hidden="true" class="icon-bar"></span>
+</button>
+<div class="brand navbar-brand " id="site-name-slogan">
+<h1 id="site-name">
+<strong>
+<a href="/" rel="home" title="Home"><span>Dental Center</span></a>
+</strong>
+</h1>
+</div> <!-- /#name-and-slogan -->
+</div><!-- /.navbar-header -->
+<nav class="collapse navbar-collapse " role="navigation">
+<h2 class="sr-only">Main menu</h2><ul class="nav navbar-nav links clearfix" role="menubar"><li class="mid-2120 first" role="presentation"><a class="first leaf" href="/clinics" role="menuitem">Clinics</a></li>
+<li class="mid-1602" role="presentation"><a class="leaf" href="/how-we-are-different" role="menuitem">How We're Different</a></li>
+<li class="mid-1604" role="presentation"><a class="leaf" href="/new-patients" role="menuitem">New Patients</a></li>
+<li class="mid-1605 last" role="presentation"><a class="last leaf" href="/find-provider" role="menuitem" title="">Find a Provider</a></li>
+</ul> <h2 class="sr-only">Secondary menu</h2><ul class="nav navbar-nav secondary-links" id="secondary-menu-links"><li class="menu-1898 first last"><a href="https://dentalhealth.ucsf.edu" title="">Patient Access Login <i class="fa fa-user"></i></a></li>
+</ul> <h2 class="sr-only">Secondary menu</h2><ul class="nav navbar-nav menu-social"><li class="menu-1862 first"><a href="http://twitter.com/ucsfdentistry" title=""><i class="fa fa-twitter"></i><span class="sr-only">Twitter</span></a></li>
+<li class="menu-1870"><a href="https://www.facebook.com/UCSFDentalCenter/" title=""><i class="fa fa-facebook"></i><span class="sr-only">Facebook</span></a></li>
+<li class="menu-1863"><a href="https://www.yelp.com/biz/ucsf-dental-center-san-francisco-5" title=""><i class="fa fa-yelp"></i><span class="sr-only">Yelp</span></a></li>
+<li class="menu-1871 last"><a href="/search" title=""><i class="fa fa-search"></i><span class="sr-only">Search</span></a></li>
+</ul> <form accept-charset="UTF-8" action="/search" id="views-exposed-form-dent-search-multi-search" method="get" role="form"><div><div class="views-exposed-form">
+<div class="views-exposed-widgets clearfix">
+<div class="views-exposed-widget views-widget-filter-search_api_multi_fulltext" id="edit-s-wrapper">
+<div class="views-widget">
+<div class="form-item form-type-textfield form-item-s form-group">
+<input class="form-control form-text fa-on" id="edit-s" maxlength="128" name="s" size="30" type="text" value=""/>
+</div>
+</div>
+</div>
+<div class="views-exposed-widget views-submit-button">
+<button class="form-submit" id="edit-submit-dent-search-multi" name="" type="submit" value="Search">Search</button> </div>
+</div>
+</div>
+</div></form> </nav>
+</div>
+</header>
+<!-- Page Main -->
+<div class="clearfix" id="main-wrapper">
+<main class="clearfix" id="main" role="main">
+<div id="top-content">
+<div class="column container">
+<a id="main-content"></a>
+</div>
+</div> <!-- /.section, /#top-content -->
+<div class="container">
+<div id="content">
+<div class="column">
+<div class="region region-content">
+<div class="block block-system" id="block-system-main">
+<div class="content">
+<article about="/home" class="node node-dentc-page node-full clearfix" id="node-259" typeof="sioc:Item foaf:Document">
+<span class="rdf-meta element-hidden" content="Home" property="dc:title"></span> <section class="content with-sidebar">
+<div class="paragraphs-items paragraphs-items-field-dentc-components-main paragraphs-items-field-dentc-components-main-full paragraphs-items-full">
+<div class="field-dentc-components-main">
+<div about="" class="tout--hero entity entity-paragraphs-item paragraphs-item-dentc-hero" typeof="">
+<picture title="Get Expert Dental Care From Leaders in the Field">
+<div class="field-dentc-paragraph-image">
+<picture>
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source media="(max-width: 479px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen-xxs_1x/public/ucsf_20150519_clinical_055-cropped.jpg?itok=rfUND7fl&amp;timestamp=1475863724 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen-xxs_2x/public/ucsf_20150519_clinical_055-cropped.jpg?itok=I8hs06i0&amp;timestamp=1475863724 2x"></source>
+<source media="(min-width: 480px)and (max-width: 767px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen-xs_1x/public/ucsf_20150519_clinical_055-cropped.jpg?itok=gcROx6bU&amp;timestamp=1475863724 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen-xs_2x/public/ucsf_20150519_clinical_055-cropped.jpg?itok=ayqtZXfC&amp;timestamp=1475863724 2x"></source>
+<source media="(min-width: 768px) and (max-width: 991px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen-sm_1x/public/ucsf_20150519_clinical_055-cropped.jpg?itok=Mhf-2gTH&amp;timestamp=1475863724 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen-sm_2x/public/ucsf_20150519_clinical_055-cropped.jpg?itok=yHRVlaQt&amp;timestamp=1475863724 2x"></source>
+<source media="(min-width: 992px) and (max-width: 1199px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen-sm_1x/public/ucsf_20150519_clinical_055-cropped.jpg?itok=Mhf-2gTH&amp;timestamp=1475863724 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen-md_2x/public/ucsf_20150519_clinical_055-cropped.jpg?itok=KxLhq1tX&amp;timestamp=1475863724 2x"></source>
+<source media="(min-width: 1200px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen-lg_1x/public/ucsf_20150519_clinical_055-cropped.jpg?itok=h2keTMHa&amp;timestamp=1475863724 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen-lg_2x/public/ucsf_20150519_clinical_055-cropped.jpg?itok=H_DC2iF6&amp;timestamp=1475863724 2x"></source>
+<!--[if IE 9]></video><![endif]-->
+<img alt="Hero alt text" src="http://www.ucsfdentalcenter.org/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen-lg_2x/public/ucsf_20150519_clinical_055-cropped.jpg?itok=H_DC2iF6&amp;timestamp=1475863724" title=""/>
+</picture> </div>
+</picture>
+<div class="content">
+<h1 class="field-dentc-paragraph-title tout--hero__title">
+    Get Expert Dental Care From Leaders in the Field  </h1>
+<p>
+<div class="field-dentc-paragraph-subtitle">
+    UCSF Dental Center draws upon the excellence of UCSF to provide top-quality oral health care.  </div>
+</p>
+<a class="btn" href="http://www.ucsfdentalcenter.org/how-we-are-different">
+<span>See How We’re Different</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<aside>
+<div class="paragraphs-items paragraphs-items-field-dentc-components-sidebar paragraphs-items-field-dentc-components-sidebar-full paragraphs-items-full">
+<div class="field-dentc-components-sidebar">
+<div about="" class="entity entity-paragraphs-item paragraphs-item-dentc-cta tout" typeof="">
+<h2>
+  Get Ongoing Care or Make Your First Appointment<em></em></h2>
+<div class="field-dentc-paragraph-link">
+<a class="btn" href="http://www.ucsfdentalcenter.org/find-provider">Start Here</a> </div>
+</div>
+</div>
+<div class="field-dentc-components-sidebar">
+<div about="" class="testimonial entity entity-paragraphs-item paragraphs-item-dentc-testimonial" typeof="">
+<blockquote>
+<p>The faculty dentists here are innovators at the top of their field. I wouldn’t see anyone else.</p> <footer>
+  Marc Fredson</footer>
+</blockquote>
+<picture>
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source media="(max-width: 479px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_4_3_landscape_345w/public/dentc_paragraph_image/testimonial/testimonial_fredson.jpg?itok=E-66E5Wj&amp;timestamp=1475858903 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_4_3_landscape_720w/public/dentc_paragraph_image/testimonial/testimonial_fredson.jpg?itok=HBeeSdKB&amp;timestamp=1475858903 2x"></source>
+<source media="(min-width: 480px)and (max-width: 767px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_4_3_landscape_720w/public/dentc_paragraph_image/testimonial/testimonial_fredson.jpg?itok=HBeeSdKB&amp;timestamp=1475858903 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_4_3_landscape_1440w/public/dentc_paragraph_image/testimonial/testimonial_fredson.jpg?itok=pkBAm-E1&amp;timestamp=1475858903 2x"></source>
+<source media="(min-width: 768px) and (max-width: 991px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_4_3_landscape_720w/public/dentc_paragraph_image/testimonial/testimonial_fredson.jpg?itok=HBeeSdKB&amp;timestamp=1475858903 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_4_3_landscape_1440w/public/dentc_paragraph_image/testimonial/testimonial_fredson.jpg?itok=pkBAm-E1&amp;timestamp=1475858903 2x"></source>
+<source media="(min-width: 992px) and (max-width: 1199px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_4_3_landscape_940w/public/dentc_paragraph_image/testimonial/testimonial_fredson.jpg?itok=ALLbuKr_&amp;timestamp=1475858903 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_4_3_landscape_1880w/public/dentc_paragraph_image/testimonial/testimonial_fredson.jpg?itok=l7BOWaYk&amp;timestamp=1475858903 2x"></source>
+<source media="(min-width: 1200px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_4_3_landscape_1140w/public/dentc_paragraph_image/testimonial/testimonial_fredson.jpg?itok=o-O-4wXw&amp;timestamp=1475858903 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_4_3_landscape_2280w/public/dentc_paragraph_image/testimonial/testimonial_fredson.jpg?itok=miAquL9B&amp;timestamp=1475858903 2x"></source>
+<!--[if IE 9]></video><![endif]-->
+<img alt="Testimonial - Marc Fredson" src="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_4_3_landscape_2280w/public/dentc_paragraph_image/testimonial/testimonial_fredson.jpg?itok=miAquL9B&amp;timestamp=1475858903" title=""/>
+</picture> </div>
+</div>
+</div>
+</aside>
+<section>
+<div class="paragraphs-items paragraphs-items-field-dentc-components-bottom paragraphs-items-field-dentc-components-bottom-full paragraphs-items-full">
+<div class="field-dentc-components-bottom">
+<div about="" class="entity entity-paragraphs-item paragraphs-item-dentc-content content-wrap--threeup content-wrap" typeof="">
+<div class="paragraphs-items paragraphs-items-field-dentc-paragraphs paragraphs-items-field-dentc-paragraphs-full paragraphs-items-full">
+<div class="field-dentc-paragraphs">
+<div about="" class="tout--cta entity entity-paragraphs-item paragraphs-item-dentc-tout-image" typeof="">
+<div class="content-outer">
+<figure class="field-dentc-paragraph-image">
+<picture>
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source media="(max-width: 479px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_173w/public/dentc_paragraph_image/tout/sharma_patient_2.jpg?itok=p5E4taxP&amp;timestamp=1475861632 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_360w/public/dentc_paragraph_image/tout/sharma_patient_2.jpg?itok=5v61v7hf&amp;timestamp=1475861632 2x"></source>
+<source media="(min-width: 480px)and (max-width: 767px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_360w/public/dentc_paragraph_image/tout/sharma_patient_2.jpg?itok=5v61v7hf&amp;timestamp=1475861632 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_720w/public/dentc_paragraph_image/tout/sharma_patient_2.jpg?itok=68Lcb3qm&amp;timestamp=1475861632 2x"></source>
+<source media="(min-width: 768px) and (max-width: 991px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_360w/public/dentc_paragraph_image/tout/sharma_patient_2.jpg?itok=5v61v7hf&amp;timestamp=1475861632 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_720w/public/dentc_paragraph_image/tout/sharma_patient_2.jpg?itok=68Lcb3qm&amp;timestamp=1475861632 2x"></source>
+<source media="(min-width: 992px) and (max-width: 1199px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_470w/public/dentc_paragraph_image/tout/sharma_patient_2.jpg?itok=rYQfMWYB&amp;timestamp=1475861632 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_940w/public/dentc_paragraph_image/tout/sharma_patient_2.jpg?itok=VslH7msq&amp;timestamp=1475861632 2x"></source>
+<source media="(min-width: 1200px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_570w/public/dentc_paragraph_image/tout/sharma_patient_2.jpg?itok=Vg88LnCu&amp;timestamp=1475861632 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_1140w/public/dentc_paragraph_image/tout/sharma_patient_2.jpg?itok=mBUzZmwh&amp;timestamp=1475861632 2x"></source>
+<!--[if IE 9]></video><![endif]-->
+<img alt="Image tout alt text" src="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_1140w/public/dentc_paragraph_image/tout/sharma_patient_2.jpg?itok=mBUzZmwh&amp;timestamp=1475861632" title=""/>
+</picture> </figure>
+<div class="content">
+<h2><strong>
+  Top of the List</strong> 
+  Explore our faculty clinics</h2>
+<div class="field-dentc-paragraph-text">
+<p>Select a faculty provider as your personal dentist.</p>
+</div>
+</div>
+</div>
+<a class="btn" href="http://www.ucsfdentalcenter.org/clinics">
+<span>Find Your Dentist</span>
+<svg class="carret-svg" height="16px" version="1.1" width="9px" xmlns="http://www.w3.org/2000/svg"><polygon class="carret" points="1.206,14.384 0.565,13.616 7.332,7.976 0.567,2.36 1.206,1.59 8.896,7.974"></polygon></svg> </a>
+</div>
+</div>
+<div class="field-dentc-paragraphs">
+<div about="" class="tout--cta entity entity-paragraphs-item paragraphs-item-dentc-tout-image" typeof="">
+<div class="content-outer">
+<figure class="field-dentc-paragraph-image">
+<picture>
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source media="(max-width: 479px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_173w/public/dentc_paragraph_image/tout/gen_dent_patient.jpg?itok=ZptVjGuO&amp;timestamp=1476303777 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_360w/public/dentc_paragraph_image/tout/gen_dent_patient.jpg?itok=K9V8Fie-&amp;timestamp=1476303777 2x"></source>
+<source media="(min-width: 480px)and (max-width: 767px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_360w/public/dentc_paragraph_image/tout/gen_dent_patient.jpg?itok=K9V8Fie-&amp;timestamp=1476303777 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_720w/public/dentc_paragraph_image/tout/gen_dent_patient.jpg?itok=pZdw51zD&amp;timestamp=1476303777 2x"></source>
+<source media="(min-width: 768px) and (max-width: 991px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_360w/public/dentc_paragraph_image/tout/gen_dent_patient.jpg?itok=K9V8Fie-&amp;timestamp=1476303777 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_720w/public/dentc_paragraph_image/tout/gen_dent_patient.jpg?itok=pZdw51zD&amp;timestamp=1476303777 2x"></source>
+<source media="(min-width: 992px) and (max-width: 1199px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_470w/public/dentc_paragraph_image/tout/gen_dent_patient.jpg?itok=h47YWHph&amp;timestamp=1476303777 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_940w/public/dentc_paragraph_image/tout/gen_dent_patient.jpg?itok=-wWOyQJO&amp;timestamp=1476303777 2x"></source>
+<source media="(min-width: 1200px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_570w/public/dentc_paragraph_image/tout/gen_dent_patient.jpg?itok=AfwBDQoC&amp;timestamp=1476303777 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_1140w/public/dentc_paragraph_image/tout/gen_dent_patient.jpg?itok=LiioHRZH&amp;timestamp=1476303777 2x"></source>
+<!--[if IE 9]></video><![endif]-->
+<img alt="hero alt text" src="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_1140w/public/dentc_paragraph_image/tout/gen_dent_patient.jpg?itok=LiioHRZH&amp;timestamp=1476303777" title=""/>
+</picture> </figure>
+<div class="content">
+<h2><strong>
+  $40 Student Clinic Special</strong> 
+  For new Dental Center patients</h2>
+<div class="field-dentc-paragraph-text">
+<p>Cleaning, exam and X-rays — through Dec. 11</p>
+</div>
+</div>
+</div>
+<a class="btn" href="http://www.ucsfdentalcenter.org/clinic/general-dentistry-student-clinic-parnassus">
+<span>Schedule an Appointment</span>
+<svg class="carret-svg" height="16px" version="1.1" width="9px" xmlns="http://www.w3.org/2000/svg"><polygon class="carret" points="1.206,14.384 0.565,13.616 7.332,7.976 0.567,2.36 1.206,1.59 8.896,7.974"></polygon></svg> </a>
+</div>
+</div>
+<div class="field-dentc-paragraphs">
+<div about="" class="tout--cta entity entity-paragraphs-item paragraphs-item-dentc-tout-image" typeof="">
+<div class="content-outer">
+<figure class="field-dentc-paragraph-image">
+<picture>
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source media="(max-width: 479px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_173w/public/dentc_paragraph_image/tout/tout_braces.jpg?itok=ke4VH3wI&amp;timestamp=1475861582 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_360w/public/dentc_paragraph_image/tout/tout_braces.jpg?itok=xDfDvc4I&amp;timestamp=1475861582 2x"></source>
+<source media="(min-width: 480px)and (max-width: 767px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_360w/public/dentc_paragraph_image/tout/tout_braces.jpg?itok=xDfDvc4I&amp;timestamp=1475861582 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_720w/public/dentc_paragraph_image/tout/tout_braces.jpg?itok=SztNSebB&amp;timestamp=1475861582 2x"></source>
+<source media="(min-width: 768px) and (max-width: 991px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_360w/public/dentc_paragraph_image/tout/tout_braces.jpg?itok=xDfDvc4I&amp;timestamp=1475861582 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_720w/public/dentc_paragraph_image/tout/tout_braces.jpg?itok=SztNSebB&amp;timestamp=1475861582 2x"></source>
+<source media="(min-width: 992px) and (max-width: 1199px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_470w/public/dentc_paragraph_image/tout/tout_braces.jpg?itok=9lZzumRc&amp;timestamp=1475861582 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_940w/public/dentc_paragraph_image/tout/tout_braces.jpg?itok=r3IUvuwP&amp;timestamp=1475861582 2x"></source>
+<source media="(min-width: 1200px)" srcset="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_570w/public/dentc_paragraph_image/tout/tout_braces.jpg?itok=AhqpP8As&amp;timestamp=1475861582 1x, http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_1140w/public/dentc_paragraph_image/tout/tout_braces.jpg?itok=XorcpxZg&amp;timestamp=1475861582 2x"></source>
+<!--[if IE 9]></video><![endif]-->
+<img alt="Image tout alt text" src="http://www.ucsfdentalcenter.org/sites/default/files/styles/dent_3_4_portrait_1140w/public/dentc_paragraph_image/tout/tout_braces.jpg?itok=XorcpxZg&amp;timestamp=1475861582" title=""/>
+</picture> </figure>
+<div class="content">
+<h2><strong>
+  Brace Yourself</strong> 
+  Orthodontics for teens, adults</h2>
+<div class="field-dentc-paragraph-text">
+<p>We offer Invisalign, regular and ceramic braces.</p>
+</div>
+</div>
+</div>
+<a class="btn" href="http://www.ucsfdentalcenter.org/clinic/orthodontics-faculty-and-resident-clinics-parnassus">
+<span>Visit Orthodontics Clinic</span>
+<svg class="carret-svg" height="16px" version="1.1" width="9px" xmlns="http://www.w3.org/2000/svg"><polygon class="carret" points="1.206,14.384 0.565,13.616 7.332,7.976 0.567,2.36 1.206,1.59 8.896,7.974"></polygon></svg> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- /.section, /#content -->
+</main><!-- /#main -->
+</div> <!-- /#main-wrapper -->
+<footer>
+<div class="footer__org" itemscope="" itemtype="http://schema.org/Organization">
+<div>
+<div>
+<h1 itemprop="name">UCSF Dental Center</h1>
+<p class="sr-only" itemprop="description"></p>
+<p><span class="sr-only">Phone: </span><a content="+1415502580" href="tel:+1415502580" itemprop="telephone">(415) 502-5800</a></p>
+</div>
+</div>
+</div>
+<div class="footer__primary-nav">
+<div>
+<div class="logo">
+<a href="/" rel="home" title="Home"><span>Dental Center</span></a>
+</div>
+<h2 class="sr-only">Main menu</h2><ul class="nav navbar-nav links clearfix" role="menubar"><li class="mid-2120 first" role="presentation"><a class="first leaf" href="/clinics" role="menuitem">Clinics</a></li>
+<li class="mid-1602" role="presentation"><a class="leaf" href="/how-we-are-different" role="menuitem">How We're Different</a></li>
+<li class="mid-1604" role="presentation"><a class="leaf" href="/new-patients" role="menuitem">New Patients</a></li>
+<li class="mid-1605 last" role="presentation"><a class="last leaf" href="/find-provider" role="menuitem" title="">Find a Provider</a></li>
+</ul> </div>
+</div>
+<div class="footer__external-nav">
+<div>
+<h2 class="sr-only">External links</h2><ul class="nav navbar-nav menu-external"><li class="menu-1890 first"><a href="http://dentistry.ucsf.edu" title="">UCSF School of Dentistry</a></li>
+<li class="menu-1892"><a href="https://www.ucsf.edu" title="">UCSF</a></li>
+<li class="menu-1893"><a href="https://www.ucsfhealth.org" title="">UCSF Health</a></li>
+<li class="menu-1894 last"><a href="https://dentalhealth.ucsf.edu" title="">Patient Access Login <i class="fa fa-user"></i></a></li>
+</ul> </div>
+</div>
+<div class="footer__footer-nav">
+<div>
+<p>© Copyright 2016 University of California Regents. All Rights Reserved.</p><h2 class="sr-only">Footer menu</h2><ul class="nav navbar-nav menu-footer"><li class="menu-1895 first"><a href="/accessibility" title="">Accessibility</a></li>
+<li class="menu-1896"><a href="/privacy" title="">Privacy</a></li>
+<li class="menu-1897 last"><a href="/new-patients/insurance-and-payment-options" title="">Billing Information</a></li>
+</ul> </div>
+</div>
+</footer>
+</div></div> <!-- /#page, /#page-wrapper -->
+<script src="http://www.ucsfdentalcenter.org/sites/default/files/js/js_7Ukqb3ierdBEL0eowfOKzTkNu-Le97OPm-UqTS5NENU.js" type="text/javascript"></script>
+<script src="http://www.ucsfdentalcenter.org/sites/default/files/js/js_29qYXJz8NLGg8Aomg-RZPjJcj9yEdEst1BMZ9gZbs-4.js" type="text/javascript"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"2017b6f4ea","applicationID":"25655308","transactionName":"YQdWN0MAX0IFWxJcCVhNYRFYTh5YClwDTUhGCkQ=","queueTime":0,"applicationTime":14,"atts":"TUBVQQsaTEw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

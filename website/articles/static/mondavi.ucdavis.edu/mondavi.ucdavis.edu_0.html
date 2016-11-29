@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en" dir="ltr"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en" dir="ltr"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9" lang="en" dir="ltr"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" dir="ltr" lang="en" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product#"> <!--<![endif]-->
+<head>
+<title>Robert and Margrit Mondavi | Center for the Performing Arts</title>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta charset="utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<link href="http://mondavi.ucdavis.edu/sites/all/themes/mondavi_one/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="http://mondavi.ucdavis.edu/sites/all/themes/mondavi_one/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+<link href="http://mondavi.ucdavis.edu/sites/all/themes/mondavi_one/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+<link href="http://mondavi.ucdavis.edu/sites/all/themes/mondavi_one/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
+<link href="http://mondavi.ucdavis.edu/sites/all/themes/mondavi_one/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+<link href="http://mondavi.ucdavis.edu/sites/all/themes/mondavi_one/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+<link href="http://mondavi.ucdavis.edu/sites/all/themes/mondavi_one/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+<link href="http://mondavi.ucdavis.edu/sites/all/themes/mondavi_one/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="http://mondavi.ucdavis.edu/sites/all/themes/mondavi_one/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+<link href="http://mondavi.ucdavis.edu/sites/all/themes/mondavi_one/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed"/>
+<link href="http://mondavi.ucdavis.edu/sites/all/themes/mondavi_one/apple-touch-icon-precomposed-144x144.png" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+<meta content="on" http-equiv="cleartype"/>
+<meta content="true" name="HandheldFriendly"/>
+<link href="http://mondavi.ucdavis.edu/sites/default/files/mcfav3.ico.gif" rel="shortcut icon" type="image/gif"/>
+<meta content="width" name="MobileOptimized"/>
+<link href="http://www.w3.org/1999/xhtml/vocab" rel="profile"/>
+<meta content="yes" http-equiv="apple-mobile-web-app-capable"/>
+<meta content="The Mondavi Center's mission is to present a rich program of diverse artists and thinkers in public performance and as the basis for education and engagement programs on our campus and in our region; and to steward and sustain a state-of-the-art venue for artists and audiences." name="description"/>
+<meta content="Mondavi Center, Mondavi Center for the Performing Arts, Performing Arts, Dance, Arts Education, Theatre, Theater, Davis, Sacramento, Edgewise, Jackson Hall, Speakers" name="keywords"/>
+<meta content="width=device-width" name="viewport"/>
+<meta content="Drupal 7 (http://drupal.org)" name="generator"/>
+<link href="http://mondavi.ucdavis.edu/" rel="canonical"/>
+<link href="http://mondavi.ucdavis.edu/" rel="shortlink"/>
+<meta content="Mondavi Center" property="og:site_name"/>
+<meta content="http://mondavi.ucdavis.edu/home" property="og:url"/>
+<link href="http://mondavi.ucdavis.edu/sites/default/files/css/css_NaYeK7xZiyEaij7UBxuuM_2e-mm_ZMTB0foWtwnjPMs.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://mondavi.ucdavis.edu/sites/default/files/css/css_lwdaDKdEJAtP1nBoDdN5zmNeIeDgc7BU4tuuVx1CFtY.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://mondavi.ucdavis.edu/sites/default/files/css/css_O9sAswBtJEFkQ23FpyGwmN2CYMZlSXvfKbmbyr8ARr4.css" media="all" rel="stylesheet" type="text/css"/>
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="http://mondavi.ucdavis.edu/sites/default/files/css/css_OWjyAaCu0gUjsOYtJ5oZRNbIFezPB1ajOxy9zW3dzcE.css" media="all" />
+<![endif]-->
+<link href="http://mondavi.ucdavis.edu/sites/default/files/css/css_PxsPpITToy8ZnO0bJDA1TEC6bbFpGTfSWr2ZP8LuFYo.css" media="all" rel="stylesheet" type="text/css"/>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='/profiles/sitefarm/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js'>\x3C/script>")</script>
+<script src="http://mondavi.ucdavis.edu/sites/default/files/js/js_RcHB3nlOgl_5_iK2RnYi7CldPMpeeXNp67noYdXRtk8.js"></script>
+<script>window.jQuery.ui || document.write("<script src='/profiles/sitefarm/modules/contrib/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")</script>
+<script src="http://mondavi.ucdavis.edu/sites/default/files/js/js_4wwHb6jK-lEQX23WD6Yuhgwi3OkLR2yvv9XRFq0Rc28.js"></script>
+<script src="http://mondavi.ucdavis.edu/sites/default/files/js/js_o-bBM7c2ZsOkkwdxwYYltHmucnZ0AqOAiI7FvSgQqkg.js"></script>
+<script src="//use.typekit.net/sbh8jjz.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="http://mondavi.ucdavis.edu/sites/default/files/js/js_MlxuLA1u-8drlVj_v4kobF6-ME9zDgMA5v0H9j4BVVs.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"mondavi_one","theme_token":"NSdB0xBPiFd1bCjAo0GHfTprVq3fg5MRToL-TI50aLc","css":{"sites\/all\/themes\/omega\/omega\/css\/modules\/system\/system.base.css":1,"sites\/all\/themes\/omega\/omega\/css\/modules\/system\/system.messages.theme.css":1,"profiles\/sitefarm\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/sitefarm\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/node\/node.css":1,"profiles\/sitefarm\/modules\/panopoly\/panopoly_admin\/panopoly-admin-navbar.css":1,"sites\/all\/themes\/omega\/omega\/css\/modules\/field\/field.theme.css":1,"profiles\/sitefarm\/modules\/panopoly\/panopoly_core\/css\/panopoly-dropbutton.css":1,"profiles\/sitefarm\/modules\/panopoly\/panopoly_magic\/css\/panopoly-magic.css":1,"profiles\/sitefarm\/modules\/panopoly\/panopoly_magic\/css\/panopoly-modal.css":1,"profiles\/sitefarm\/modules\/panopoly\/panopoly_theme\/css\/panopoly-featured.css":1,"profiles\/sitefarm\/modules\/panopoly\/panopoly_theme\/css\/panopoly-accordian.css":1,"profiles\/sitefarm\/modules\/panopoly\/panopoly_theme\/css\/panopoly-layouts.css":1,"profiles\/sitefarm\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets.css":1,"profiles\/sitefarm\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets-spotlight.css":1,"profiles\/sitefarm\/modules\/contrib\/radix_layouts\/radix_layouts.css":1,"profiles\/sitefarm\/modules\/features\/sitefarm_admin\/sitefarm-admin.css":1,"profiles\/sitefarm\/modules\/features\/sitefarm_wysiwyg\/sitefarm-wysiwyg.css":1,"sites\/all\/themes\/omega\/omega\/css\/modules\/search\/search.theme.css":1,"profiles\/sitefarm\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/themes\/omega\/omega\/css\/modules\/user\/user.base.css":1,"profiles\/sitefarm\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/themes\/omega\/omega\/css\/modules\/user\/user.theme.css":1,"profiles\/sitefarm\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/sitefarm\/modules\/contrib\/ldap\/ldap_servers\/ldap_servers.admin.css":1,"profiles\/sitefarm\/modules\/contrib\/panels\/css\/panels.css":1,"profiles\/sitefarm\/modules\/contrib\/flexslider\/assets\/css\/flexslider_img.css":1,"profiles\/sitefarm\/libraries\/flexslider\/flexslider.css":1,"sites\/all\/modules\/features\/ucd_mondavi\/ucd_mondavi_slideshow_override\/css\/ucd-mondavi-slideshow-override.css":1,"sites\/all\/themes\/mondavi_one\/css\/normalize.css":1,"sites\/all\/themes\/mondavi_one\/css\/bower_components.css":1,"sites\/all\/themes\/mondavi_one\/css\/styles.css":1,"sites\/all\/themes\/mondavi_one\/css\/mondavi_one.no-query.css":1,"profiles\/sitefarm\/modules\/panopoly\/panopoly_images\/panopoly-images.css":1}},"CToolsModal":{"modalSize":{"type":"scale","width":".9","height":".9","addWidth":0,"addHeight":0,"contentRight":25,"contentBottom":75},"modalOptions":{"opacity":".55","background-color":"#000"},"animationSpeed":"fast","modalTheme":"CToolsModalDialog","throbberTheme":"CToolsModalThrobber"},"panopoly_magic":{"pane_add_preview_mode":"single"},"flexslider":{"optionsets":{"homepage":{"namespace":"flex-","selector":".slides \u003E li","easing":"swing","direction":"horizontal","reverse":false,"smoothHeight":false,"startAt":0,"animationSpeed":600,"initDelay":0,"useCSS":true,"touch":true,"video":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":0,"controlsContainer":".flex-nav-container","sync":"#flexslider-2","asNavFor":"","itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":0,"move":0,"animation":"fade","slideshow":true,"slideshowSpeed":"7000","directionNav":true,"controlNav":"0","prevText":"Previous","nextText":"Next","pausePlay":false,"pauseText":"Pause","playText":"Play","randomize":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"animationLoop":true,"pauseOnAction":true,"pauseOnHover":false,"manualControls":".flex-direction-nav"}},"instances":{"flexslider-1":"homepage"}},"better_exposed_filters":{"views":{"ucd_slideshow":{"displays":{"panel_pane_1":{"filters":[]}}},"ucd_mondavi_events":{"displays":{"panel_pane_1":{"filters":[]}}}}},"currentPath":"home","currentPathIsAdmin":false,"search_redirect":{"people_directory_search_url":null,"department_directory_search_url":null},"urlIsAjaxTrusted":{"\/search\/node":true}});</script>
+</head>
+<body class="l-header--fixed front not-logged-in page-home region-content">
+<!-- Google Tag Manager -->
+<noscript><iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-T9NMLG" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;j.type='text/javascript';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T9NMLG');</script>
+<!-- End Google Tag Manager -->
+<a class="element-invisible element-focusable" href="#main-content">Skip to main content</a>
+<div class="l-page">
+<header class="l-header header" role="banner">
+<div class="header__topbar">
+<div class="l-container">
+<a href="http://www.ucdavis.edu"><img alt="UC Davis Logo" class="logo" src="/sites/all/themes/mondavi_one/images/uc-logo-white.svg"/></a>
+</div>
+</div>
+<div class="header__img-bg">
+<a class="nav-toggle js-nav-toggle" href="#nav">
+<span class="nav-toggle__icon nav-toggle__icon--menu">Menu</span>
+</a>
+<div class="l-container">
+<div class="l-branding">
+<a class="site-logo" href="/" rel="home" title="Home"><img alt="Home" class="logo" src="http://mondavi.ucdavis.edu/sites/all/themes/mondavi_one/logo.svg"/></a>
+</div>
+</div>
+</div>
+<div class="l-navbar navbar menu--closed">
+<div class="l-container--navigation off-canvas off-canvas--left">
+<div class="off-canvas__container">
+<div class="l-search-popup">
+<button class="search-popup__open js-search-popup__open">Open</button>
+<div class="search-popup">
+<button class="search-popup__close"><span class="search-popup__close-icon">Close</span></button>
+<form accept-charset="UTF-8" action="/search/node" class="search-popup__container search-form" id="search-form" method="post"><div><div class="form-item form-type-textfield form-item-keys">
+<input class="search-popup__input form-text" id="edit-keys" maxlength="255" name="keys" placeholder="Search" required="required" size="20" type="text" value=""/> <label class="option" for="edit-keys">Search </label>
+</div>
+<div class="search-popup__buttons"><input class="search-popup__submit form-submit" id="edit-submit" name="op" type="submit" value="Find"/></div><input name="form_build_id" type="hidden" value="form-GyCQoMSGiTLauRlV99CSEi_9qmBGzrGCELWkED0eycc"/>
+<input name="form_id" type="hidden" value="search_form"/>
+</div></form> </div>
+</div>
+<nav class="primary-nav primary-nav--superfish">
+<ul class="menu"><li class="first expanded"><a href="/events/upcoming-events" title="">Events &amp; Tickets<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a><ul class="menu"><li class="first leaf"><a href="/events/upcoming-events" title="">Upcoming Events</a></li>
+<li class="leaf"><a href="/events/subscriptions" title="">Subscriptions</a></li>
+<li class="leaf"><a href="/events/seating">Venues &amp; Seating</a></li>
+<li class="leaf"><a href="/events/tickets/discounts" title="">Ways to Save</a></li>
+<li class="leaf"><a href="/group-sales">Group Sales</a></li>
+<li class="expanded"><a href="/events/enhancements" title="">Performance Enhancements<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a><ul class="menu"><li class="first leaf"><a href="/events/enhancements/performance-talks" title="">Pre-Performance Talks</a></li>
+<li class="last leaf"><a href="/events/enhancements/questions-answers" title="">Q&amp;A Sessions</a></li>
+</ul></li>
+<li class="last leaf"><a href="/events/young-artists-competition">Young Artists Competition</a></li>
+</ul></li>
+<li class="expanded"><a href="/visit-us/parking">Visit Us<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a><ul class="menu"><li class="first leaf"><a href="/visit-us/parking" title="">Parking &amp; Directions</a></li>
+<li class="leaf"><a href="/visit-us/accessibility">Accessibility</a></li>
+<li class="leaf"><a href="/events/policies">Policies</a></li>
+<li class="leaf"><a href="/visit-us/restaurants-hotels">Restaurants &amp; Hotels</a></li>
+<li class="last leaf"><a href="/visit-us/tours">Tours</a></li>
+</ul></li>
+<li class="expanded"><a href="/about-us/mission">About Us<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a><ul class="menu"><li class="first leaf"><a href="/about-us/mission">Mission</a></li>
+<li class="leaf"><a href="/about-us/background">Background</a></li>
+<li class="leaf"><a href="/about-us/employment">Employment &amp; Volunteer Opportunities</a></li>
+<li class="leaf"><a href="/about-us/staff">Staff</a></li>
+<li class="last leaf"><a href="/events/seating" title="">Venue</a></li>
+</ul></li>
+<li class="expanded"><a href="/give">Give<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a><ul class="menu"><li class="first expanded"><a href="/give" title="">Ways to Give<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a><ul class="menu"><li class="first leaf"><a href="/support-us/ways-to-give/corporate-partners">Corporate Partners</a></li>
+<li class="leaf"><a href="/support-us/ways-to-give/student-membership">Aggie Arts Student Membership</a></li>
+<li class="last leaf"><a href="/support-us/planned-giving">Planned Giving</a></li>
+</ul></li>
+<li class="leaf"><a href="/support-us/friends-of-mondavi">Friends of Mondavi Center</a></li>
+<li class="leaf"><a href="/support-us/volunteering">Volunteering</a></li>
+<li class="last leaf"><a href="/events/uncorked" title="">Uncorked</a></li>
+</ul></li>
+<li class="expanded"><a href="/resources">Resources<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a><ul class="menu"><li class="first leaf"><a href="/resources/rentals">Rentals</a></li>
+<li class="leaf"><a href="/resources/press">Press Materials</a></li>
+<li class="expanded"><a href="/resources/teachers/cuesheets">Teachers<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a><ul class="menu"><li class="first last leaf"><a href="/resources/teachers/cuesheets" title="">Cue Sheets</a></li>
+</ul></li>
+<li class="last expanded"><a href="/resources/uc-davis-faculty/curriculum-connections">UC Davis Faculty<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a><ul class="menu"><li class="first last leaf"><a href="/resources/uc-davis-faculty/curriculum-connections">Curriculum Connections</a></li>
+</ul></li>
+</ul></li>
+<li class="last expanded"><a href="/arts-education">Education<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a><ul class="menu"><li class="first leaf"><a href="/arts-education/dance-for-parkinsons">Dance for Parkinson's</a></li>
+<li class="leaf"><a href="/arts-education/globe-ed-academy">Globe Ed Academy</a></li>
+<li class="last leaf"><a href="/arts-education/school-matinees">School Matinees</a></li>
+</ul></li>
+</ul> </nav>
+</div>
+</div>
+</div>
+</header>
+<div class="l-main">
+<a id="main-content"></a>
+<div class="l-container">
+<div class="l-content" role="main">
+<div class="panel-display davis-stack clearfix radix-davis-stack">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 radix-layouts-header panel-panel">
+<div class="panel-panel-inner">
+<div class="l-full-width clearfix"><div class="panel-pane pane-views-panes pane-ucd-slideshow-panel-pane-1 box--flush category-brand--admin-blue pane-title--plain pane-title--bullhorn">
+<div class="pane-content ">
+<div class="view view-ucd-slideshow view-id-ucd_slideshow view-display-id-panel_pane_1 view-dom-id-915ab70cedfaa18868649a4709bb6266">
+<div class="view-content">
+<div class="flexslider" id="flexslider-1">
+<ul class="slides"><li>
+<div> <div></div></div></li></ul></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></body></html> 
+<div class="views-field views-field-field-ucd-slideshow-subtitle"> <div class="field-content">Vienna Boys' Choir <br/> Tuesday, November 29</div> </div>
+<div> <div><a href="http://www.mondaviarts.org/event/2016-17/vienna-boys-choir"><img alt="Vienna Boys' Choir" class="slideshow" height="769" src="http://mondavi.ucdavis.edu/sites/default/files/styles/slideshow/public/photos/slideshow/vienna-next_0.jpg?itok=CCLd6v91" width="2000"/></a></div> </div>
+<li>
+<div> <div></div></div></li> 
+<div class="views-field views-field-field-ucd-slideshow-subtitle"> <div class="field-content">China Philharmonic Orchestra <br/>Saturday, December 3</div> </div>
+<div> <div><a href="http://www.mondaviarts.org/event/2016-17/china-philharmonic-orchestra"><img alt="China Philharmonic Orchestra" class="slideshow" height="769" src="http://mondavi.ucdavis.edu/sites/default/files/styles/slideshow/public/photos/slideshow/china.jpg?itok=a7pn51Aw" width="2000"/></a></div> </div>
+<li>
+<div> <div></div></div></li> 
+<div class="views-field views-field-field-ucd-slideshow-subtitle"> <div class="field-content">American Bach Soloists <br/> Saturday, December 10</div> </div>
+<div> <div><a href="http://www.mondaviarts.org/event/2016-17/american-bach-soloists"><img alt="American Bach Soloists" class="slideshow" height="769" src="http://mondavi.ucdavis.edu/sites/default/files/styles/slideshow/public/photos/slideshow/abs.jpg?itok=FY1Q4UGa" width="2000"/></a></div> </div>
+<li>
+<div> <div></div></div></li> 
+<div class="views-field views-field-field-ucd-slideshow-subtitle"> <div class="field-content">The Chamber Music Society of Lincoln Center <br/>Sunday, December 11</div> </div>
+<div> <div><a href="http://www.mondaviarts.org/event/2016-17/chamber-music-society-lincoln-center"><img alt="The Chamber Music Society of Lincoln Center" class="slideshow" height="769" src="http://mondavi.ucdavis.edu/sites/default/files/styles/slideshow/public/photos/slideshow/chamber.jpg?itok=wA2vrkBf" width="2000"/></a></div> </div>
+<li>
+<div> <div></div></div></li> 
+<div class="views-field views-field-field-ucd-slideshow-subtitle"> <div class="field-content">The Ukulele Orchestra of Great Britain <br/> Tuesday, December 13</div> </div>
+<div> <div><a href="http://www.mondaviarts.org/event/2016-17/ukulele-orchestra-great-britain"><img alt="The Ukulele Orchestra of Great Britain" class="slideshow" height="769" src="http://mondavi.ucdavis.edu/sites/default/files/styles/slideshow/public/photos/slideshow/ukulele.jpg?itok=3_uxcd84" width="2000"/></a></div> </div>
+
+
+ 
+
+ 
+
+
+<div class="row">
+<div class="col-md-8 col-md-push-4">
+<div class="radix-layouts-content panel-panel">
+<div class="panel-panel-inner">
+<div class="panel-pane pane-fieldable-panels-pane pane-vuuid-80c28033-8d32-44a6-ba3a-af1dbdff8360 box--flush category-brand--admin-blue pane-title--plain pane-title--bullhorn panel-pane--flush pane-bundle-text">
+<div class="pane-content ">
+<div class="fieldable-panels-pane">
+<div class="field field--name-field-basic-text-text field--type-text-long field--label-hidden body-text"><div class="field__items"><div class="field__item even"><p><img alt="Season On Sale Now!" height="675" src="http://mondavi.ucdavis.edu/sites/default/files/upload/photos/jlco-onsale.jpg" width="1200"/><a href="https://www.mondaviarts.org/subscribe"> </a></p></div></div></div></div>
+</div>
+</div>
+<div class="panel-pane pane-fieldable-panels-pane pane-vuuid-4c2c8736-27f4-401b-b701-f8005784952f box category-brand--admin-blue pane-title--plain pane-title--bullhorn pane-bundle-text">
+<div class="pane-content ">
+<div class="fieldable-panels-pane">
+<div class="field field--name-field-basic-text-text field--type-text-long field--label-hidden body-text"><div class="field__items"><div class="field__item even"><h2>2016-17 Tickets on Sale Now</h2>
+<p>Order online, over the phone or in-person.</p>
+<p><strong><a href="https://www.mondaviarts.org/events/upcoming-events">Browse the season's</a></strong> offerings or take a peek at our <strong><a href="https://www.mondaviarts.org/tags/just-added">Just Added</a></strong> events.</p>
+<p><strong>Didn't receive a brochure? </strong>Request your <strong><a href="http://mondavi.ucdavis.edu/brochurerequest">2016–17 brochure</a></strong>.</p>
+<p><a class="btn--alt" href="http://mondavi.ucdavis.edu/subscribe">Subscriptions Still Available</a></p></div></div></div></div>
+</div>
+</div>
+<div class="panel-pane pane-fieldable-panels-pane pane-uuid-32318f89-0068-46e4-a2b8-28b6cc906fd1 box--flush category-brand--admin-blue l-sibling-grid--third pane-bundle-ucdedu-marketing-highlight">
+<div class="pane-content ">
+<a class="fieldable-panels-pane marketing-highlight" href="http://mondaviarts.org/uc-davis-faculty-staff">
+<div class="marketing-highlight__image">
+<div class="field field--name-field-featured-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img alt="Faculty" class="ucdedu-marketing-highlight" height="480" src="http://mondavi.ucdavis.edu/sites/default/files/styles/ucdedu_marketing_highlight/public/images/marketing_highlight/faculty1.jpg?itok=ynjOR3kx" width="640"/></div></div></div> </div>
+<div class="marketing-highlight__body">
+<h3 class="marketing-highlight__title category-brand__text ">UC Davis Staff &amp; Faculty</h3>
+<p>Discounts &amp; Curriculum Connections</p>
+</div>
+</a>
+</div>
+</div>
+<div class="panel-pane pane-fieldable-panels-pane pane-uuid-32a4df30-5975-4591-879c-3f63896796fb box--flush category-brand--admin-blue l-sibling-grid--third pane-bundle-ucdedu-marketing-highlight">
+<div class="pane-content ">
+<a class="fieldable-panels-pane marketing-highlight" href="http://mondaviarts.org/uc-davis-students-faculty-staff">
+<div class="marketing-highlight__image">
+<div class="field field--name-field-featured-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img alt="Students" class="ucdedu-marketing-highlight" height="480" src="http://mondavi.ucdavis.edu/sites/default/files/styles/ucdedu_marketing_highlight/public/images/marketing_highlight/students.jpg?itok=6iItD9AZ" width="640"/></div></div></div> </div>
+<div class="marketing-highlight__body">
+<h3 class="marketing-highlight__title category-brand__text ">UC Davis Students</h3>
+<p>Free Tickets, Discounts &amp; More</p>
+</div>
+</a>
+</div>
+</div>
+<div class="panel-pane pane-fieldable-panels-pane pane-vuuid-d8cd3c5f-ac48-4849-bcef-6004990aa612 box--flush category-brand--admin-blue l-sibling-grid--third pane-bundle-ucdedu-marketing-highlight">
+<div class="pane-content ">
+<a class="fieldable-panels-pane marketing-highlight" href="https://www.mondaviarts.org/tags/family-friendly">
+<div class="marketing-highlight__image">
+<div class="field field--name-field-featured-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img alt="Family Friendly" class="ucdedu-marketing-highlight" height="480" src="http://mondavi.ucdavis.edu/sites/default/files/styles/ucdedu_marketing_highlight/public/images/marketing_highlight/family-friendly_0.jpg?itok=9p8Dibd5" width="640"/></div></div></div> </div>
+<div class="marketing-highlight__body">
+<h3 class="marketing-highlight__title category-brand__text ">Family-Friendly</h3>
+<p>Visual delights for the entire family</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="radix-layouts-content2 panel-panel">
+<div class="panel-panel-inner">
+</div>
+</div>
+<div class="radix-layouts-content3 panel-panel">
+<div class="panel-panel-inner">
+</div>
+</div>
+<div class="radix-layouts-content4 panel-panel">
+<div class="panel-panel-inner">
+</div>
+</div>
+</div>
+<div class="col-md-4 col-md-pull-8">
+<div class="radix-layouts-sidebar panel-panel">
+<div class="panel-panel-inner">
+<div class="panel-pane pane-views-panes pane-ucd-mondavi-events-panel-pane-1 box category-brand--admin-blue pane-title--plain pane-title--bullhorn">
+<h2 class="pane-title">
+    Events  </h2>
+<div class="pane-content ">
+<div class="view view-ucd-mondavi-events view-id-ucd_mondavi_events view-display-id-panel_pane_1 view-dom-id-591c021cf289ca120be3e4ec0e513b6b">
+<div class="view-content">
+<div class="views-row views-row-1 views-row-odd views-row-first">
+<article class="node node--ucd-mondavi-event node--sidebar node--ucd-mondavi-event--sidebar" role="article">
+<div class="node__content event-block-alt">
+<div class="event-block-alt--figure">
+<div class="field field--name-field-featured-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><a href="/event/2016-17/vienna-boys-choir"><img alt="Vienna Boys Choir" class="panopoly-image-thumbnail" src="http://mondavi.ucdavis.edu/sites/default/files/styles/panopoly_image_thumbnail/public/featured_images/1617_vienna-boys-choir.jpg?itok=l4y0uQDE"/></a></div></div></div> </div>
+<div class="event-block-alt--body">
+<div class="field field--name-title field--type-text field--label-hidden"><div class="field__items"><div class="field__item even"><h3><a href="/event/2016-17/vienna-boys-choir">Vienna Boys' Choir</a></h3></div></div></div><div class="field field--name-field-ucd-mondavi-event-date field--type-datetime field--label-hidden"><div class="field__items"><div class="field__item even"><span class="date-display-single">Tuesday, November 29, 2016 - 7:00pm</span></div></div></div> </div>
+</div>
+</article>
+</div>
+<div class="views-row views-row-2 views-row-even">
+<article class="node node--ucd-mondavi-event node--sidebar node--ucd-mondavi-event--sidebar" role="article">
+<div class="node__content event-block-alt">
+<div class="event-block-alt--figure">
+<div class="field field--name-field-featured-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><a href="/event/2016-17/university-chorus-uc-davis-symphony-orchestra"><img alt="University Chorus with the UCD Symphony Orchestra" class="panopoly-image-thumbnail" src="http://mondavi.ucdavis.edu/sites/default/files/styles/panopoly_image_thumbnail/public/featured_images/1617_2016-12-02-chorus.jpg?itok=mtGu8pWn"/></a></div></div></div> </div>
+<div class="event-block-alt--body">
+<div class="field field--name-title field--type-text field--label-hidden"><div class="field__items"><div class="field__item even"><h3><a href="/event/2016-17/university-chorus-uc-davis-symphony-orchestra">University Chorus with the UC Davis Symphony Orchestra</a></h3></div></div></div><div class="field field--name-field-ucd-mondavi-event-date field--type-datetime field--label-hidden"><div class="field__items"><div class="field__item even"><span class="date-display-single">Friday, December 2, 2016 - 7:00pm</span></div></div></div> </div>
+</div>
+</article>
+</div>
+<div class="views-row views-row-3 views-row-odd views-row-last">
+<article class="node node--ucd-mondavi-event node--sidebar node--ucd-mondavi-event--sidebar" role="article">
+<div class="node__content event-block-alt">
+<div class="event-block-alt--figure">
+<div class="field field--name-field-featured-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><a href="/event/2016-17/china-philharmonic-orchestra"><img alt="China Philharmonic Orchestra" class="panopoly-image-thumbnail" src="http://mondavi.ucdavis.edu/sites/default/files/styles/panopoly_image_thumbnail/public/featured_images/china-philharmonic_0.jpg?itok=17ugkmyM"/></a></div></div></div> </div>
+<div class="event-block-alt--body">
+<div class="field field--name-title field--type-text field--label-hidden"><div class="field__items"><div class="field__item even"><h3><a href="/event/2016-17/china-philharmonic-orchestra">China Philharmonic Orchestra</a></h3></div></div></div><div class="field field--name-field-ucd-mondavi-event-date field--type-datetime field--label-hidden"><div class="field__items"><div class="field__item even"><span class="date-display-single">Saturday, December 3, 2016 - 8:00pm</span></div></div></div> </div>
+</div>
+</article>
+</div>
+</div>
+</div> </div>
+</div>
+<div class="panel-pane pane-fieldable-panels-pane pane-uuid-b8badb4b-492e-4d4a-b872-343cc511efe9 box--flush category-brand--admin-blue pane-title--plain pane-title--bullhorn pane-bundle-ucdedu-focal-link">
+<div class="pane-content ">
+<a class="fieldable-panels-pane focal-link" href="https://tickets.mondaviarts.org/account/login.aspx">
+<div class="focal-link__figure ">
+<div class="field field--name-field-ucdedu-focal-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img alt="Promo Code" height="260" src="http://mondavi.ucdavis.edu/sites/default/files/images/focal_link/promo_0.png" width="260"/></div></div></div> </div>
+<div class="focal-link__body">
+<strong>Login to Buy</strong>
+</div>
+</a>
+</div>
+</div>
+<div class="panel-pane pane-fieldable-panels-pane pane-uuid-db5544ac-c8bf-438b-8247-5d2d9b4c3f9b pane-bundle-ucdedu-focal-link box--flush box pane-title--plain box--small">
+<div class="pane-content ">
+<a class="fieldable-panels-pane focal-link" href="http://www.mondaviarts.org/events/tickets/gift-certificates">
+<div class="focal-link__figure ">
+<div class="field field--name-field-ucdedu-focal-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img alt="Gift Certificates" height="100" src="http://mondavi.ucdavis.edu/sites/default/files/images/focal_link/gift-certificate-100x100_5.png" width="100"/></div></div></div> </div>
+<div class="focal-link__body">
+<strong>Gift Certificates</strong>
+</div>
+</a>
+</div>
+</div>
+<div class="panel-pane pane-fieldable-panels-pane pane-uuid-3373d902-b0a9-49fd-adef-41c1e2993ba9 box--flush category-brand--admin-blue pane-title--plain pane-title--bullhorn pane-bundle-ucdedu-focal-link">
+<div class="pane-content ">
+<a class="fieldable-panels-pane focal-link" href="https://open.spotify.com/user/12185377413/playlist/2LefKI3g8YOWZ7noCVlKKm">
+<div class="focal-link__figure ">
+<div class="field field--name-field-ucdedu-focal-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img alt="16-17 Spotify Playlist" height="130" src="http://mondavi.ucdavis.edu/sites/default/files/images/focal_link/spotify.sm__0.png" width="130"/></div></div></div> </div>
+<div class="focal-link__body">
+<strong>16–17 Spotify Playlist</strong>
+</div>
+</a>
+</div>
+</div>
+<div class="panel-pane pane-fieldable-panels-pane pane-uuid-ed1b85ef-c81a-40d5-bd6d-b24f225a56cd box--flush category-brand--admin-blue pane-title--plain pane-title--bullhorn pane-bundle-ucdedu-focal-link">
+<div class="pane-content ">
+<a class="fieldable-panels-pane focal-link" href="/content/email-newsletter-sign">
+<div class="focal-link__figure ">
+<div class="field field--name-field-ucdedu-focal-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img alt="Email Sign-Up" height="260" src="http://mondavi.ucdavis.edu/sites/default/files/images/focal_link/newsletter.png" width="260"/></div></div></div> </div>
+<div class="focal-link__body">
+<strong>Email Sign-Up</strong>
+</div>
+</a>
+</div>
+</div>
+<div class="panel-pane pane-social-follow-links box--flush bg-transparent panel-pane--flush box pane-title--plain">
+<div class="pane-content ">
+<div class="social-follow-small">
+<h3 class="pane-title">Follow Mondavi Center</h3>
+<ul>
+<li><a class="social-follow-small__facebook" href="https://www.facebook.com/mondavicenter" title="Facebook">Follow on Facebook</a></li>
+<li><a class="social-follow-small__twitter" href="https://twitter.com/MondaviCenter" title="Twitter">Follow on Twitter</a></li>
+<li><a class="social-follow-small__instagram" href="https://instagram.com/mondavicenter" title="Instagram">Follow on Instagram</a></li>
+<li><a class="social-follow-small__youtube" href="https://www.youtube.com/user/mondavicenter" title="YouTube">Follow on YouTube</a></li>
+<li><a class="social-follow-small__googleplus" href="https://plus.google.com/+mondavicenter" title="Google Plus">Follow on Google Plus</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="radix-layouts-sidebar2 panel-panel">
+<div class="panel-panel-inner">
+</div>
+</div>
+<div class="radix-layouts-sidebar3 panel-panel">
+<div class="panel-panel-inner">
+</div>
+</div>
+<div class="radix-layouts-sidebar4 panel-panel">
+<div class="panel-panel-inner">
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 radix-layouts-footer panel-panel">
+<div class="panel-panel-inner">
+</div>
+</div>
+</div>
+
+<!-- /.moscone -->
+
+
+
+<footer class="l-footer footer" role="contentinfo">
+<div class="l-container">
+<h2 class="footer__title">Robert and Margrit Mondavi Center for the Performing Arts | UC Davis </h2>
+<div class="l-region l-region--footer footer__navs">
+<nav class="footer-nav space-below--large" id="block-menu-menu-footer-menu" role="navigation">
+<ul class="menu list--pipe"><li class="first leaf"><a href="/contact-us" title="">Contact Us</a></li>
+<li class="leaf"><a href="/events/archive" title="">Archive</a></li>
+<li class="last leaf"><a href="/events/policies" title="">Policies</a></li>
+</ul></nav>
+<div class="footer-nav copyright" id="block-ucd-copyright-ucd-copyright">
+<div class="block__content">
+<p>University of California, Davis, One Shields Avenue, Davis, CA 95616 | 530-754-2787</p>
+<ul class="list--pipe">
+<li><a href="/help">Help</a></li>
+<li><a href="http://ucdavis.edu/help/privacy-accessibility.html">Privacy &amp; Accessibility</a></li>
+<li><a href="http://occr.ucdavis.edu/poc/">Principles of Community</a></li>
+<li><a href="http://www.universityofcalifornia.edu/">University of California</a></li>
+<li><a href="/sitemap">Sitemap</a></li>
+<li class="ucd-copyright__item">Last Updated: November 28, 2016</li>
+</ul>
+<p>Copyright © The Regents of the University of California, Davis campus. All rights reserved.</p>
+</div>
+</div>
+</div>
+<div class="footer-spacer">
+<hr class="footer-spacer__hr hr-invert">
+<div class="footer-spacer__logo">
+<a href="https://www.ucdavis.edu/">
+<img alt="UC Davis Logo" class="logo" src="/sites/all/themes/mondavi_one/images/uc-logo-white.svg"/>
+</a>
+</div>
+</hr></div>
+</div>
+</footer>
+
+<script src="http://mondavi.ucdavis.edu/sites/default/files/js/js_fkOyyRkm8-42Ol05B_YQKWVxXcGyYAiKqJwakAbPGKo.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"8df3b6df23","applicationID":"18157387","transactionName":"YlxUZEEAWRZTVRZcDVsWY0JaThgMXFIHTUxFUUY=","queueTime":0,"applicationTime":11,"atts":"ThtXEgkaShg=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+

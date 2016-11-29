@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<title>R'Web</title>
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<script src="add-event.js" type="text/javascript"></script>
+<script src="popup.js" type="text/javascript"></script>
+<script src="prototype.js" type="text/javascript"></script>
+<script src="control.js" type="text/javascript"></script>
+<style type="text/css">
+.tab-header { position: relative; top: -58px; } 
+.style1 {
+	color: #128aa2;
+	font-weight: bold;
+}
+#pwd_reset-link {
+  background: url(../images/pwd_reset.jpg);
+  height: 83px;
+  width: 261px;
+}
+</style>
+<meta content="2008-04-18" http-equiv="last-modified">
+<meta content="1.133 1.90 " name="version">
+<link href="css/design6.css" media="all" rel="stylesheet" type="text/css">
+<!--<link rel="stylesheet" type="text/css" href="css/print6.css" media="print"> -->
+<link href="css/intro.css" media="all" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+window.onbeforeunload = function(){ return; }
+/***********************************************
+* Bookmark site script- ï¿½ Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+/* Modified to support Opera */
+function bookmarksite(title,url){
+if (window.sidebar) // firefox
+	window.sidebar.addPanel(title, url, "");
+else if(window.opera && window.print){ // opera
+	var elem = document.createElement('a');
+	elem.setAttribute('href',url);
+	elem.setAttribute('title',title);
+	elem.setAttribute('rel','sidebar');
+	elem.click();
+} 
+else if(document.all)// ie
+	window.external.AddFavorite(url, title);
+}
+</script>
+</link></link></meta></meta></head>
+<body>
+<!-- Masthead Begin -->
+<div id="top"><img src="images/ucr_name.gif" style="float:left;"/>
+</div>
+<div id="masthead">
+<div align="center"><img class="x" src="images/masthead.jpg"/></div>
+</div>
+<!-- Masthead End -->
+<div class="pagewrapper">
+<div id="content">
+<div id="login_page">
+<div id="intro">
+<div id="login_button"><a href="http://rspaceportal.ucr.edu/rspaceportal/portal_api.login?p_entry=1"><img alt="Login" src="images/login.png"/></a></div>
+<!-- com.omniupdate.div label="login_intro" group="Everyone" button="657"   -->
+<div style="padding-top:110px; padding-left:18px; width:450px;">
+<!-- <img style="padding-right:14px;"  border="0" alt="Shuttle" width="126" height="97" src="images/facebook_button.png"/> -->
+<span style="color: rgb(63, 124, 181);"><strong>R'Web self-service</strong></span> connects you directly to 
+  <span style="color: rgb(63, 124, 181);"><strong> Academic History, Class Registration, R'Mail, Transcript and Verification, iLearn, iGrade, Authorized User</strong></span> and more.
+ 
+ <br/><br/>
+<span> 
+	 Access <span style="color: rgb(63, 124, 181);"><strong>Facebook,</strong></span> get up-to-date campus notifications and <span style="color: rgb(63, 124, 181);"><strong>Shout-outs,</strong></span> customize your
+	 <span style="color: rgb(63, 124, 181);"><strong> Homepage,</strong></span> access the
+	 <span style="color: rgb(63, 124, 181);"><strong> Library</strong></span> app and get real-time
+	 <span style="color: rgb(63, 124, 181);"><strong> Traffic Reports. Log-in now!</strong></span>
+</span>
+</div><!-- /com.omniupdate.div -->
+</div>
+</div>
+</div>
+<div id="help_page">
+<div id="intro">
+<div id="help_tab">
+<div id="help_list"><ul style="line-height:2.7em;">
+<!-- com.omniupdate.div label="help_links" group="Everyone" button="657"   --><li><a href="/portal_security_student.html" rel="popup standard 1024 700 noicon">Security Precautions</a></li>
+<li><a href="/general_overview.html" rel="popup standard 1024 700 noicon">R'Web General Overview<br/></a></li>
+<li><a href="/customize.html" rel="popup standard 1024 700 noicon">Customize Your R'Web</a></li>
+<li><a href="/facebook_help.html" rel="popup standard 1024 700 noicon">Setting up and Adding Facebook</a></li><!-- /com.omniupdate.div -->
+</ul>
+</div>
+<p><!-- com.omniupdate.div label="help_text" group="Everyone" button="657"   --><strong><span style="color: #128aa2;">Your first time in R'Web?</span></strong><br/><strong><span style="color: #128aa2;">R'Web</span></strong> is a powerful tool, but like any tool, it is important to take a moment to learn how to use it correctly. If you are new to <strong><span style="color: #128aa2;">R'Web</span></strong>, we invite you to review our guidelines.<br/><br/> Also, we encourage you to <strong><span style="color: #128aa2;">bookmark this page</span></strong> in your Web browser, as we think you will be coming here often.<!-- /com.omniupdate.div -->
+</p></div>
+</div>
+</div>
+<div id="bookmark">
+<a href="javascript:bookmarksite('R Web', 'http://rweb.ucr.edu')" onfocus="if(this.blur)this.blur()" title="UCR Rspace Portal"><img alt="Bookmark this page" height="33" id="addBookmarkContainer" src="images/bookmark.jpg" width="197"/></a></div></div></body></html>
+<ul class="tab-control">
+<div id="login"><li><a class="active" href="#login_page" id="freshman-link" onfocus="if(this.blur)this.blur()"></a></li></div>
+<div id="help"><li><a class="" href="#help_page" id="transfer-link" onfocus="if(this.blur)this.blur()"></a></li></div>
+<div id="pwd_reset"><li><a class="" href="https://passwordreset.ucr.edu/" id="pwd_reset-link" onfocus="if(this.blur)this.blur()" target="blank"></a></li></div>
+<!--	
+	<div id="pwd_reset">
+      <li>
+		<a class="" href="https://passwordresettest.ucr.edu/" target="blank" onFocus="if(this.blur)this.blur()" id="pwd_reset_link">
+		  <img class="imgLock" src="images/lock2.svg" alt="Reset Password page" />
+			<div class="divPwdReset"><span class="spnPwdReset">PASSWORD RESET</span><br><span class="spnPwdResetText">NetID Request/Password Reset</span></div>
+		</a>
+	  </li>
+    </div>    	
+-->
+</ul>
+<br/>
+<div align="right" style="padding-top:65px; margin-right:9px;">
+<br/>
+<a href="http://cms-prod-1.ucr.edu/oucampus/de.jsp?user=D01129&amp;site=ucr4me&amp;path=/index.html">© 2010 Regents of the University of California</a></div>
+<!-- com.omniupdate.efp --><!-- /com.omniupdate.efp -->
+
+
+
+
+

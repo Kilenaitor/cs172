@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<meta content="EN-US" http-equiv="content-language"/>
+<meta content="width=device-width, user-scalable=no" name="viewport">
+<title>UCR Extension | How to Enroll at UCR</title>
+<link href="/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+<link href="/favicon.ico" rel="SHORTCUT ICON"/>
+<meta content="index, follow" name="robots"/>
+<meta content="31 days" name="revisit-after"/>
+<meta content="true" name="mssmarttagspreventparsing"/>
+<!-- Global Styles -->
+<link href="/includes/css/reset.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/includes/css/screen_styles.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/includes/css/screen_layout_large.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/includes/css/screen_layout_medium.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/includes/css/screen_layout_small.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/includes/css/jquery.fs.shifter.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" rel="stylesheet"/>
+<!-- Additional Styles -->
+<link href="/includes/css/how_to.css" media="screen" rel="stylesheet" type="text/css"/>
+<!-- Global Scripts -->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script src="/includes/js/header.jquery.js" type="text/javascript"></script>
+<script src="/includes/js/sessionInfo.js" type="text/javascript"></script>
+<script src="/includes/js/ga.js" type="text/javascript"></script>
+<script src="/includes/js/jquery.fs.shifter.js" type="text/javascript"></script>
+</meta></head>
+<style>
+.shifter-handle {
+margin: 10px;
+}
+.shifter-navigation {
+padding: 30px;
+}
+.shifter-navigation a {
+color: #666;
+display: block;
+font-size: 16px;
+margin: 0 0 10px;
+}
+</style>
+<script>
+	$(document).ready(function() {
+		$.shifter({
+			maxWidth: "960px"
+		});
+	});
+</script>
+<body class="shifter">
+<div class="shifter-page"> <span class="shifter-handle">Menu</span>
+<div id="wrapper">
+<div id="header">
+<div id="header_logo">
+<a href="/"><img src="/images/header/logo.png"/></a>
+</div>
+<div id="header_blue">
+<div id="search_links">
+<ul class="search-ul">
+<li class="cart"><a href="https://portal.ucx.ucr.edu/coursebasket/publicCourseBasket.do?method=load" style="margin:0px !important;"><img class="cart-img" src="/images/header/cart.png"/></a></li>
+<li><img class="search-img" id="search" src="/images/header/search_icon.png"/></li>
+<!--					<li><a href="/areas_of_study.php">FAQs</a></li> //-->
+<li class="login-nav">
+<a class="login-img" href="#" id="login"> LOGIN</a>
+<a id="loggedin"></a>
+</li>
+<li class="elearn-nav" style="background-color:transparent !important; margin:10px;"><a href="http://elearn.extension.ucr.edu/" style="background-color:none !important; margin:0px !important;">ELEARN</a></li>
+<li class="home"><a href="/" style="margin:0px !important;"><img src="/images/header/home.png" style="margin-top:13px;"/></a></li>
+</ul>
+</div>
+</div>
+<div id="header_yellow">
+<ul id="nav_links">
+<li><a href="/areas_of_study.php">Browse Programs</a><img id="certificate_nav" src="/images/header/cert-drop-triangle.png" style="margin-left:5px;"/></li>
+<li id="browse_course"><a href="/browse-course.php">Search <br/>Courses</a></li>
+<li><a href="/resources/">Student <br/>Resources</a></li>
+<li><a href="http://www.iep.ucr.edu" target="_blank">International <br/>Students</a></li>
+</ul>
+</div>
+<div style="clear:both;"></div>
+<div id="login-drop" title="Extension Login">
+<div id="login-header-bar">
+<p id="close-login-drop" style="float:right; padding-right: 6px;"><img alt="close [x]" src="/images/close-x.png"/></p>
+</div>
+<div style="clear:both;"></div>
+<div id="login-links">
+<table>
+<tr>
+<td>
+<a href="https://portal.ucx.ucr.edu/portal/logon.do?method=load">Student</a>
+</td>
+<td>
+							|
+						</td>
+<td>
+<a href="https://portal.ucx.ucr.edu/portal/logonInstructor.do?method=load">Instructor</a>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="search-drop" title="Easy Search">
+<p id="close-search-drop" style="float:right; padding-right:6px; margin-bottom:10px;"><img alt="close [x]" src="/images/close-x.png"/></p>
+<div style="clear:both;"></div>
+<form action="/search.php" class="searchbox" method="post">
+<input class="searchbox-input" name="search" placeholder="quick search" required="" style="search">
+<button src="/images/header/search.png" value="submit"></button>
+</input></form>
+<div style="clear:both;"></div>
+<p class="sitemap"><a href="#">or browse our site map</a></p>
+</div>
+<div id="certificate-dropdowns">
+<p id="close-drop" style="float:right; margin-right: 6px; margin-top: 6px; "><img alt="close [x]" src="/images/close-x.png"/></p>
+<div style="clear:both;"></div>
+<select id="area-of-study" name="aos">
+<option>Area of Study</option>
+<option value="41459">Business</option>
+<option value="41464">Computer Science and Engineering</option>
+<option value="41469">Education and Credentials</option>
+<option value="41477">Environment</option>
+<option value="41480">Healthcare</option>
+<option value="41483">Law and Criminal Justice</option>
+<option value="41487">Language and Culture</option>
+<option value="41491">Marketing and Communications</option>
+<option value="41495">Personal Enrichment</option>
+</select>
+<div id="concentration-fields">
+</div>
+<div id="certificate-list">
+</div>
+</div>
+</div>
+<!-- end div:header -->
+<div id="main-content">
+<div id="how-to-header">
+<img src="/images/studentresources/howtoenroll/meeting-the-edu-need.png" style="margin-top:150px; margin-bottom:75px; margin-left: 200px;">
+<div id="how-to-buttons">
+<table>
+<tr>
+<td>
+<div class="four-ways"></div>
+</td>
+<td>
+<div class="online-enroll">
+<div class="popup online">
+<div class="close">
+<img class="close_popup" id="close_online" src="/images/aos/top_close_button.png">
+</img></div>
+<div style="padding: 20px;">
+<div style="float:left;">
+<p class="step_header">Online</p>
+<p class="step_content"><p><strong>Step #1: Find Your Class(es)</strong><br/>Choose your class(es) from our print catalog or explore our <a href="/browse-course.php">Course Catalog online</a>. Search by course or program.</p></p>
+<p class="step_content"><p><strong>Step #2: Add To Cart</strong><br/>Click "Add to Cart" to add the class(es) you want to your Cart.</p></p>
+<p class="step_content"><p><strong>Step #3: Pay Online</strong><br/>Once you have selected all the classes you want, use Checkout to pay using your VISA, MasterCard, or Discover.</p></p>
+</div>
+<div style="clear:both; margin-bottom:20px;"></div>
+</div>
+</div>
+</div>
+</td>
+<td>
+<div class="phone-enroll">
+<div class="popup phone">
+<div class="close">
+<img class="close_popup" id="close_phone" src="/images/aos/top_close_button.png">
+</img></div>
+<div style="padding: 20px;">
+<div style="float:left;">
+<p class="step_header">Phone</p>
+<p class="step_content"><p><strong>Step #1: Find Your Class(es)</strong><br/>Choose your class(es) from our print catalog or explore our <a href="/browse-course.php">Course Catalog online</a>. Search by course or program.</p></p>
+<p class="step_content"><p><strong>Step #2: Mark In Catalog</strong><br/>Circle the course. Have the course name and course number, as well as your Visa, MasterCard, or Discover ready.</p></p>
+<p class="step_content"><p><strong>Step #3: Call and Pay</strong><br/>Call (951) 827-4105 or toll-free (800) 442-4990. Student Services can take your information, including payment, over the phone.</p></p>
+</div>
+<div style="clear:both; margin-bottom:20px;"></div>
+</div>
+</div>
+</div>
+</td>
+<td>
+<div class="mail-enroll">
+<div class="popup mail">
+<div class="close">
+<img class="close_popup" id="close_mail" src="/images/aos/top_close_button.png">
+</img></div>
+<div style="padding: 20px;">
+<div style="float:left;">
+<p class="step_header">Mail</p>
+<p class="step_content"><p><strong>Step #1: Find Your Class(es)</strong><br/>Choose your class(es) from our print catalog or explore our <a href="/browse-course.php">Course Catalog online</a>. Search by course or program.</p></p>
+<p class="step_content"><p><strong>Step #2: Fill Out Form</strong><br/>Complete the enrollment form at the back of the print Course Catalog, or download an <a href="/pdf/misc/enrollmentform.pdf">Enrollment Form</a> to complete.</p>
+<ul>
+<li>Include your check or VISA/MasterCard/Discover authorization.</li>
+<li>Use a separate sheet for each person enrolling.</li>
+</ul></p>
+<p class="step_content"><p><strong>Step #3: Mail Form and Payment</strong><br/>Mail to: 	<br/>UCR Extension
+			<br/>Student Services
+			<br/>1200 University Ave.
+			<br/>Riverside, CA 92507-4596</p></p>
+</div>
+<div style="clear:both; margin-bottom:20px;"></div>
+</div>
+</div>
+</div>
+</td>
+<td>
+<div class="in-person-enroll">
+<div class="popup in-person">
+<div class="close">
+<img class="close_popup" id="close_in-person" src="/images/aos/top_close_button.png">
+</img></div>
+<div style="padding: 20px;">
+<div style="float:left;">
+<p class="step_header">In Person</p>
+<p class="step_content"><p><strong>Step #1: Find Your Class(es)</strong><br/>Choose your class(es) from our print catalog or explore our <a href="/browse-course.php">Course Catalog online</a>. Search by course or program.</p></p>
+<p class="step_content"><p><strong>Step #2: Mark In Catalog</strong><br/>Circle the class you want in your print Course Catalog and bring it with you, as well as your checkbook or Visa/MasterCard/Discover.</p></p>
+<p class="step_content"><p><strong>Step #3: Pay UCR Extension</strong><br/>Come to the UCR Extension Center, Student Services front desk. They can assist you with enrollment. Check our Locations page for Registration Hours and Directions.
+</p></p>
+</div>
+<div style="clear:both; margin-bottom:20px;"></div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<img src="/images/studentresources/howtoenroll/ucr-copy.png" style="margin-top:75px; margin-bottom:60px;">
+</img></img></div>
+</div>
+<script> 
+	var_class = ""; 
+	function reset(var_class) { 
+		if(var_class != "phone") { 
+			$('.phone').css("display", "none"); 
+			$('.phone-triangle').css("display", "none"); 
+		}
+		if(var_class != "mail") { 
+			$('.mail').css("display", "none"); 
+			$('.mail-triangle').css("display", "none"); 
+		}
+		if(var_class != "in-person") { 
+			$('.in-person').css("display", "none"); 
+			$('.in-person-triangle').css("display", "none"); 
+		}
+		if(var_class != "online") { 
+			$('.online').css("display", "none"); 
+			$('.online-triangle').css("display", "none"); 
+		}
+	}
+	$('.phone-enroll').click(function () { 
+		var_class = 'phone'; 
+		reset(var_class); 
+		$('.phone').toggle("fade");
+		$('.phone-triangle').toggle("fade"); 
+	});
+
+	$('.mail-enroll').click(function () { 
+		var_class = 'mail'; 
+		reset(var_class); 
+		$('.mail').toggle("fade");
+		$('.mail-triangle').toggle("fade"); 
+	});
+	$('.in-person-enroll').click(function () { 
+		var_class = 'in-person'; 
+		reset(var_class); 
+		$('.in-person').toggle("fade");
+		$('.in-person-triangle').toggle("fade"); 
+	});
+
+	$('.online-enroll').click(function () { 
+		var_class = 'online'; 
+		reset(var_class); 
+		$('.online').toggle("fade");
+		$('.online-triangle').toggle("fade"); 
+	});
+</script>
+<!-- end div:main-content -->
+<!-- 
+		
+		Footer expanded
+
+//-->
+<script src="/includes/js/jquery.knob.js" type="text/javascript"></script>
+<script src="/includes/js/jquery.ui.widget.js" type="text/javascript"></script>
+<script src="/includes/js/jquery.iframe-transport.js" type="text/javascript"></script>
+<script src="/includes/js/jquery.fileupload.js" type="text/javascript"></script>
+<script src="/includes/js/upload-script.js" type="text/javascript"></script>
+<script src="/includes/js/tinymce/tinymce.min.js" type="text/javascript"></script>
+<link href="/includes/css/upload-style.css" media="screen" rel="stylesheet" type="text/css"/>
+<div id="submit-feedback-wrap">
+<div id="submit-feedback">
+<div class="close-feedback">
+<p>close [x]</p>
+</div>
+<div style="margin-top:50px;"></div>
+<h2 style="margin-left:30px;">Submit Feedback</h2>
+<p style="margin-left:30px;">Thank you for taking the time to submit your feedback about the UCR Extension website.  Please be sure to include all relevant information to ensure that we can follow up with your request as soon as possible.</p>
+<div style="margin-top:25px;"></div>
+<form action="/feedback.php" enctype="multipart/form-data" method="POST">
+<input name="url" type="hidden" value="/resources/how-to-enroll.php">
+<input name="page_title" type="hidden" value=" How to Enroll at UCR">
+<input id="feedback-input" name="name" placeholder="Your Name" required="" type="text">
+<input id="feedback-input" name="netid" placeholder="Your NetId" required="" type="text">
+<input id="feedback-input" name="email" placeholder="Your Email" required="" type="text">
+<div style="margin-left:25px; width:90%;">
+<textarea id="feedback-textarea" name="feedback"></textarea>
+</div>
+<p>
+<input src="/images/footer/submit.png" style="margin-left:30px;" type="image"/>
+</p>
+</input></input></input></input></input></form>
+<div style="width:100%; border-bottom:1px solid black; margin-top:10px; margin-bottom:10px;"></div>
+<h2 style="margin-left:30px;">Add Supporting Files</h2>
+<div style="margin-left:30px; width:90%;">
+<form action="/includes/modules/upload.php" enctype="multipart/form-data" id="upload" method="post">
+<div id="drop" style="height:auto !important; width:625px !important; border-radius:0px !important;">
+					Drop Here
+
+					<a>Browse</a>
+<input multiple="" name="upl" type="file"/>
+<input name="file_dir" type="hidden" value="feedback_uploads">
+<input name="file_type" type="hidden" value="pdf">
+</input></input></div>
+<ul style="width:100% !important;">
+<!-- The file uploads will be shown here -->
+</ul>
+</form>
+</div>
+</div>
+</div>
+<div id="expanded-footer">
+<div id="expanded-footer-wrap">
+<div class="feedback">
+<img src="/images/footer/feedback.png">
+</img></div>
+<div class="ucr-links">
+<ul>
+<li><a href="http://www.ucr.edu/"><img src="/images/footer/ucr-home.png"/></a></li>
+<li><a href="http://www.ucr.edu/about/"><img src="/images/footer/about-ucr.png"/></a></li>
+<li><a href="http://www.ucr.edu/academics/"><img src="/images/footer/ucr-academics.png"/></a></li>
+<li><a href="http://www.ucr.edu/athletics/"><img src="/images/footer/athletics.png"/></a></li>
+<li><a href="http://www.ucr.edu/happenings/"><img src="/images/footer/happenings.png"/></a></li>
+<li><a href="http://www.ucr.edu/research/"><img src="/images/footer/ucr-research.png"/></a></li>
+<li><a href="http://www.ucr.edu/resources/"><img src="/images/footer/campus-resources.png"/></a></li>
+<li><a href="http://www.ucr.edu/giving/"><img src="/images/footer/giving-to-ucr.png"/></a></li>
+</ul>
+</div>
+<div style="clear:both;"></div>
+<div class="ucr-text-links">
+<ul>
+<li><a href="http://library.ucr.edu/">UCR Libraries</a></li>
+<li><a href="http://campusstatus.ucr.edu/">Campus Status</a></li>
+<li><a href="http://campusstore.ucr.edu/">Campus Store</a></li>
+<li><a href="http://www.ucr.edu/employment.html">Career Opportunities</a></li>
+<li><a href="http://diversity.ucr.edu/">Diversity</a></li>
+<li><a href="http://www.ucr.edu/about/directions.html">Maps and Directions</a></li>
+<li><a href="http://my.ucr.edu/visit/Pages/default.aspx">Visit UCR</a></li>
+</ul>
+</div>
+<div class="ucr-logo-footer">
+<a href="http://www.ucr.edu"><img src="/images/footer/ucr-logo-footer.png"/></a>
+</div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div style="clear:both;"></div>
+<div id="footer-divider"></div>
+<div id="footer-container">
+<div id="footer-expander">
+<img id="footer-expand" src="/images/footer/expander.png">
+</img></div>
+<!-- 
+		
+		Footer elements
+
+//-->
+<div id="unex-address">
+<p>University of California, Riverside Extension</p>
+<p>1200 University Ave.</p>
+<p>Riverside, Ca 92507-4596</p>
+</div>
+<div id="student-services">
+<p><a href="/resources/">Student Services</a></p>
+<p>(951) 827-4105 or (800) 442-4990</p>
+<p><a href="https://www.google.com/maps/place/1200+University+Ave,+Riverside,+CA+92507/@33.975152,-117.3374027,15z/data=!4m2!3m1!1s0x80dcae475d5b7fd9:0x52fb0c93cb0fd1bc?sa=X&amp;ei=lDQrVK_oLtKxogT6lYGQAw&amp;ved=0CB8Q8gEwAA">Directions</a></p>
+<!-- <p><a href="/sitemap.php">Sitemap</a></p> //-->
+</div>
+<div id="social-media">
+<a href="http://www.linkedin.com/company/university-of-california-riverside-extension"><img src="/images/footer/linkedin.png"/></a>
+<a href="http://www.twitter.com/ucrextension"><img src="/images/footer/twitter.png"/></a>
+<a href="http://www.facebook.com/UCRiversideExtension"><img src="/images/footer/facebook.png"/></a>
+</div>
+<div id="footer-links">
+<div id="request-info-request-form">
+<p id="close-request-info-request-form" style="float:right; padding-right: 6px;"><img alt="close [x]" src="/images/close-x.png"/></p>
+<div style="clear:both;"></div>
+<iframe src="https://ucrextension.hobsonsradius.com/ssc/iform/x7l04RBA700kx6700rB6.ssc" style="height: 500px !important; width:420px;" title="Inquiry form to obtain request-info online."></iframe>
+</div>
+<p><a href="/cares/">First 5 Riverside CARES Plus</a></p>
+<p><a href="http://www.iep.ucr.edu/">International Programs</a></p>
+<p><a href="#" id="request-info-request">Request Information</a></p>
+<p><a href="/resources/resource/Your_UCR_NetID">NetID Help</a></p>
+</div>
+<div id="seal-links">
+<div id="seal">
+<img src="/images/footer/ucr-seal.png">
+</img></div>
+<div id="copyright">
+<p>© 2016 UC Regents</p>
+<p>All Rights Reserved</p>
+<p><a href="http://www.ucr.edu/privacy.html">Privacy Policy</a></p>
+<p><a href="http://www.ucr.edu/terms.html">Terms and Conditions</a></p>
+</div>
+</div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<!-- end div:footer-container -->
+</div>
+<!-- end div:wrapper -->
+<nav class="shifter-navigation">
+<div id="mobile-search">
+<form action="/search.php" method="post" name="search">
+<input class="search-input mobile-search-input" name="search" placeholder="quick search" required="" type="text">
+<input class="search-button" src="/images/home/blue_search.png" type="image">
+</input></input></form>
+<div style="clear:both;"></div>
+</div>
+<ul>
+<a href="/" style="margin-bottom:0px !important; font-size:16px !important;"><li style="background: rgb(253,185,19);">Main Navigation</li></a>
+<a href="/" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(253,185,19);">Home</li></a>
+<a href="/areas_of_study.php" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(253,185,19);">Certificates</li></a>
+<a href="/browse-course.php" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(253,185,19);">Browse Courses</li></a>
+<a href="/resources/" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(253,185,19);">Student Resources</li></a>
+<a href="http://www.iep.ucr.edu/" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(253,185,19);">International Programs</li></a>
+</ul>
+<div style="margin-bottom:15px;"></div>
+<ul><a href="/osher/" style="margin-bottom:0px !important; font-size:16px !important;"><li style="background: rgb(68,111,131);">Sub Navigation</li></a>
+<a href="/osher/" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(68,111,131);">Osher</li></a>
+<a href="/customtraining/" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(68,111,131);">Custom Training</li></a>
+<a href="/conferencing/" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(68,111,131);">Conferencing Services</li></a>
+<a href="/newsletter" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(68,111,131);">Newsletter</li></a>
+<a href="/about/" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(68,111,131);">About Us</li></a>
+</ul>
+<div style="margin-bottom:15px;"></div>
+<ul><a href="https://portal.ucx.ucr.edu/portal/logon.do?method=load" style="margin-bottom:0px !important; font-size:16px !important;"><li style="background: rgb(252,154,45);">Portals</li></a>
+<a href="https://portal.ucx.ucr.edu/portal/logon.do?method=load" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(252,154,45);">Student Login</li></a>
+<a href="https://portal.ucx.ucr.edu/portal/logonInstructor.do?method=load" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(252,154,45);">Instructor Login</li></a>
+</ul>
+<div style="margin-bottom:15px;"></div>
+<ul><a href="https://www.google.com/maps/place/1200+University+Ave,+Riverside,+CA+92507/@33.975152,-117.3374027,15z/data=!4m2!3m1!1s0x80dcae475d5b7fd9:0x52fb0c93cb0fd1bc?sa=X&amp;ei=lDQrVK_oLtKxogT6lYGQAw&amp;ved=0CB8Q8gEwAA" style="margin-bottom:0px !important; font-size:16px !important;"><li style="background: rgb(193,187,171);">Footer</li></a>
+<a href="https://www.google.com/maps/place/1200+University+Ave,+Riverside,+CA+92507/@33.975152,-117.3374027,15z/data=!4m2!3m1!1s0x80dcae475d5b7fd9:0x52fb0c93cb0fd1bc?sa=X&amp;ei=lDQrVK_oLtKxogT6lYGQAw&amp;ved=0CB8Q8gEwAA" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(193,187,171);">Directions</li></a>
+<a href="/cares/" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(193,187,171);">Cares Plus</li></a>
+<a href="/resources/resource/Your_UCR_NetID" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(193,187,171);">Net ID Help</li></a>
+<a href="http://www.ucr.edu/privacy.html" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(193,187,171);">Privacy Policy</li></a>
+<a href="http://www.ucr.edu/terms.html" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(193,187,171);">Terms &amp; Conditions</li></a>
+</ul>
+<div style="margin-bottom:15px;"></div>
+<ul><a href="http://www.linkedin.com/company/university-of-california-riverside-extension" style="margin-bottom:0px !important; font-size:16px !important;"><li style="background: rgb(44,108,192);">Connect with UCR Extension</li></a>
+<a href="http://www.linkedin.com/company/university-of-california-riverside-extension" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(44,108,192);">LinkedIn</li></a>
+<a href="http://www.twitter.com/ucrextension" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(44,108,192);">Twitter</li></a>
+<a href="http://www.facebook.com/UCRiversideExtension" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(44,108,192);">Facebook</li></a>
+<a href="https://www.instagram.com/ucrextension/" style="margin-bottom:0px !important; font-size:12px !important;"><li style="background: rgb(44,108,192);">Instagram</li></a>
+</ul>
+</nav></body></html>
+<script> 
+
+$(document).ready(function () {
+	$("#request-info-request").click(function(){
+		$("#request-info-request-form").fadeToggle("slow");
+	});	
+	$("#close-request-info-request-form").click(function(){
+		$("#request-info-request-form").fadeToggle("slow");
+	});			
+    $("#footer-expand").click(function () {
+		$("#expanded-footer").fadeToggle(); 
+    });
+    $(".feedback").click(function () {
+		$("#submit-feedback").fadeToggle(); 
+		$("#submit-feedback-wrap").fadeToggle();
+    });
+    $(".close-feedback").click(function () {
+		$("#submit-feedback").fadeToggle(); 
+		$("#submit-feedback-wrap").fadeToggle();
+    });
+});
+tinymce.init({
+  selector: 'textarea',
+  height: 150,
+  theme: 'modern',
+  plugins: [
+    'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+    'searchreplace wordcount visualblocks visualchars code fullscreen',
+    'insertdatetime media nonbreaking save table contextmenu directionality',
+    'emoticons template paste textcolor colorpicker textpattern imagetools'
+  ],
+  toolbar1: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+  toolbar2: 'print preview media | forecolor backcolor emoticons',
+  image_advtab: true,
+  templates: [
+    { title: 'Test template 1', content: 'Test 1' },
+    { title: 'Test template 2', content: 'Test 2' }
+  ],
+  content_css: [
+    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+    '//www.tinymce.com/css/codepen.min.css'
+  ]
+ });
+ </script>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '309997512718697');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" src="https://www.facebook.com/tr?id=309997512718697&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html dir="ltr" lang="en" prefix="fb: http://ogp.me/ns/fb# og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video#"><!--<![endif]-->
+<head>
+<meta charset="utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<link href="http://police.ucsf.edu/sites/police.ucsf.edu/themes/custom/ucsfpd/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+<meta content="Drupal 7 (http://drupal.org)" name="generator"/>
+<link href="http://police.ucsf.edu/" rel="canonical"/>
+<link href="http://police.ucsf.edu/" rel="shortlink"/>
+<meta content="University of California, San Francisco Police Department" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="http://police.ucsf.edu/" property="og:url"/>
+<meta content="University of California, San Francisco Police Department" property="og:title"/>
+<meta content="Together for a safe and crime-free campus" property="og:description"/>
+<title>University of California, San Francisco Police Department | Together for a safe and crime-free campus</title>
+<meta content="width" name="MobileOptimized">
+<meta content="true" name="HandheldFriendly">
+<meta content="width=device-width" name="viewport">
+<meta content="on" http-equiv="cleartype">
+<style>
+@import url("http://police.ucsf.edu/modules/system/system.base.css?oenrvb");
+@import url("http://police.ucsf.edu/modules/system/system.messages.css?oenrvb");
+@import url("http://police.ucsf.edu/modules/system/system.theme.css?oenrvb");
+</style>
+<style media="screen">
+@import url("http://police.ucsf.edu/sites/all/modules/contrib/views_slideshow/views_slideshow.css?oenrvb");
+</style>
+<style>
+@import url("http://police.ucsf.edu/sites/police.ucsf.edu/modules/date/date_api/date.css?oenrvb");
+@import url("http://police.ucsf.edu/sites/police.ucsf.edu/modules/date/date_popup/themes/datepicker.1.7.css?oenrvb");
+@import url("http://police.ucsf.edu/sites/police.ucsf.edu/modules/contrib/fences/field.css?oenrvb");
+@import url("http://police.ucsf.edu/modules/node/node.css?oenrvb");
+@import url("http://police.ucsf.edu/modules/search/search.css?oenrvb");
+@import url("http://police.ucsf.edu/modules/user/user.css?oenrvb");
+@import url("http://police.ucsf.edu/sites/police.ucsf.edu/modules/contrib/extlink/extlink.css?oenrvb");
+@import url("http://police.ucsf.edu/sites/all/modules/contrib/views/css/views.css?oenrvb");
+</style>
+<style>
+@import url("http://police.ucsf.edu/sites/all/modules/contrib/ctools/css/ctools.css?oenrvb");
+@import url("http://police.ucsf.edu/sites/police.ucsf.edu/modules/contrib/oembed/oembed.base.css?oenrvb");
+@import url("http://police.ucsf.edu/sites/police.ucsf.edu/modules/contrib/oembed/oembed.theme.css?oenrvb");
+@import url("http://police.ucsf.edu/sites/all/modules/contrib/panels/css/panels.css?oenrvb");
+@import url("http://police.ucsf.edu/sites/all/modules/contrib/panels/plugins/layouts/flexible/flexible.css?oenrvb");
+@import url("http://police.ucsf.edu/sites/all/modules/contrib/views_slideshow/contrib/views_slideshow_cycle/views_slideshow_cycle.css?oenrvb");
+@import url("http://police.ucsf.edu/sites/police.ucsf.edu/files/ctools/css/a71e1e615a8a3cc120c54ce0e80d3066.css?oenrvb");
+</style>
+<style>
+@import url("http://police.ucsf.edu/sites/police.ucsf.edu/themes/custom/ucsfpd/css/styles.css?oenrvb");
+@import url("http://police.ucsf.edu/sites/police.ucsf.edu/themes/custom/ucsfpd/css/banner_styles.css?oenrvb");
+</style>
+<script src="http://police.ucsf.edu/misc/jquery.js?v=1.4.4"></script>
+<script src="http://police.ucsf.edu/misc/jquery.once.js?v=1.2"></script>
+<script src="http://police.ucsf.edu/misc/drupal.js?oenrvb"></script>
+<script src="http://police.ucsf.edu/sites/all/modules/contrib/views_slideshow/js/views_slideshow.js?v=1.0"></script>
+<script src="http://police.ucsf.edu/sites/police.ucsf.edu/modules/contrib/extlink/extlink.js?oenrvb"></script>
+<script src="http://police.ucsf.edu/sites/all/libraries/jquery.cycle/jquery.cycle.all.js?oenrvb"></script>
+<script src="http://police.ucsf.edu/sites/all/libraries/json2/json2.js?oenrvb"></script>
+<script src="http://police.ucsf.edu/sites/all/modules/contrib/views_slideshow/contrib/views_slideshow_cycle/js/views_slideshow_cycle.js?oenrvb"></script>
+<script src="http://police.ucsf.edu/sites/all/modules/contrib/google_analytics/googleanalytics.js?oenrvb"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","http://police.ucsf.edu/sites/police.ucsf.edu/files/googleanalytics/analytics.js?oenrvb","ga");ga("create", "UA-41007847-1", {"cookieDomain":"auto"});ga("send", "pageview");</script>
+<script src="http://police.ucsf.edu/sites/police.ucsf.edu/themes/custom/ucsfpd/js/jquery.isotope.min.js?oenrvb"></script>
+<script src="http://police.ucsf.edu/sites/police.ucsf.edu/themes/custom/ucsfpd/js/script.js?oenrvb"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"ucsfpd","theme_token":"4XMivOflv6bkGBgCu8WjHwrcSd2Dv0E6NjOK9tovaso","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/views_slideshow\/js\/views_slideshow.js":1,"sites\/police.ucsf.edu\/modules\/contrib\/extlink\/extlink.js":1,"sites\/all\/libraries\/jquery.cycle\/jquery.cycle.all.js":1,"sites\/all\/libraries\/json2\/json2.js":1,"sites\/all\/modules\/contrib\/views_slideshow\/contrib\/views_slideshow_cycle\/js\/views_slideshow_cycle.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/police.ucsf.edu\/themes\/custom\/ucsfpd\/js\/jquery.isotope.min.js":1,"sites\/police.ucsf.edu\/themes\/custom\/ucsfpd\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/views_slideshow\/views_slideshow.css":1,"sites\/police.ucsf.edu\/modules\/date\/date_api\/date.css":1,"sites\/police.ucsf.edu\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/police.ucsf.edu\/modules\/contrib\/extlink\/extlink.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/police.ucsf.edu\/modules\/contrib\/oembed\/oembed.base.css":1,"sites\/police.ucsf.edu\/modules\/contrib\/oembed\/oembed.theme.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/flexible\/flexible.css":1,"sites\/all\/modules\/contrib\/views_slideshow\/contrib\/views_slideshow_cycle\/views_slideshow_cycle.css":1,"public:\/\/ctools\/css\/a71e1e615a8a3cc120c54ce0e80d3066.css":1,"sites\/police.ucsf.edu\/themes\/custom\/ucsfpd\/system.menus.css":1,"sites\/police.ucsf.edu\/themes\/custom\/ucsfpd\/css\/styles.css":1,"sites\/police.ucsf.edu\/themes\/custom\/ucsfpd\/css\/banner_styles.css":1}},"viewsSlideshow":{"front_page_slideshow-block":{"methods":{"goToSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"nextSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"pause":["viewsSlideshowControls","viewsSlideshowCycle"],"play":["viewsSlideshowControls","viewsSlideshowCycle"],"previousSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"transitionBegin":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"transitionEnd":[]},"paused":0}},"viewsSlideshowPager":{"front_page_slideshow-block":{"bottom":{"type":"viewsSlideshowPagerFields"}}},"viewsSlideshowPagerFields":{"front_page_slideshow-block":{"bottom":{"activatePauseOnHover":0}}},"viewsSlideshowCycle":{"#views_slideshow_cycle_main_front_page_slideshow-block":{"num_divs":4,"id_prefix":"#views_slideshow_cycle_main_","div_prefix":"#views_slideshow_cycle_div_","vss_id":"front_page_slideshow-block","effect":"fade","transition_advanced":0,"timeout":5000,"speed":700,"delay":0,"sync":1,"random":0,"pause":1,"pause_on_click":0,"action_advanced":1,"start_paused":0,"remember_slide":0,"remember_slide_days":1,"pause_in_middle":0,"pause_when_hidden":0,"pause_when_hidden_type":"full","amount_allowed_visible":"","nowrap":0,"fixed_height":0,"items_per_slide":1,"wait_for_image_load":1,"wait_for_image_load_timeout":3000,"cleartype":0,"cleartypenobg":0,"advanced_options":"{}"}},"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":0,"extSubdomains":0,"extExclude":"","extInclude":"system\\\/files\\\/.*","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/":true}});</script>
+<!--[if lt IE 9]>
+    <script src="/sites/police.ucsf.edu/themes/custom/zen/js/html5-respond.js"></script>
+    <![endif]-->
+</meta></meta></meta></meta></head>
+<body class="html front not-logged-in no-sidebars page-home page-panels">
+<p id="skip-link">
+<a class="element-invisible element-focusable" href="#main-menu">Jump to navigation</a>
+</p>
+<div class="region region-ucsf-banner">
+<!-- block--ucsf-banner.tpl.php //-->
+<div class="grey" id="ucsf-banner-nav">
+<div class="top-header-container row">
+<ul class="menu">
+<li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+<li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+<li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+<li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+</ul>
+</div>
+</div> </div>
+<div id="page">
+<header id="header" role="banner">
+<div class="header__region region region-header">
+<div class="block block-system block-menu first odd" id="block-system-user-menu" role="navigation">
+<div class="block-wrapper">
+<h3 class="block__title block-title">User menu</h3>
+<ul class="menu"><li class="menu__item is-leaf first leaf"><a class="menu__link active" href="/" title="">Home</a></li>
+<li class="menu__item is-leaf last leaf"><a class="menu__link" href="/user/login?current=home">Log in</a></li>
+</ul>
+</div>
+</div><!-- /.block -->
+<div class="block block-search last even" id="block-search-form" role="search">
+<div class="block-wrapper">
+<form accept-charset="UTF-8" action="/" id="search-block-form" method="post"><div><div class="container-inline">
+<h2 class="element-invisible">Search form</h2>
+<div class="form-item form-type-textfield form-item-search-block-form">
+<label class="element-invisible" for="edit-search-block-form--2">Search </label>
+<input class="form-text" id="edit-search-block-form--2" maxlength="128" name="search_block_form" size="15" title="Enter the terms you wish to search for." type="text" value=""/>
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input class="form-submit" id="edit-submit" name="op" type="submit" value="Search"/></div><input name="form_build_id" type="hidden" value="form-MXCMIaOz1WfQQyr0mfBJHYoT7c38rcywSESNwQc25Ig"/>
+<input name="form_id" type="hidden" value="search_block_form"/>
+</div>
+</div></form>
+</div>
+</div><!-- /.block -->
+</div>
+<a href="/" id="logo" rel="home" title="Home"><img alt="Home" src="http://police.ucsf.edu/sites/police.ucsf.edu/files/ucpd_badge.png"/></a>
+<hgroup id="name-and-slogan">
+<h1 id="site-name">
+<a href="/" rel="home" title="Home"><span>
+              University of California, San Francisco
+                              <span class="site-name-large">Police Department</span>
+</span></a>
+</h1>
+<h2 id="site-slogan">Together for a safe and crime-free campus</h2>
+</hgroup><!-- /#name-and-slogan -->
+</header>
+<div id="main">
+<div class="column" id="content" role="main">
+<a id="main-content"></a>
+<div class="panel-flexible panels-flexible-1 clearfix">
+<div class="panel-flexible-inside panels-flexible-1-inside">
+<div class="panels-flexible-row panels-flexible-row-1-15 panels-flexible-row-first clearfix full_width">
+<div class="inside panels-flexible-row-inside panels-flexible-row-1-15-inside panels-flexible-row-inside-first clearfix">
+<div class="panels-flexible-region panels-flexible-region-1-heading panels-flexible-region-first panels-flexible-region-last heading_area">
+<div class="inside panels-flexible-region-inside panels-flexible-region-1-heading-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-views pane-front-page-slideshow" id="slideshow">
+<div class="view view-front-page-slideshow view-id-front_page_slideshow view-display-id-block view-dom-id-3c7e36b81b9b43ee4aec42629b0794b7">
+<div class="view-content">
+<div class="skin-default">
+<div class="views_slideshow_cycle_main views_slideshow_main" id="views_slideshow_cycle_main_front_page_slideshow-block"><div class="views-slideshow-cycle-main-frame views_slideshow_cycle_teaser_section" id="views_slideshow_cycle_teaser_section_front_page_slideshow-block">
+<div class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-1 views-row-odd" id="views_slideshow_cycle_div_front_page_slideshow-block_0">
+<div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd views-row-first">
+<div class="field-slide-image">
+<img alt="" height="320" src="http://police.ucsf.edu/sites/police.ucsf.edu/files/styles/slideshow_slide/public/img_2963_edited_cropped_-_use_this.jpg?itok=SrlOz8hB&amp;c=338fe459bc10e7aa1e15f6d0c6433e2c" width="785"/> </div>
+</div>
+</div>
+<div class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-2 views_slideshow_cycle_hidden views-row-even" id="views_slideshow_cycle_div_front_page_slideshow-block_1">
+<div class="views-slideshow-cycle-main-frame-row-item views-row views-row-1 views-row-even">
+<div class="field-slide-image">
+<img alt="" height="320" src="http://police.ucsf.edu/sites/police.ucsf.edu/files/styles/slideshow_slide/public/ucsfpd-94_edited_v4.jpg?itok=lEYH9dsL&amp;c=d542644b9ae324b506732145ec02b1ab" width="785"/> </div>
+</div>
+</div>
+<div class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-3 views_slideshow_cycle_hidden views-row-odd" id="views_slideshow_cycle_div_front_page_slideshow-block_2">
+<div class="views-slideshow-cycle-main-frame-row-item views-row views-row-2 views-row-odd">
+<div class="field-slide-image">
+<img alt="" height="320" src="http://police.ucsf.edu/sites/police.ucsf.edu/files/styles/slideshow_slide/public/img_2875_edited.jpg?itok=yzrkwNUs&amp;c=91ca7d5a594f4694c20de7197e4f57f7" width="785"/> </div>
+</div>
+</div>
+<div class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-4 views_slideshow_cycle_hidden views-row-even" id="views_slideshow_cycle_div_front_page_slideshow-block_3">
+<div class="views-slideshow-cycle-main-frame-row-item views-row views-row-3 views-row-even views-row-last">
+<div class="field-slide-image">
+<img alt="" height="320" src="http://police.ucsf.edu/sites/police.ucsf.edu/files/styles/slideshow_slide/public/ucsfpd-236.jpg?itok=3i74uLyv&amp;c=5a35062a1302911a5fc119ecab7c669e" width="785"/> </div>
+</div>
+</div>
+</div>
+</div>
+<div class="views-slideshow-controls-bottom clearfix">
+<div class="views-slideshow-pager-fields widget_pager widget_pager_bottom views_slideshow_pager_field" id="widget_pager_bottom_front_page_slideshow-block">
+<div class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-odd views-row-first" id="views_slideshow_pager_field_item_bottom_front_page_slideshow-block_0">
+<div class="views-field-counter">
+<div class="views-content-counter">
+    1  </div>
+</div>
+</div>
+<div class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-even" id="views_slideshow_pager_field_item_bottom_front_page_slideshow-block_1">
+<div class="views-field-counter">
+<div class="views-content-counter">
+    2  </div>
+</div>
+</div>
+<div class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-odd" id="views_slideshow_pager_field_item_bottom_front_page_slideshow-block_2">
+<div class="views-field-counter">
+<div class="views-content-counter">
+    3  </div>
+</div>
+</div>
+<div class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-even views-row-last" id="views_slideshow_pager_field_item_bottom_front_page_slideshow-block_3">
+<div class="views-field-counter">
+<div class="views-content-counter">
+    4  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="panel-pane pane-custom pane-4" id="slideshow_content">
+<h2>EMERGENCY:<br/>
+	9+911</h2>
+<p>To reach UCSF police, dial 9+911 from <br/>
+	any campus phone or 415/476-6911 from <br/>
+	a non-campus phone.</p>
+<h2>Non-Emergency:</h2>
+<p><strong>415/476-1414</strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-1-2 clearfix ">
+<div class="inside panels-flexible-row-inside panels-flexible-row-1-2-inside clearfix">
+<div class="panels-flexible-column panels-flexible-column-1-6 panels-flexible-column-first ">
+<div class="inside panels-flexible-column-inside panels-flexible-column-1-6-inside panels-flexible-column-inside-first">
+<div class="panels-flexible-region panels-flexible-region-1-feature_photo panels-flexible-region-first panels-flexible-region-last ">
+<div class="inside panels-flexible-region-inside panels-flexible-region-1-feature_photo-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+</div>
+</div>
+</div>
+</div>
+<div class="panels-flexible-column panels-flexible-column-1-5 panels-flexible-column-last ">
+<div class="inside panels-flexible-column-inside panels-flexible-column-1-5-inside panels-flexible-column-inside-last">
+<div class="panels-flexible-region panels-flexible-region-1-site_info panels-flexible-region-first panels-flexible-region-last ">
+<div class="inside panels-flexible-region-inside panels-flexible-region-1-site_info-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-1-3 clearfix ">
+<div class="inside panels-flexible-row-inside panels-flexible-row-1-3-inside clearfix">
+<div class="panels-flexible-region panels-flexible-region-1-middle panels-flexible-region-first panels-flexible-region-last ">
+<div class="inside panels-flexible-region-inside panels-flexible-region-1-middle-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-custom pane-5">
+<h2 class="pane-title">Welcome</h2>
+<p>The women and men of the UCSF Police Department are committed to making our campus a safe place for you to live, work, study and visit. We strongly believe in the principles of community policing, and have partnered with agencies throughout San Francisco to enhance the safety and quality of life at UCSF.</p>
+<p>We also recognize that all members of the campus community share in the responsibility of maintaining our safe environment. To that end, our website provides relevant and practical information to help you prevent and better respond in the event of a crime or public safety emergency.</p>
+<p>Please let us know how we can best serve you.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-1-4 panels-flexible-row-last clearfix ">
+<div class="inside panels-flexible-row-inside panels-flexible-row-1-4-inside panels-flexible-row-inside-last clearfix">
+<div class="panels-flexible-column panels-flexible-column-1-10 panels-flexible-column-first ">
+<div class="inside panels-flexible-column-inside panels-flexible-column-1-10-inside panels-flexible-column-inside-first">
+<div class="panels-flexible-region panels-flexible-region-1-bottom_left panels-flexible-region-first panels-flexible-region-last ">
+<div class="inside panels-flexible-region-inside panels-flexible-region-1-bottom_left-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-menu-tree pane-menu-how-do-i">
+<h2 class="pane-title">How do I ...</h2>
+<div class="menu-block-wrapper menu-block-ctools-menu-how-do-i-1 menu-name-menu-how-do-i parent-mlid-menu-how-do-i-0 menu-level-1">
+<ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-716"><a class="menu__link" href="/report-crime/how-obtain-police-report" style="font-weight: bold; color: blue;">Get a police report?</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-722"><a class="menu__link" href="/campus-security/safety-escorts"> Get a safety escort?</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-715"><a class="menu__link" href="/weid">Get an ID card?</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-718"><a class="menu__link" href="/report-crime">Report a crime?</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-717"><a class="menu__link" href="/emergency-management">Learn about emergency procedures?</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-728"><a class="menu__link" href="/crime-prevention-statistics/lost-and-found">Contact Lost &amp; Found?</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-721"><a class="menu__link" href="/weid/fingerprinting">Get fingerprinted?</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-720"><a class="menu__link" href="/jobs/how-apply">Apply for a job?</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-727"><a class="menu__link" href="/crime-prevention-statistics">Find crime statistics?</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-726"><a class="menu__link" href="/weid/notary">Get something notarized?</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-725"><a class="menu__link" href="http://police.ucsf.edu/contact-us/citizen-report-form">Make a Citizens Complaint?</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-765"><a class="menu__link" href="/contact-webform">Contact the Police?</a></li>
+</ul></div>
+</div>
+<div class="panel-pane pane-custom pane-3">
+<p> </p>
+<p><a href="http://www.calea.org/" target="_blank"><img alt="" src="http://police.ucsf.edu/sites/police.ucsf.edu/files/u11/calea_logo.jpg"/></a></p>
+<p><a href="http://www.iaclea.org/" target="_blank"><img alt="" src="http://police.ucsf.edu/sites/police.ucsf.edu/files/u11/accred_logo_hi_res.jpg"/></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="panels-flexible-column panels-flexible-column-1-9 ">
+<div class="inside panels-flexible-column-inside panels-flexible-column-1-9-inside">
+<div class="panels-flexible-region panels-flexible-region-1-bottom_center panels-flexible-region-first panels-flexible-region-last ">
+<div class="inside panels-flexible-region-inside panels-flexible-region-1-bottom_center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-menu-tree pane-menu-what-to-do-if">
+<h2 class="pane-title">What To Do If ...</h2>
+<div class="menu-block-wrapper menu-block-ctools-menu-what-to-do-if-1 menu-name-menu-what-to-do-if parent-mlid-menu-what-to-do-if-0 menu-level-1">
+<ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-704"><a class="menu__link" href="/report-crime" style="font-weight: bold; color: blue;">You are the victim of a crime</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1961"><a class="menu__link" href="http://police.ucsf.edu/system/files/vawa_rights_and_options.pdf" style="color: #ff0000; font-weight: bold;" title="You are a survivor of sexual assault, dating violence, domestic violence, or stalking">You are a survivor of sexual assault, dating violence, domestic violence, or stalking - Rights, Options &amp; Resources</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-700"><a class="menu__link" href="/crime-prevention-statistics/gunman-campus" style="color: #ff0000; font-weight: bold;">There is a gunman on campus (active shooter)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-711"><a class="menu__link" href="/emergency-management/preparing-disasters/natural-disasters-earthquakes">There is an earthquake</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-712"><a class="menu__link" href="/emergency-management/preparing-disasters/terrorism">There is a terrorist attack</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-705"><a class="menu__link" href="/crime-prevention-statistics/bomb-threats-and-suspicious-packages">You receive a suspicious package or bomb threat</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-701"><a class="menu__link" href="/weid/lost-or-stolen-cards">You lost your ID card</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-702"><a class="menu__link" href="/weid/id-card-fingerprint-services-locations">You need an ID card</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-699"><a class="menu__link" href="/weid/fingerprinting">You need to be fingerprinted</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-710"><a class="menu__link" href="/crime-prevention-statistics/lost-and-found">You lost or found a personal item</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-709"><a class="menu__link" href="/weid/notary">You need something notarized</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-706"><a class="menu__link" href="/emergency-management/preparing-disasters/overseas-travel">You are traveling overseas</a></li>
+</ul></div>
+</div>
+<div class="panel-pane pane-custom pane-1">
+<br/>
+<br/>
+<a href="http://warnme.ucsf.edu"><img alt="Warn Me" src="/sites/police.ucsf.edu/files/ucsfpd_warnme.gif" style="width: 156px; height: 140px;"/></a>
+</div>
+<div class="panel-pane pane-custom pane-2">
+<p><br/><a href="http://www.frontdoorsoftware.com/ucsf/" target="_blank"><img alt="" src="http://police.ucsf.edu/sites/police.ucsf.edu/files/u10/laptop_encryption_widget_v3.jpg"/></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="panels-flexible-column panels-flexible-column-1-11 panels-flexible-column-last ">
+<div class="inside panels-flexible-column-inside panels-flexible-column-1-11-inside panels-flexible-column-inside-last">
+<div class="panels-flexible-region panels-flexible-region-1-bottom_right panels-flexible-region-first panels-flexible-region-last ">
+<div class="inside panels-flexible-region-inside panels-flexible-region-1-bottom_right-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-menu-tree pane-menu-links">
+<h2 class="pane-title">Links</h2>
+<div class="menu-block-wrapper menu-block-ctools-menu-links-1 menu-name-menu-links parent-mlid-menu-links-0 menu-level-1">
+<ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-821"><a class="menu__link" href="http://police.ucsf.edu/crime-prevention-statistics/crime-alerts" style="color: #ff0000; font-weight: bold;">Crime Alerts</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-822"><a class="menu__link" href="http://police.ucsf.edu/crime-prevention-statistics/clery-daily-crime-logs" style="font-weight: bold; color: blue;">Daily Crime Logs</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1436"><a class="menu__link" href="http://police.ucsf.edu/node/96" name="Sexual Violence Prevention &amp; Response" style="font-weight: bold; color: red">Sexual Violence Prevention &amp; Response</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-769"><a class="menu__link" href="/crime-prevention-statistics/clery-crime-report">Clery Act - Annual Security Report</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-771"><a class="menu__link" href="http://www.ucsf.edu/maps">Campus Maps</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-774"><a class="menu__link" href="http://it.ucsf.edu/">ID Theft</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-723"><a class="menu__link" href="https://it.ucsf.edu/encrypt">Laptop Security/Encryption Tips</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-804"><a class="menu__link" href="http://www.frontdoorsoftware.com/ucsf/">Laptop Theft Prevention &amp; Recovery Software - Frontdoorsoftware.com</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-772"><a class="menu__link" href="http://www.meganslaw.ca.gov/">Megan's Law</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-773"><a class="menu__link" href="http://www.nationalbikeregistry.com/">National Bike Registry</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-768"><a class="menu__link" href="http://www.crimemapping.com/map/ca/sanfrancisco">San Francisco Crime Map</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-770"><a class="menu__link" href="http://campuslifeservices.ucsf.edu/transportation/">Shuttle Schedule</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-724"><a class="menu__link" href="http://police-statistics.universityofcalifornia.edu/">UC Police Annual Reports</a></li>
+</ul></div>
+</div>
+<div class="panel-pane pane-menu-tree pane-menu-time-place-and-manner-rules">
+<h2 class="pane-title">Time, Place and Manner Rules</h2>
+<div class="menu-block-wrapper menu-block-ctools-menu-time-place-and-manner-rules-1 menu-name-menu-time-place-and-manner-rules parent-mlid-menu-time-place-and-manner-rules-0 menu-level-1">
+<ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-703"><a class="menu__link" href="http://policies.ucsf.edu/policy/050-14">Campus Admin Policies - 050-14 Use of Campus Open Spaces and Special Use Areas</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-713"><a class="menu__link" href="http://studentlife.ucsf.edu/sites/studentlife.ucsf.edu/files/PDF/Special%20Use%20Area%20Guidelines.pdf">UCSF Special Use Procedures</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-766"><a class="menu__link" href="http://studentlife.ucsf.edu/policies/campus-activities">UCSF Policies Applying to Campus Activities, Organizations and Students - Student Life</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-767"><a class="menu__link" href="https://hr.ucsf.edu/hr.php/x/files?F=1&amp;cms_id=2259">UCSF Access Guidelines for Employee Organizations</a></li>
+</ul></div>
+</div>
+<div class="panel-pane pane-menu-tree pane-menu-resources">
+<h2 class="pane-title">Resources</h2>
+<div class="menu-block-wrapper menu-block-ctools-menu-resources-1 menu-name-menu-resources parent-mlid-menu-resources-0 menu-level-1">
+<ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-782"><a class="menu__link" href="/about-us/mission-vision-values/policies-procedures">Universitywide PD Policies and Procedures</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-780"><a class="menu__link" href="/about-us/mission-vision-values/policies-procedures">UCSF PD General Orders</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-781"><a class="menu__link" href="/about-us/mission-vision-values/policies-procedures">UCSF PD Use of Force Policy</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-1956"><a class="menu__link" href="http://police.ucsf.edu/system/files/ucsf_pd_organizational_chart_fy17_page_1_2016.10.10.pdf" title="UCSF Police Department Organizational Chart">UCSF Police Department Organizational Chart</a></li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- /#content -->
+<div id="navigation">
+<div class="region region-navigation">
+<div class="block block-menu-block first last odd" id="block-menu-block-4" role="navigation">
+<div class="block-wrapper">
+<h3 class="block__title block-title">Main Menu</h3>
+<div class="menu-block-wrapper menu-block-4 menu-name-main-menu parent-mlid-0 menu-level-1">
+<ul class="menu"><li class="menu__item is-parent is-leaf first leaf has-children menu-mlid-580"><a class="menu__link" href="/report-crime">Report A Crime</a></li>
+<li class="menu__item is-parent is-leaf leaf has-children menu-mlid-432"><a class="menu__link" href="/weid">WeID</a></li>
+<li class="menu__item is-parent is-leaf leaf has-children menu-mlid-581"><a class="menu__link" href="/campus-security">Campus Security</a></li>
+<li class="menu__item is-parent is-leaf leaf has-children menu-mlid-446"><a class="menu__link" href="/crime-prevention-statistics">Crime Prevention &amp; Statistics</a></li>
+<li class="menu__item is-parent is-leaf leaf has-children menu-mlid-582"><a class="menu__link" href="/emergency-management">Emergency Management</a></li>
+<li class="menu__item is-parent is-leaf leaf has-children menu-mlid-583"><a class="menu__link" href="/jobs">Jobs</a></li>
+<li class="menu__item is-parent is-leaf leaf has-children menu-mlid-429"><a class="menu__link" href="/FAQ">FAQ</a></li>
+<li class="menu__item is-parent is-leaf leaf has-children menu-mlid-584"><a class="menu__link" href="/about-us">About Us</a></li>
+<li class="menu__item is-parent is-leaf last leaf has-children menu-mlid-473"><a class="menu__link" href="/contact-us">Contact Us</a></li>
+</ul></div>
+</div>
+</div><!-- /.block -->
+</div>
+</div><!-- /#navigation -->
+</div><!-- /#main -->
+<footer class="region region-footer" id="footer">
+<div class="block block-menu-block first odd" id="block-menu-block-2" role="navigation">
+<div class="block-wrapper">
+<div class="menu-block-wrapper menu-block-2 menu-name-main-menu parent-mlid-0 menu-level-1">
+<ul class="menu"><li class="menu__item is-expanded first expanded menu-mlid-580"><a class="menu__link" href="/report-crime">Report A Crime</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-585"><a class="menu__link" href="/report-crime/how-obtain-police-report">How to Obtain a Police Report</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-642"><a class="menu__link" href="/report-crime/report-a-crime-online">Report a Crime Online</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-432"><a class="menu__link" href="/weid">WeID</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-587"><a class="menu__link" href="/weid/id-card-fingerprint-services-locations">ID Card &amp; Fingerprint Services Locations</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-592"><a class="menu__link" href="/weid/fingerprinting">Fingerprinting</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-764"><a class="menu__link" href="/weid/make-appointment">Make An Appointment</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-589"><a class="menu__link" href="/weid/gaining-building-access/department-approvals">Department Approvals</a></li>
+<li class="menu__item is-collapsed collapsed menu-mlid-588"><a class="menu__link" href="/weid/gaining-building-access">Gaining Building Access</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-590"><a class="menu__link" href="/weid/lost-or-stolen-cards">Lost or Stolen Cards</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-591"><a class="menu__link" href="/weid/how-return-card">How to Return a Card</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-665"><a class="menu__link" href="/weid/notary">Notary</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-581"><a class="menu__link" href="/campus-security">Campus Security</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-433"><a class="menu__link" href="/campus-security/safety-escorts">Safety Escorts</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-434"><a class="menu__link" href="/campus-security/alarm-management">Alarm Management</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-593"><a class="menu__link" href="/campus-security/building-lockouts">Building Lockouts</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-594"><a class="menu__link" href="/campus-security/security-surveys">Security Surveys</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-595"><a class="menu__link" href="/campus-security/special-event-security">Special Event Security</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-446"><a class="menu__link" href="/crime-prevention-statistics">Crime Prevention &amp; Statistics</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-596"><a class="menu__link" href="/crime-prevention-statistics/personal-safety-and-security">Personal Safety and Security</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1986"><a class="menu__link" href="/crime-prevention-statistics/sexual-violence-prevention-response">Sexual Violence Prevention &amp; Response</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-599"><a class="menu__link" href="/crime-prevention-statistics/clery-daily-crime-logs">Daily Crime Logs</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1256"><a class="menu__link" href="/crime-prevention-statistics/crime-alerts">Crime Alerts</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-672"><a class="menu__link" href="/crime-prevention-statistics/clery-crime-report">Clery Act - Annual Security Report</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-597"><a class="menu__link" href="/crime-prevention-statistics/gunman-campus">Gunman on Campus</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-598"><a class="menu__link" href="/crime-prevention-statistics/bomb-threats-and-suspicious-packages">Bomb Threats and Suspicious Packages</a></li>
+<li class="menu__item is-collapsed collapsed menu-mlid-673"><a class="menu__link" href="/crime-prevention-statistics/lost-and-found">Lost and Found</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-786"><a class="menu__link" href="/crime-prevention-statistics/internal-investigation-statistics">Internal Investigation Statistics</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-582"><a class="menu__link" href="/emergency-management">Emergency Management</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-1976"><a class="menu__link" href="/emergency-management/warnme">WarnMe</a></li>
+<li class="menu__item is-expanded expanded menu-mlid-601"><span class="menu__link nolink">Preparing for Disasters</span><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-602"><a class="menu__link" href="/emergency-management/preparing-disasters/disasteremergency-supplies">Disaster Supplies</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-604"><a class="menu__link" href="/emergency-management/preparing-disasters/natural-disasters-earthquakes">Natural Disasters (Earthquakes)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-603"><a class="menu__link" href="/emergency-management/preparing-disasters/overseas-travel">Overseas Travel</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-675"><a class="menu__link" href="/emergency-management/preparing-disasters/personal-preparedness">Personal Preparedness</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-660"><a class="menu__link" href="/emergency-management/preparing-disasters/terrorism">Terrorism</a></li>
+</ul></li>
+<li class="menu__item is-leaf leaf menu-mlid-606"><a class="menu__link" href="/emergency-management/emergency-action-plan-eap">Emergency Action Plan (EAP)</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-607"><a class="menu__link" href="/emergency-management/mission-continuity">Mission Continuity (UC Ready)</a></li>
+<li class="menu__item is-expanded expanded menu-mlid-608"><a class="menu__link" href="/emergency-management/training-and-education">Training and Education</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-609"><a class="menu__link" href="/emergency-management/training-and-education/volunteer-opportunities">Volunteer Opportunities</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-610"><a class="menu__link" href="/emergency-management/training-and-education/forms-resources">Forms &amp; Resources</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-1981"><a class="menu__link" href="/emergency-management/training-and-education/emergency-preparedness-training-calendar">Emergency Preparedness Training Calendar</a></li>
+</ul></li>
+<li class="menu__item is-expanded last expanded menu-mlid-611"><a class="menu__link" href="/emergency-management/campus-wide-emergency-response-plan-ermp">Campus-wide Emergency Response Plan (ERMP)</a><ul class="menu"><li class="menu__item is-leaf first last leaf menu-mlid-612"><a class="menu__link" href="/emergency-management/campus-wide-emergency-response-plan-ermp/ermp-table-contents">ERMP Contents and Description</a></li>
+</ul></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-583"><a class="menu__link" href="/jobs">Jobs</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-613"><a class="menu__link" href="/jobs/how-apply">How To Apply</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-614"><a class="menu__link" href="/jobs/police-recruitment-process">Police Recruitment Process</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-429"><a class="menu__link" href="/FAQ">FAQ</a><ul class="menu"><li class="menu__item is-leaf first last leaf menu-mlid-659"><a class="menu__link" href="/faq/what-do-if%E2%80%A6">What to do if…</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-584"><a class="menu__link" href="/about-us">About Us</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-615"><a class="menu__link" href="/about-us/office-chief">Office of the Chief</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-616"><a class="menu__link" href="/about-us/field-services-division">Field Services</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-618"><a class="menu__link" href="/about-us/technical-services-division">Technical Services</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-619"><a class="menu__link" href="/about-us/professional-standards-division">Professional Standards</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-617"><a class="menu__link" href="/about-us/homeland-security-emergency-management-division">Homeland Security &amp; Emergency Management</a></li>
+<li class="menu__item is-expanded last expanded menu-mlid-664"><a class="menu__link" href="/about-us/mission-vision-values">Mission, Vision &amp; Values</a><ul class="menu"><li class="menu__item is-leaf first last leaf menu-mlid-783"><a class="menu__link" href="/about-us/mission-vision-values/policies-procedures">Policies &amp; Procedures</a></li>
+</ul></li>
+</ul></li>
+<li class="menu__item is-expanded last expanded menu-mlid-473"><a class="menu__link" href="/contact-us">Contact Us</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-674"><a class="menu__link" href="/contact-webform">Contact Us Form</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-787"><a class="menu__link" href="/contact-us/citizen-report-form">Citizen Report Form</a></li>
+</ul></li>
+</ul></div>
+</div>
+</div><!-- /.block -->
+<div class="block block-block last even" id="block-block-3">
+<div class="block-wrapper">
+<p>© 2013 University of California, San Francisco Police Dept. All Rights Reserved. </p>
+</div>
+</div><!-- /.block -->
+</footer>
+</div><!-- /#page -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"573f5e4f15","applicationID":"24954590","transactionName":"blJQMUQCXksAUkcIWFcYcwZCCl9WTkFSBlJmWlMLVwRVSj5BUgZSZlJKAFUWRF0=","queueTime":0,"applicationTime":177,"atts":"QhVTRwwYTUU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

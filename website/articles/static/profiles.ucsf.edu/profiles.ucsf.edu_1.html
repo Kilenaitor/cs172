@@ -1,0 +1,672 @@
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><title>
+	Find/collaborate with leading health researchers | UCSF Profiles
+</title><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"0e3a89a5d6","applicationID":"2830474","transactionName":"M1wDZUFYCBVYBUNZWAoWIGJjFhUDWBRUWBgAXAdQRlUSSFgVR0g=","queueTime":0,"applicationTime":53,"ttGuid":"EBB90FCDDD90EF8","agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<link href="http://profiles.ucsf.edu/Framework/CSS/profiles.css" media="all" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        if (window.location.hostname.match(/^dev-profiles.ucsf.edu$/i)) {
+            _gaq.push(['_setAccount', 'UA-1142388-9']);
+        } else if (window.location.hostname.match(/^stage-profiles.ucsf.edu$/i)) {
+            _gaq.push(['_setAccount', 'UA-1142388-20']);
+        } else {
+            _gaq.push(['_setAccount', 'UA-1142388-6']);
+        }
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+<link href="http://profiles.ucsf.edu/Search/CSS/search.css" media="all" rel="stylesheet" type="text/css"/><script src="http://profiles.ucsf.edu/Search/JavaScript/comboTreeCheck.js" type="text/javascript"></script><script>var _path = "http://profiles.ucsf.edu";</script><link href="http://profiles.ucsf.edu/Search/CSS/UCSF.css" media="all" rel="stylesheet" type="text/css"/><script src="http://profiles.ucsf.edu/Search/JavaScript/UCSF.js" type="text/javascript"></script><script src="http://profiles.ucsf.edu/Framework/JavaScript/profiles.js" type="text/javascript"></script><link href="http://profiles.ucsf.edu/Framework/CSS/UCSF.css" media="all" rel="stylesheet" type="text/css"/><script src="http://profiles.ucsf.edu/Framework/JavaScript/UCSF.js" type="text/javascript"></script><script type="text/javascript">
+var _rootDomain = "http://profiles.ucsf.edu";
+</script>
+<!--[if IE]>
+					<link rel='stylesheet' type='text/css' href='http://profiles.ucsf.edu/Framework/CSS/profiles-ie.css' />
+				<![endif]-->
+<link href="http://profiles.ucsf.edu/ORNG/CSS/gadgets.css" media="all" rel="stylesheet" type="text/css"/><script id="ctl00_cntlORNGContainer" src="http://profiles.ucsf.edu/shindigucsf/gadgets/js/container:views:rpc:jsonld:orng.js?c=1&amp;container=default" type="text/javascript"></script><script id="ctl00_cntlORNGGadgets" type="text/javascript">
+var my = {};
+my.gadgetSpec = function(appId, label, url, view, chrome_id, opt_params, secureToken) {
+this.appId = appId;
+this.label = label;
+this.url = url;
+this.view = view || 'default';
+this.chrome_id = chrome_id;
+this.opt_params = opt_params;
+this.secureToken = secureToken;
+};
+my.openSocialURL = 'http://profiles.ucsf.edu/shindigucsf';
+my.guid = 'e3f09477-d4d5-4d80-bd4a-e8042f4df2d9';
+my.containerSecurityToken = 'default:5OEtRLGrrKKoT2AL_72OfK3Qq5CNGJnBeA1bhcaaoTooL-qbcQkgCY8sDdEIvD66i2768w';
+my.containerSessionId = '64418578-39e8-431b-af6c-94bf104e2cb9';
+my.debug = 0;
+my.noCache = 0;
+my.noCache = 0;
+my.gadgets = [new my.gadgetSpec(106,'Live Updates','http://profiles.ucsf.edu/apps_ucsf/ProfileActivities.xml','small','gadgets-tools-left-106',{'gadget_class':'ORNGTitleBarGadget'},'default:AQTBuWYsUt2aHvZ-Iea1feJUByogv3yCmesjLAfA4V9KTeYYfCkUDc8LF6I3jbQBjFBoWGmWERH32dYt0sUIAf71zjFLPk4FwFahQpFn66eQvkKI7ingmpEHYc3pNL0XljBV8gEwaSSMRZMues25eTQZlfM6D-MUqbEYl6xtxs2r1-1Y')];
+$(document).ready(function(){
+my.init();
+});
+</script><script src="http://profiles.ucsf.edu/ORNG/JavaScript/orng.js" type="text/javascript"></script></head>
+<body id="ctl00_bodyMaster">
+<form action="default.aspx" enctype="multipart/form-data" id="aspnetForm" method="post" name="aspnetForm">
+<input id="ctl00_toolkitScriptMaster_HiddenField" name="ctl00_toolkitScriptMaster_HiddenField" type="hidden" value=""/>
+<input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUENTM4MQ9kFgJmD2QWAgIDD2QWAmYPZBYGAgIPZBYCAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgFkAgMPZBYEAgEPZBYCAgEPFgIfAAICFgRmD2QWAgIBD2QWAmYPZBYEAgEPFgIeCWlubmVyaHRtbAX8Ajx1bD48bGk+PGEgaHJlZj0naHR0cDovL3Byb2ZpbGVzLnVjc2YuZWR1L3NlYXJjaCc+RmluZCBQZW9wbGU8L2E+PC9saT48bGk+PGEgaHJlZj0naHR0cDovL3Byb2ZpbGVzLnVjc2YuZWR1L3NlYXJjaC9hbGwnPkZpbmQgRXZlcnl0aGluZzwvYT48L2xpPjxsaT48YSBocmVmPSdodHRwOi8vcHJvZmlsZXMudWNzZi5lZHUvYWJvdXQvZGVmYXVsdC5hc3B4Jz5BYm91dCBUaGlzIFNpdGU8L2E+PC9saT48bGk+PGEgaHJlZj0naHR0cDovL3Byb2ZpbGVzLnVjc2YuZWR1L2xvZ2luL2RlZmF1bHQuYXNweD9waW49c2VuZCZtZXRob2Q9bG9naW4mcmVkaXJlY3R0bz1odHRwOi8vcHJvZmlsZXMudWNzZi5lZHUvc2VhcmNoJz5Mb2dpbiB0byBQcm9maWxlczwvYT48L2xpPjwvdWw+ZAIDD2QWAgIBDxYCHwAC/////w9kAgEPZBYCAgEPZBYCZg9kFgJmDxYCHgRUZXh0BUU8ZGl2IGlkPSJnYWRnZXRzLXRvb2xzLWxlZnQtMTA2IiBjbGFzcz0iZ2FkZ2V0cy1nYWRnZXQtcGFyZW50Ij48L2Rpdj5kAgUPFgIeBXN0eWxlBWpiYWNrZ3JvdW5kLWltYWdlOnVybChodHRwOi8vcHJvZmlsZXMudWNzZi5lZHUvRnJhbWV3b3JrL0ltYWdlcy9wYXNzaXZlX2JhY2suZ2lmKTtiYWNrZ3JvdW5kLXJlcGVhdDpyZXBlYXQ7FgICAQ9kFgJmD2QWBGYPZBYCAgEPZBYIAgMPFgIfAgWLATxoMj48YT48aW1nIGNsYXNzPSJwYWdlSWNvbiIgc3JjPSJodHRwOi8vcHJvZmlsZXMudWNzZi5lZHUvRnJhbWV3b3JrL0ltYWdlcy9pY29uX3Byb2ZpbGUuZ2lmIi8+PC9hPjxzcGFuIGl0ZW1wcm9wPSJuYW1lIj5TZWFyY2g8L3NwYW4+PC9oMj5kAgcPFgIfAAIBZAILDxYCHwIFyQI8ZGl2IGNsYXNzPSd0YWJCYWNrJz48ZGl2IGNsYXNzPSdhY3RpdmVUYWInPjxkaXYgY2xhc3M9J3RhYkxlZnQnPjwvZGl2PjxkaXYgY2xhc3M9J3RhYkNlbnRlcic+RmluZCBQZW9wbGU8L2Rpdj48ZGl2IGNsYXNzPSd0YWJSaWdodCc+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0nZGlzYWJsZWRUYWInPjxhIGhyZWY9J2h0dHA6Ly9wcm9maWxlcy51Y3NmLmVkdS9zZWFyY2gvYWxsJz48ZGl2IGNsYXNzPSd0YWJMZWZ0Jz48L2Rpdj48ZGl2IGNsYXNzPSd0YWJDZW50ZXInPkZpbmQgUmVzZWFyY2g8L2Rpdj48ZGl2IGNsYXNzPSd0YWJSaWdodCc+PC9kaXY+PC9hPjwvZGl2PjwvZGl2PmQCDQ9kFgICAQ8WAh8AAgEWAmYPZBYCAgEPZBYCZg9kFgICCQ9kFgRmDw8WBB4ISW1hZ2VVcmwFM2h0dHA6Ly9wcm9maWxlcy51Y3NmLmVkdS9mcmFtZXdvcmsvSW1hZ2VzL2JsYW5rLmdpZh4NT25DbGllbnRDbGljawUqU2hvd01haW5Db250ZW50KCdjdGNGaXJzdCcpOyByZXR1cm4gZmFsc2U7ZGQCAQ9kFgJmD2QWAmYPFQEOZGl2TWFzdGVyX0NUQzFkAgEPZBYCAgEPZBYCAgEPFgIfAAIBFgJmD2QWAgIBD2QWAmYPZBYEZg8WAh8CBQtNb3N0IHZpZXdlZGQCAQ8WAh8CBekIPHVsPjxsaT48YSBocmVmPSJKYXZhU2NyaXB0OnNlYXJjaFRoaXNQaHJhc2UoJ3llYXN0JywnaHR0cDovL3htbG5zLmNvbS9mb2FmLzAuMS9QZXJzb24nLCdwZW9wbGUnKSI+eWVhc3Q8L2E+PC9saT48bGk+PGEgaHJlZj0iSmF2YVNjcmlwdDpzZWFyY2hUaGlzUGhyYXNlKCdSaGV1bWF0b2lkJywnaHR0cDovL3htbG5zLmNvbS9mb2FmLzAuMS9QZXJzb24nLCdwZW9wbGUnKSI+UmhldW1hdG9pZDwvYT48L2xpPjxsaT48YSBocmVmPSJKYXZhU2NyaXB0OnNlYXJjaFRoaXNQaHJhc2UoJ2hvbWVvc3Rhc2lzJywnaHR0cDovL3htbG5zLmNvbS9mb2FmLzAuMS9QZXJzb24nLCdwZW9wbGUnKSI+aG9tZW9zdGFzaXM8L2E+PC9saT48bGk+PGEgaHJlZj0iSmF2YVNjcmlwdDpzZWFyY2hUaGlzUGhyYXNlKCdqb2huJywnaHR0cDovL3htbG5zLmNvbS9mb2FmLzAuMS9QZXJzb24nLCdwZW9wbGUnKSI+am9objwvYT48L2xpPjxsaT48YSBocmVmPSJKYXZhU2NyaXB0OnNlYXJjaFRoaXNQaHJhc2UoJ2pvbmVzJywnaHR0cDovL3htbG5zLmNvbS9mb2FmLzAuMS9QZXJzb24nLCdwZW9wbGUnKSI+am9uZXM8L2E+PC9saT48bGk+PGEgaHJlZj0iSmF2YVNjcmlwdDpzZWFyY2hUaGlzUGhyYXNlKCdrYWlzZXInLCdodHRwOi8veG1sbnMuY29tL2ZvYWYvMC4xL1BlcnNvbicsJ3Blb3BsZScpIj5rYWlzZXI8L2E+PC9saT48bGk+PGEgaHJlZj0iSmF2YVNjcmlwdDpzZWFyY2hUaGlzUGhyYXNlKCdwYXVsJywnaHR0cDovL3htbG5zLmNvbS9mb2FmLzAuMS9QZXJzb24nLCdwZW9wbGUnKSI+cGF1bDwvYT48L2xpPjxsaT48YSBocmVmPSJKYXZhU2NyaXB0OnNlYXJjaFRoaXNQaHJhc2UoJ1N1bGxpdmFuJywnaHR0cDovL3htbG5zLmNvbS9mb2FmLzAuMS9QZXJzb24nLCdwZW9wbGUnKSI+U3VsbGl2YW48L2E+PC9saT48bGk+PGEgaHJlZj0iSmF2YVNjcmlwdDpzZWFyY2hUaGlzUGhyYXNlKCdEQ0lTJywnaHR0cDovL3htbG5zLmNvbS9mb2FmLzAuMS9QZXJzb24nLCdwZW9wbGUnKSI+RENJUzwvYT48L2xpPjxsaT48YSBocmVmPSJKYXZhU2NyaXB0OnNlYXJjaFRoaXNQaHJhc2UoJ2RpYWJldGVzJywnaHR0cDovL3htbG5zLmNvbS9mb2FmLzAuMS9QZXJzb24nLCdwZW9wbGUnKSI+ZGlhYmV0ZXM8L2E+PC9saT48L3VsPmQCBA9kFgICAQ8WAh8AZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFhcFDmNoa0V4YWN0cGhyYXNlBRRpbnN0aXR1dGlvbmFsbGV4Y2VwdAUTZGVwYXJ0bWVudGFsbGV4Y2VwdAUMY2hrTHN0SXRlbSQwBQxjaGtMc3RJdGVtJDEFDGNoa0xzdEl0ZW0kMgUMY2hrTHN0SXRlbSQzBQxjaGtMc3RJdGVtJDQFDGNoa0xzdEl0ZW0kNQUMY2hrTHN0SXRlbSQ2BQxjaGtMc3RJdGVtJDYFEWN0Y0ZpcnN0JGliRXhwYW5kBTRjdGNGaXJzdCRyTWFzdGVyJGN0bDAwJHJEZXRhaWwkY3RsMDAkY2hlY2tEZXRhaWxUZXh0BTRjdGNGaXJzdCRyTWFzdGVyJGN0bDAwJHJEZXRhaWwkY3RsMDEkY2hlY2tEZXRhaWxUZXh0BTRjdGNGaXJzdCRyTWFzdGVyJGN0bDAwJHJEZXRhaWwkY3RsMDIkY2hlY2tEZXRhaWxUZXh0BTRjdGNGaXJzdCRyTWFzdGVyJGN0bDAwJHJEZXRhaWwkY3RsMDMkY2hlY2tEZXRhaWxUZXh0BTRjdGNGaXJzdCRyTWFzdGVyJGN0bDAwJHJEZXRhaWwkY3RsMDQkY2hlY2tEZXRhaWxUZXh0BTRjdGNGaXJzdCRyTWFzdGVyJGN0bDAwJHJEZXRhaWwkY3RsMDUkY2hlY2tEZXRhaWxUZXh0BTRjdGNGaXJzdCRyTWFzdGVyJGN0bDAwJHJEZXRhaWwkY3RsMDYkY2hlY2tEZXRhaWxUZXh0BTRjdGNGaXJzdCRyTWFzdGVyJGN0bDAwJHJEZXRhaWwkY3RsMDckY2hlY2tEZXRhaWxUZXh0BTRjdGNGaXJzdCRyTWFzdGVyJGN0bDAwJHJEZXRhaWwkY3RsMDgkY2hlY2tEZXRhaWxUZXh0BTRjdGNGaXJzdCRyTWFzdGVyJGN0bDAwJHJEZXRhaWwkY3RsMDkkY2hlY2tEZXRhaWxUZXh0BTRjdGNGaXJzdCRyTWFzdGVyJGN0bDAwJHJEZXRhaWwkY3RsMTAkY2hlY2tEZXRhaWxUZXh0to11+Ol9AkqkY1iqW47hCT0i8XQ="/>
+<script src="/ScriptResource.axd?d=SRH-ni9ULtxcZvsG17dXJjMIAbgElR1-fl8kYra43CdZrWkknVq1M_WPp8IUUMsKriaDcrh5XyUQahR_T--m9q0q18WbT0R8tZkzPSB0Jo29D5QsIrCQzyRVH7thfYNRbgxrJQ2&amp;t=705c9838" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+<input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="59A49A67"/>
+<input id="__EVENTVALIDATION" name="__EVENTVALIDATION" type="hidden" value="/wEWNgKx5+rxBQLmgbSQBwKwyO2CBQKpmbjOCQKbzu7HAgKbzqYkAufV88sMAuPuzY0IAu7DpZICAsTVrZ4HAsTVwfkPAsTV1dQIAsTV6a8BAsTV3bEEAsTV8YwNAsTVhegFAs3f5LAPAsmborIKApOg9swIAsrH6cgMAqDUiQkC57/BvgoC3KakkwYCwY3QlAcCgqnznwoCwb3y3Q0Cx8y6hwECzNbbjwgC47TxYwLJ1si2CwLnv43xAwLcpsjZCwKn8/zjBgKdkq2QAgKS+Y/lDQKIzuDwAQK4+97xAQL3j96vBQKi6NOODQKCqYeUCwLBva6+AgLAvtGhDwKdkrn1BgKS+fPdDgKCj5aTAwKD+LXUDAKAvOTwCQKMpdSkBgKe4efJBwLl0rK7AQKX1Ob1CQKYytXkCALX3tTYDgLSwZWBDvoTzow9mL3hSHyRp4edbQINkZg3"/>
+<div id="divStatus" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 999999; display:none;">
+<div class="progress">
+<span><img alt="Loading..." height="213" src="http://profiles.ucsf.edu/Edit/Images/loader.gif" width="400"/></span>
+</div>
+</div>
+<script language="javascript" type="text/javascript">
+
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+
+        function EndRequestHandler(sender, args) {
+            if (args.get_error() != undefined) {
+                args.set_errorHandled(true);
+            }
+        }
+
+        function ShowStatus() {
+            document.getElementById("divStatus").style.display = "block";
+        }
+
+
+
+    </script>
+<div id="page-container">
+<div id="header-ucsf">
+<div id="ucsfnav">
+<ul>
+<li class="first">
+<a href="http://www.ucsf.edu/" target="_blank" title="University of California San Francisco">University of California San Francisco</a>
+</li>
+<li>
+<a href="http://www.ucsf.edu/about" target="_blank" title="About UCSF">About UCSF</a>
+</li>
+<li>
+<a href="http://www.ucsf.edu/search" target="_blank" title="Search UCSF">Search UCSF</a>
+</li>
+<li>
+<a href="http://www.ucsfhealth.org/" target="_blank" title="UCSF Medical Center">UCSF Medical Center</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="institutionHeader">
+<div id="site-logo">
+<h1><a href="http://profiles.ucsf.edu/"><img alt="UCSF Profiles" src="http://profiles.ucsf.edu/Framework/images/ucsfProfilesLogo.png"/>
+<div id="tagline">search, discover, network</div></a></h1>
+</div>
+<div id="powered-by-block">
+<a href="http://ctsi.ucsf.edu/" id="powered-by-ctsi" target="_blank"><img alt="CTSI icon" src="http://profiles.ucsf.edu/Framework/images/ctsi16.png" style="margin-right:4px"/>Powered by CTSI</a>
+</div>
+<div id="new-features">
+<a href="http://profiles.ucsf.edu/about/NewFeatures.aspx">New Features: Learn more  ❯</a>
+</div>
+</div>
+<div id="suckerfish-container">
+<div id="suckerfishmenu">
+<div class="content">
+<ul class="menu">
+<li class="item-home"><a href="../" id="ctl00_navResearch">Search</a></li>
+<li id="about"><a href="http://profiles.ucsf.edu/about/AboutProfiles.aspx">About</a></li>
+<li id="data"><a href="http://profiles.ucsf.edu/about/ForDevelopers.aspx">Use our Data</a></li>
+<li id="contact"><a href="http://profiles.ucsf.edu/about/Help.aspx">Help / Contact Us</a></li> </ul>
+</div>
+</div>
+</div>
+<div class="profiles">
+<div id="active-nav"><span id="signin">
+<a href="http://profiles.ucsf.edu/login/default.aspx?method=login&amp;edit=true" id="signinlink">Sign in</a>
+               to see <span id="stats">private stats</span> on your profile page — or add photo, interests, videos, mentoring, etc.</span>
+<ul id="editmenu"></ul>
+</div>
+<center>
+<div class="profilesHeader" id="ctl00_divProfilesHeader">
+<div class="panelHeader">
+</div>
+</div>
+<div class="profilesPage" id="ctl00_divProfilesPage">
+<table>
+<tr>
+<td valign="top">
+<table>
+<tbody>
+<tr>
+<td class="profilesPageColumnLeft">
+<div class="profilesContentActive">
+<div class="panelActive">
+<div class="activeContainer" id="defaultmenu">
+<div class="activeContainerTop"></div>
+<div class="activeContainerCenter">
+<div class="activeSection">
+<div class="activeSectionHead">Menu</div>
+<div class="activeSectionBody">
+<div id="ctl00_ContentActive_rptActive_ctl00_ctl00_panelMenu"><ul><li><a href="http://profiles.ucsf.edu/search">Find People</a></li><li><a href="http://profiles.ucsf.edu/search/all">Find Everything</a></li><li><a href="http://profiles.ucsf.edu/about/default.aspx">About This Site</a></li><li><a href="http://profiles.ucsf.edu/login/default.aspx?pin=send&amp;method=login&amp;redirectto=http://profiles.ucsf.edu/search">Login to Profiles</a></li></ul></div>
+</div>
+</div>
+</div>
+<div class="activeContainerBottom"></div>
+</div>
+<div class="gadgets-gadget-parent" id="gadgets-tools-left-106"></div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top">
+<table>
+<tr>
+<td class="profilesPageColumnRight">
+<div class="profilesPageColumnRightTop">
+<div class="profilesPageColumnRightTopLine" id="ctl00_divProfilesPageColumnRightTopLine">
+</div>
+</div>
+<div class="profilesPageColumnRightCenter" id="ctl00_divPageColumnRightCenter" style="background-image:url(http://profiles.ucsf.edu/Framework/Images/passive_back.gif);background-repeat:repeat;">
+<table id="ctl00_tblTableBody">
+<tr id="ctl00_trbody">
+<td class="profilesMainColumnLeft" id="ctl00_divProfilesMainColumnLeft">
+<div class="profilesContentMain" id="ctl00_divProfilesContentMain">
+<div class="backLink">
+</div>
+<div class="pageTitle">
+<h2><a><img class="pageIcon" src="http://profiles.ucsf.edu/Framework/Images/icon_profile.gif"/></a><span itemprop="name">Search</span></h2></div>
+<div class="pageSubTitle">
+</div>
+<div class="panelPage">
+</div>
+<div class="pageDescription">
+</div>
+<div class="pageTabs">
+<div class="tabBack"><div class="activeTab"><div class="tabLeft"></div><div class="tabCenter">Find People</div><div class="tabRight"></div></div><div class="disabledTab"><a href="http://profiles.ucsf.edu/search/all"><div class="tabLeft"></div><div class="tabCenter">Find Research</div><div class="tabRight"></div></a></div></div>
+</div>
+<div class="panelMain">
+<style type="text/css">
+.profiles .profilesContentMain { width: 584px; }
+.profiles .profilesContentPassive { margin-right: 20px; }
+.profiles .profilesContentMain .pageTitle h2 { display: none; }
+</style>
+<script type="text/javascript">
+
+
+    function runScript(e) {
+        if (e.keyCode == 13) {
+            search();            
+        }
+        return false;
+    }
+
+    function search() {
+
+        document.getElementById("hdnSearch").value = "true"
+        document.forms[0].submit();
+    }
+
+    function showdiv() {
+        var divChkList = $('[id$=divChkList]').attr('id');
+        var chkListItem = $('[id$=chkLstItem_0]').attr('id');
+        document.getElementById(divChkList).style.display = "block";
+
+        document.getElementById(chkListItem).focus()
+    }
+
+    function showdivonClick() {
+        var objDLL = $('[id$=divChkList]').attr('id');// document.getElementById("divChkList");
+
+        if (document.getElementById(objDLL).style.display  == "block")
+            document.getElementById(objDLL).style.display = "none";
+        else
+            document.getElementById(objDLL).style.display = "block";
+    }
+
+    function getSelectedItem(lstValue, lstNo, lstID, ctrlType) {
+
+
+        var noItemChecked = 0;
+        var ddlChkList =  document.getElementById($('[id$=ddlChkList]').attr('id'));
+        var selectedItems = "";
+        var selectedValues = "";
+        var arr = document.getElementById($('[id$=chkLstItem]').attr('id')).getElementsByTagName('input');
+        var arrlbl = document.getElementById($('[id$=chkLstItem]').attr('id')).getElementsByTagName('label');
+        var objLstId = document.getElementById($('[id$=hidList]').attr('id')); //document.getElementById('hidList');
+
+        for (i = 0; i < arr.length; i++) {
+            checkbox = arr[i];
+            if (i == lstNo) {
+                if (ctrlType == 'anchor') {
+                    if (!checkbox.checked) {
+                        checkbox.checked = true;
+                    }
+                    else {
+                        checkbox.checked = false;
+                    }
+                }
+            }
+
+            if (checkbox.checked) {                
+
+                var buffer;
+                if (arrlbl[i].innerText == undefined)
+                    buffer = arrlbl[i].textContent;
+                else
+                    buffer = arrlbl[i].innerText;
+
+                if (selectedItems == "") {
+
+                    selectedItems = buffer;
+                }
+                else {
+                    selectedItems = selectedItems + "," + buffer;
+                }
+                noItemChecked = noItemChecked + 1;
+            }
+        }
+
+        ddlChkList.title = selectedItems;
+
+        if (noItemChecked != "0")
+            ddlChkList.options[ddlChkList.selectedIndex].text = selectedItems;
+        else
+            ddlChkList.options[ddlChkList.selectedIndex].text = "";
+
+		var hidList =  document.getElementById($('[id$=hidList]').attr('id'));
+        hidList.value = ddlChkList.options[ddlChkList.selectedIndex].text;
+
+
+    }
+
+    document.onclick = check;
+    function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
+        var obj = document.getElementById($('[id$=divChkList]').attr('id'));
+        var obj1 = document.getElementById($('[id$=ddlChkList]').attr('id'));
+        if (target.id != "alst" && !target.id.match($('[id$=chkLstItem]').attr('id'))) {
+            if (!(target == obj || target == obj1)) {
+                //obj.style.display = 'none'
+            }
+            else if (target == obj || target == obj1) {
+                if (obj.style.display == 'block') {
+                    obj.style.display = 'block';
+                }
+                else {
+                    obj.style.display = 'none';
+                    document.getElementById($('[id$=ddlChkList]').attr('id')).blur();
+                }
+            }
+        }
+    }
+</script>
+<input id="hdnSearch" name="hdnSearch" type="hidden" value="hdnSearch"/>
+<div class="content_container">
+<div class="tabContainer" style="margin-top: 0px;">
+<div class="searchForm nonavbar">
+<table onkeypress="JavaScript:runScript(event);" width="100%">
+<tbody align="left">
+<tr>
+<td colspan="3">
+<div class="header">
+                                Find People by Research Topic or Name</div>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<div class="searchSection" id="divSearchSection">
+<table class="searchForm" width="100%">
+<tr>
+<th style="width: 140px">
+                                            Research Topics
+                                        </th>
+<td class="fieldOptions" colspan="2">
+<input class="inputText" id="txtSearchFor" name="txtSearchFor" onkeypress="JavaScript:runScript(event);" type="text"/>
+<span class="unused"><input id="chkExactphrase" name="chkExactphrase" type="checkbox"/></span>
+</td>
+<!--  NOTE: checkboxes are hidden in css
+                                            Search for exact phrase
+                                    </tr>
+                                    <tr>
+                                        <tr>
+                                            <th>
+                                            </th>
+-->
+<td colspan="2" style="text-decoration: none;">
+<div style="float: left; display: inline">
+<a href="JavaScript:search();">
+<img alt="Search" src="http://profiles.ucsf.edu/Search/Images/search.jpg" style="border: 0;"/>
+</a>
+</div>
+</td>
+</tr>
+</table></div></td></tr>
+</tbody></table>
+</div>
+</div></div></div></div></td>
+</tr>
+</table>
+<div id="andor"><span>and/or</span></div>
+<table id="searchOptions" width="100%">
+<!--
+                <tr>
+                    <td colspan='3'>
+                        <div style="font-size: 18px; color: #b23f45; font-weight: bold; margin-bottom: 3px;">
+                            Find people by name/organization</div>
+                    </td>
+                </tr>
+-->
+<tr>
+<td colspan="3">
+<div class="searchSection" id="div1">
+<table class="searchForm" width="100%">
+<tr>
+<th>
+                                        Last Name
+                                    </th>
+<td colspan="2">
+<input class="inputText" id="txtLname" name="txtLname" onkeypress="JavaScript:runScript(event);" type="text"/>
+</td>
+</tr>
+<tr>
+<th>
+                                        First Name
+                                    </th>
+<td colspan="2">
+<input class="inputText" id="txtFname" name="txtFname" onkeypress="JavaScript:runScript(event);" type="text"/>
+</td>
+</tr>
+<tr id="trInstitution">
+<th>
+                                        School
+                                    </th>
+<td colspan="2">
+<select id="institution" name="institution" style="width:249px" title="institution"><option value=""></option><option value="http://profiles.ucsf.edu/profile/365064">UCSF Chancellor/EVC/FAS</option><option value="http://profiles.ucsf.edu/profile/365065">UCSF School of Dentistry</option><option value="http://profiles.ucsf.edu/profile/365066">UCSF School of Medicine</option><option value="http://profiles.ucsf.edu/profile/365067">UCSF School of Nursing</option><option value="http://profiles.ucsf.edu/profile/365068">UCSF School of Pharmacy</option></select>
+<span class="unused"><input id="institutionallexcept" name="institutionallexcept" type="checkbox"/></span>
+<!--
+                                        All <b>except</b> the one selected
+-->
+</td>
+</tr>
+<tr id="trDepartment">
+<th>
+                                        Department
+                                    </th>
+<td colspan="2">
+<select id="department" name="department" style="width:249px" title="department"><option value=""></option><option value="http://profiles.ucsf.edu/profile/80764481">Adult Partial Hospitalization</option><option value="http://profiles.ucsf.edu/profile/78063358">Adult Psy Inpatient Service</option><option value="http://profiles.ucsf.edu/profile/364960">AIDS Research Institute</option><option value="http://profiles.ucsf.edu/profile/365009">Anatomy</option><option value="http://profiles.ucsf.edu/profile/41510183">Anesthesia</option><option value="http://profiles.ucsf.edu/profile/41510184">Anthro, History, Social Med</option><option value="http://profiles.ucsf.edu/profile/41510185">AVC Ethics &amp; Compliance</option><option value="http://profiles.ucsf.edu/profile/41510186">Biochemistry and Biophysics</option><option value="http://profiles.ucsf.edu/profile/41510187">Bioengineering</option><option value="http://profiles.ucsf.edu/profile/73432897">Budget Resource Management and Risk</option><option value="http://profiles.ucsf.edu/profile/73432898">Campus Life Services -  Associate Vice Chancellor </option><option value="http://profiles.ucsf.edu/profile/364971">Campus Planning</option><option value="http://profiles.ucsf.edu/profile/12110937">Capital Programs</option><option value="http://profiles.ucsf.edu/profile/41510188">Cardiovascular Research Inst</option><option value="http://profiles.ucsf.edu/profile/41510189">Cell and Tissue Biology</option><option value="http://profiles.ucsf.edu/profile/73432899">Cellular Molecular Pharmacology</option><option value="http://profiles.ucsf.edu/profile/74274387">Chancellor's Immediate Off</option><option value="http://profiles.ucsf.edu/profile/80764477">Child Psychiatry Clinic</option><option value="http://profiles.ucsf.edu/profile/364979">Clinical Pharmacy</option><option value="http://profiles.ucsf.edu/profile/41510192">Community Health Systems</option><option value="http://profiles.ucsf.edu/profile/76214153">Computational Health Scienc</option><option value="http://profiles.ucsf.edu/profile/73432900">Controllers Office</option><option value="http://profiles.ucsf.edu/profile/80764491">Craniofacial Anomalies</option><option value="http://profiles.ucsf.edu/profile/41510195">Ctr for Health &amp; Community</option><option value="http://profiles.ucsf.edu/profile/41510197">CTSI</option><option value="http://profiles.ucsf.edu/profile/41510198">Dean's Office</option><option value="http://profiles.ucsf.edu/profile/364985">Dermatology</option><option value="http://profiles.ucsf.edu/profile/364988">Diabetes Center</option><option value="http://profiles.ucsf.edu/profile/364964">Emergency Medicine</option><option value="http://profiles.ucsf.edu/profile/364989">Epidemiology &amp; Biostatistics</option><option value="http://profiles.ucsf.edu/profile/73432901">Executive Vice Chancellor &amp; Provost</option><option value="http://profiles.ucsf.edu/profile/79839706">Faculty Practice Admin</option><option value="http://profiles.ucsf.edu/profile/41510200">Family Community Medicine</option><option value="http://profiles.ucsf.edu/profile/364992">Family Health Care Nursing</option><option value="http://profiles.ucsf.edu/profile/51798948">Family Medicine</option><option value="http://profiles.ucsf.edu/profile/73432902">Gladstone Institutes</option><option value="http://profiles.ucsf.edu/profile/41510204">Global Health Sciences</option><option value="http://profiles.ucsf.edu/profile/364993">Graduate Division</option><option value="http://profiles.ucsf.edu/profile/41510206">HDF Comprehensive Cancer Ctr</option><option value="http://profiles.ucsf.edu/profile/106936231">Healthforce Center at UCSF</option><option value="http://profiles.ucsf.edu/profile/364996">Hooper Foundation</option><option value="http://profiles.ucsf.edu/profile/70612040">Howard Hughes Medical Instit</option><option value="http://profiles.ucsf.edu/profile/41510208">Human Genetics</option><option value="http://profiles.ucsf.edu/profile/73432903">Human Resources</option><option value="http://profiles.ucsf.edu/profile/73432904">Info Tech Services</option><option value="http://profiles.ucsf.edu/profile/41510211">Institute for Health Aging</option><option value="http://profiles.ucsf.edu/profile/364999">Institute for Health Policy Studies</option><option value="http://profiles.ucsf.edu/profile/73432905">Institute for Neurodegenerative Diseases</option><option value="http://profiles.ucsf.edu/profile/365003">Laboratory Medicine</option><option value="http://profiles.ucsf.edu/profile/365004">Library</option><option value="http://profiles.ucsf.edu/profile/73432906">Med Ctr  UCOP Budget Reporting</option><option value="http://profiles.ucsf.edu/profile/365017">Medicine</option><option value="http://profiles.ucsf.edu/profile/365018">Microbiology and Immunology</option><option value="http://profiles.ucsf.edu/profile/365019">Neurological Surgery</option><option value="http://profiles.ucsf.edu/profile/365021">Neurology</option><option value="http://profiles.ucsf.edu/profile/80764485">Neurosurgery</option><option value="http://profiles.ucsf.edu/profile/73432907">Ob/Gyn, Reproductive Sciences</option><option value="http://profiles.ucsf.edu/profile/365024">Office of Legal Affairs</option><option value="http://profiles.ucsf.edu/profile/365027">Ophthalmology</option><option value="http://profiles.ucsf.edu/profile/365028">Oral &amp; Maxillofacial Surgery</option><option value="http://profiles.ucsf.edu/profile/364965">Orofacial Sciences</option><option value="http://profiles.ucsf.edu/profile/365029">Orthopaedic Surgery</option><option value="http://profiles.ucsf.edu/profile/41510218">Osher Center</option><option value="http://profiles.ucsf.edu/profile/365030">Other</option><option value="http://profiles.ucsf.edu/profile/365033">Otolaryngology</option><option value="http://profiles.ucsf.edu/profile/365034">Pathology</option><option value="http://profiles.ucsf.edu/profile/365035">Pediatrics</option><option value="http://profiles.ucsf.edu/profile/365036">Pharmaceutical Chemistry</option><option value="http://profiles.ucsf.edu/profile/41510219">Physical Therapy</option><option value="http://profiles.ucsf.edu/profile/365038">Physiological Nursing</option><option value="http://profiles.ucsf.edu/profile/365039">Physiology</option><option value="http://profiles.ucsf.edu/profile/41510220">Predoctoral Clinics</option><option value="http://profiles.ucsf.edu/profile/41510221">Preventive &amp; Restor Dent Sci</option><option value="http://profiles.ucsf.edu/profile/365041">Proctor Foundation</option><option value="http://profiles.ucsf.edu/profile/365043">Psychiatry</option><option value="http://profiles.ucsf.edu/profile/73432908">QB3 Quantitative Biosciences</option><option value="http://profiles.ucsf.edu/profile/365045">Radiation Oncology</option><option value="http://profiles.ucsf.edu/profile/365046">Radiology</option><option value="http://profiles.ucsf.edu/profile/365047">Real Estate Services</option><option value="http://profiles.ucsf.edu/profile/41510223">Regeneration Medicine</option><option value="http://profiles.ucsf.edu/profile/41510224">Social Behavioral Sciences</option><option value="http://profiles.ucsf.edu/profile/365057">Student Academic Affairs</option><option value="http://profiles.ucsf.edu/profile/73432909">Supply Chain Management</option><option value="http://profiles.ucsf.edu/profile/365058">Surgery</option><option value="http://profiles.ucsf.edu/profile/365062">Urology</option><option value="http://profiles.ucsf.edu/profile/41510226">VC Diversity&amp;Outreach;</option><option value="http://profiles.ucsf.edu/profile/41510227">Vice Chanc Research</option><option value="http://profiles.ucsf.edu/profile/73432910">Vice Provost-Academic Affairs</option></select>
+<span class="unused"><input id="departmentallexcept" name="departmentallexcept" type="checkbox"/></span>
+<!--
+                                        All <b>except</b> the one selected
+-->
+</td>
+</tr>
+<!--
+-->
+<tr id="trFacultyType">
+<th>
+                                        Researcher Type
+                                    </th>
+<td colspan="2" style="padding:0">
+<table cellpadding="0" style="padding:0">
+<tr>
+<td>
+<select id="ddlChkList" name="ddlChkList" onclick="showdivonClick()" onkeypress="showdivonClick()" title="faculty type">
+<option value=""></option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<div id="divChkList" style="border:black 1px solid;padding-top:25px;width:249px;height:180px;position:absolute;background-color:#ffffff;display:none;overflow:AUTO;fload:left;"><span id="chkLstItem" onfocus="if ( event.keyCode == 13) showdiv()" onmouseover="showdiv()"><input id="chkLstItem_0" name="chkLstItem$0" onclick="getSelectedItem('Professor','0','http://profiles.ucsf.edu/profile/39724','listItem');" type="checkbox"/><label for="chkLstItem_0"><a href="javascript:void(0)" id="alst" onclick="getSelectedItem(' Professor','0','http://profiles.ucsf.edu/profile/39724','anchor');" style="text-decoration:none;color:Black; ">Professor</a></label><br/><input id="chkLstItem_1" name="chkLstItem$1" onclick="getSelectedItem('Associate Professor','1','http://profiles.ucsf.edu/profile/39725','listItem');" type="checkbox"/><label for="chkLstItem_1"><a href="javascript:void(0)" id="alst" onclick="getSelectedItem(' Associate Professor','1','http://profiles.ucsf.edu/profile/39725','anchor');" style="text-decoration:none;color:Black; ">Associate Professor</a></label><br/><input id="chkLstItem_2" name="chkLstItem$2" onclick="getSelectedItem('Assistant Professor','2','http://profiles.ucsf.edu/profile/39727','listItem');" type="checkbox"/><label for="chkLstItem_2"><a href="javascript:void(0)" id="alst" onclick="getSelectedItem(' Assistant Professor','2','http://profiles.ucsf.edu/profile/39727','anchor');" style="text-decoration:none;color:Black; ">Assistant Professor</a></label><br/><input id="chkLstItem_3" name="chkLstItem$3" onclick="getSelectedItem('Instructor','3','http://profiles.ucsf.edu/profile/39723','listItem');" type="checkbox"/><label for="chkLstItem_3"><a href="javascript:void(0)" id="alst" onclick="getSelectedItem(' Instructor','3','http://profiles.ucsf.edu/profile/39723','anchor');" style="text-decoration:none;color:Black; ">Instructor</a></label><br/><input id="chkLstItem_4" name="chkLstItem$4" onclick="getSelectedItem('Other Academic/Other','4','http://profiles.ucsf.edu/profile/39726','listItem');" type="checkbox"/><label for="chkLstItem_4"><a href="javascript:void(0)" id="alst" onclick="getSelectedItem(' Other Academic/Other','4','http://profiles.ucsf.edu/profile/39726','anchor');" style="text-decoration:none;color:Black; ">Other Academic/Other</a></label><br/><input id="chkLstItem_5" name="chkLstItem$5" onclick="getSelectedItem('Postdoctoral Scholar','5','http://profiles.ucsf.edu/profile/39728','listItem');" type="checkbox"/><label for="chkLstItem_5"><a href="javascript:void(0)" id="alst" onclick="getSelectedItem(' Postdoctoral Scholar','5','http://profiles.ucsf.edu/profile/39728','anchor');" style="text-decoration:none;color:Black; ">Postdoctoral Scholar</a></label><br/><input id="chkLstItem_6" name="chkLstItem$6" onclick="getSelectedItem('Resident Physician','6','http://profiles.ucsf.edu/profile/39729','listItem');" type="checkbox"/><label for="chkLstItem_6"><a href="javascript:void(0)" id="alst" onclick="getSelectedItem(' Resident Physician','6','http://profiles.ucsf.edu/profile/39729','anchor');" style="text-decoration:none;color:Black; ">Resident Physician</a></label></span></div>
+</td>
+</tr>
+</table>
+<span id="lblSelectedItem"></span>
+<input id="hidList" name="hidList" type="hidden"/>
+<input id="hidURIs" name="hidURIs" type="hidden"/>
+</td>
+</tr>
+<tr>
+<th>
+                                        More Options
+                                    </th>
+<td colspan="2">
+<input id="hiddenToggle" type="hidden" value="off"/>
+<select id="selOtherOptions" style="width: 249px; height: 20px">
+<option value=""></option>
+</select>
+<table>
+<tr>
+<td>
+<div id="divOtherOptions" style="position: absolute; margin-top: -2px; margin-left: -2px;
+                                                        width: 255px; border-right: solid 1px #000000; border-bottom: solid 1px #000000;
+                                                        border-left: solid 1px gray; padding-left: 3px; height: 150; width: 243px; overflow: auto;
+                                                        background-color: #ffffff;">
+<br/>
+<div class="comboTreeCheck" id="divCTC_ctcFirst" onblur="outCTC(this);" onfocus="overCTC(this)" onmouseout="outCTC(this);" onmouseover="overCTC(this)" tabindex="0">
+<div class="comboTreeCheckBox">
+<input alt=" " border="0" id="ctcFirst_ibExpand" name="ctcFirst$ibExpand" onclick="ShowMainContent('ctcFirst'); return false;" src="http://profiles.ucsf.edu/framework/Images/blank.gif" type="image"/>
+</div>
+<div id="divMasterContent">
+<asp:repeater id="rMasters">
+<itemtemplate>
+</itemtemplate>
+</asp:repeater>
+<input id="hdnSelectedText" name="hdnSelectedText" type="hidden"/>
+<div id="divMaster_CTC1">
+<img alt="click to expand" id="ctcFirst_rMaster_ctl00_imgExpand" onclick="ShowDetailContent('ctcFirst', '1'); return false;" src="http://profiles.ucsf.edu/framework/images/collapse.gif"/>
+<span id="ctcFirst_rMaster_ctl00_lMasterText">Add-ons</span>
+<input id="ctcFirst_rMaster_ctl00_hdnIsExpand" name="ctcFirst$rMaster$ctl00$hdnIsExpand" type="hidden" value="0"/>
+<input id="ctcFirst_rMaster_ctl00_hdnMasterID" name="ctcFirst$rMaster$ctl00$hdnMasterID" type="hidden" value="1"/>
+<div id="ctcFirst_rMaster_ctl00_divDetail" style="display:none;">
+<div id="divDetailCheck">
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl00_hdnDetailID" name="ctcFirst$rMaster$ctl00$rDetail$ctl00$hdnDetailID" type="hidden" value="1"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl00_hdnDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl00$hdnDetailText" type="hidden" value="Featured Presentations"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl00_checkDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl00$checkDetailText" onclick="ClickCheckBox('ctcFirst', this);" type="checkbox"/><label for="ctcFirst_rMaster_ctl00_rDetail_ctl00_checkDetailText">Featured Presentations</label>
+</div>
+<div id="divDetailCheck">
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl01_hdnDetailID" name="ctcFirst$rMaster$ctl00$rDetail$ctl01$hdnDetailID" type="hidden" value="2"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl01_hdnDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl01$hdnDetailText" type="hidden" value="Websites"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl01_checkDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl01$checkDetailText" onclick="ClickCheckBox('ctcFirst', this);" type="checkbox"/><label for="ctcFirst_rMaster_ctl00_rDetail_ctl01_checkDetailText">Websites</label>
+</div>
+<div id="divDetailCheck">
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl02_hdnDetailID" name="ctcFirst$rMaster$ctl00$rDetail$ctl02$hdnDetailID" type="hidden" value="3"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl02_hdnDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl02$hdnDetailText" type="hidden" value="Awarded Grants"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl02_checkDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl02$checkDetailText" onclick="ClickCheckBox('ctcFirst', this);" type="checkbox"/><label for="ctcFirst_rMaster_ctl00_rDetail_ctl02_checkDetailText">Awarded Grants</label>
+</div>
+<div id="divDetailCheck">
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl03_hdnDetailID" name="ctcFirst$rMaster$ctl00$rDetail$ctl03$hdnDetailID" type="hidden" value="4"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl03_hdnDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl03$hdnDetailText" type="hidden" value="Twitter"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl03_checkDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl03$checkDetailText" onclick="ClickCheckBox('ctcFirst', this);" type="checkbox"/><label for="ctcFirst_rMaster_ctl00_rDetail_ctl03_checkDetailText">Twitter</label>
+</div>
+<div id="divDetailCheck">
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl04_hdnDetailID" name="ctcFirst$rMaster$ctl00$rDetail$ctl04$hdnDetailID" type="hidden" value="5"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl04_hdnDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl04$hdnDetailText" type="hidden" value="Featured Videos"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl04_checkDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl04$checkDetailText" onclick="ClickCheckBox('ctcFirst', this);" type="checkbox"/><label for="ctcFirst_rMaster_ctl00_rDetail_ctl04_checkDetailText">Featured Videos</label>
+</div>
+<div id="divDetailCheck">
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl05_hdnDetailID" name="ctcFirst$rMaster$ctl00$rDetail$ctl05$hdnDetailID" type="hidden" value="6"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl05_hdnDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl05$hdnDetailText" type="hidden" value="In The News"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl05_checkDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl05$checkDetailText" onclick="ClickCheckBox('ctcFirst', this);" type="checkbox"/><label for="ctcFirst_rMaster_ctl00_rDetail_ctl05_checkDetailText">In The News</label>
+</div>
+<div id="divDetailCheck">
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl06_hdnDetailID" name="ctcFirst$rMaster$ctl00$rDetail$ctl06$hdnDetailID" type="hidden" value="7"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl06_hdnDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl06$hdnDetailText" type="hidden" value="More Info"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl06_checkDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl06$checkDetailText" onclick="ClickCheckBox('ctcFirst', this);" type="checkbox"/><label for="ctcFirst_rMaster_ctl00_rDetail_ctl06_checkDetailText">More Info</label>
+</div>
+<div id="divDetailCheck">
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl07_hdnDetailID" name="ctcFirst$rMaster$ctl00$rDetail$ctl07$hdnDetailID" type="hidden" value="8"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl07_hdnDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl07$hdnDetailText" type="hidden" value="Featured Publications"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl07_checkDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl07$checkDetailText" onclick="ClickCheckBox('ctcFirst', this);" type="checkbox"/><label for="ctcFirst_rMaster_ctl00_rDetail_ctl07_checkDetailText">Featured Publications</label>
+</div>
+<div id="divDetailCheck">
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl08_hdnDetailID" name="ctcFirst$rMaster$ctl00$rDetail$ctl08$hdnDetailID" type="hidden" value="9"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl08_hdnDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl08$hdnDetailText" type="hidden" value="Global Health"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl08_checkDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl08$checkDetailText" onclick="ClickCheckBox('ctcFirst', this);" type="checkbox"/><label for="ctcFirst_rMaster_ctl00_rDetail_ctl08_checkDetailText">Global Health</label>
+</div>
+<div id="divDetailCheck">
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl09_hdnDetailID" name="ctcFirst$rMaster$ctl00$rDetail$ctl09$hdnDetailID" type="hidden" value="10"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl09_hdnDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl09$hdnDetailText" type="hidden" value="Clinical Trials"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl09_checkDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl09$checkDetailText" onclick="ClickCheckBox('ctcFirst', this);" type="checkbox"/><label for="ctcFirst_rMaster_ctl00_rDetail_ctl09_checkDetailText">Clinical Trials</label>
+</div>
+<div id="divDetailCheck">
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl10_hdnDetailID" name="ctcFirst$rMaster$ctl00$rDetail$ctl10$hdnDetailID" type="hidden" value="11"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl10_hdnDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl10$hdnDetailText" type="hidden" value="Faculty Mentoring"/>
+<input id="ctcFirst_rMaster_ctl00_rDetail_ctl10_checkDetailText" name="ctcFirst$rMaster$ctl00$rDetail$ctl10$checkDetailText" onclick="ClickCheckBox('ctcFirst', this);" type="checkbox"/><label for="ctcFirst_rMaster_ctl00_rDetail_ctl10_checkDetailText">Faculty Mentoring</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<th>
+                                        Clinical Trials <span class="notice">New!</span>
+</th>
+<td colspan="2">
+<input class="trials2" type="checkbox"/>
+</td>
+</tr>
+<!--
+                                <tr>
+                                    <th>
+                                    </th>
+                                    <td colspan="2">
+                                        <div style="float: left; display: inline">
+                                            <a href="JavaScript:search();">
+                                                <img src="http://profiles.ucsf.edu/Search/Images/search.jpg" style="border: 0;" alt="Search" />
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+-->
+</table>
+<script></script>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p><img src="http://profiles.ucsf.edu/Search/Images/icon_squareArrow.gif"/> <a href="http://profiles.ucsf.edu/direct">Search other institutions</a></p>
+</td></tr></table></td></tr></table></div>
+</center></div>
+</div>
+</form></body></html>
+
+<td class="profilesMainColumnRight" id="ctl00_tdProfilesMainColumnRight">
+<div class="profilesContentPassive">
+<div class="panelPassive">
+<script type="text/javascript">
+
+    function searchThisPhrase(keyword,classuri,searchtype) {        
+        document.location.href = 'http://profiles.ucsf.edu/search/default.aspx?searchtype=' + searchtype + '&searchfor=' + keyword + '&exactphrase=false&classuri=' + classuri;
+    }    
+    
+</script>
+<div class="passiveSectionHead">
+    Most viewed
+</div>
+<div class="passiveSectionBody">
+<ul><li><a href="JavaScript:searchThisPhrase('yeast','http://xmlns.com/foaf/0.1/Person','people')">yeast</a></li><li><a href="JavaScript:searchThisPhrase('Rheumatoid','http://xmlns.com/foaf/0.1/Person','people')">Rheumatoid</a></li><li><a href="JavaScript:searchThisPhrase('homeostasis','http://xmlns.com/foaf/0.1/Person','people')">homeostasis</a></li><li><a href="JavaScript:searchThisPhrase('john','http://xmlns.com/foaf/0.1/Person','people')">john</a></li><li><a href="JavaScript:searchThisPhrase('jones','http://xmlns.com/foaf/0.1/Person','people')">jones</a></li><li><a href="JavaScript:searchThisPhrase('kaiser','http://xmlns.com/foaf/0.1/Person','people')">kaiser</a></li><li><a href="JavaScript:searchThisPhrase('paul','http://xmlns.com/foaf/0.1/Person','people')">paul</a></li><li><a href="JavaScript:searchThisPhrase('Sullivan','http://xmlns.com/foaf/0.1/Person','people')">Sullivan</a></li><li><a href="JavaScript:searchThisPhrase('DCIS','http://xmlns.com/foaf/0.1/Person','people')">DCIS</a></li><li><a href="JavaScript:searchThisPhrase('diabetes','http://xmlns.com/foaf/0.1/Person','people')">diabetes</a></li></ul>
+<div class="passiveSectionLine">
+</div>
+</div>
+</div>
+</div>
+</td>
+
+
+
+
+
+<tr>
+<td colspan="2">
+<div class="profilesPageColumnRightBottom" id="ctl00_divProfilesPageColumnRightBottom">
+</div>
+</td>
+</tr>
+
+
+
+
+
+<div class="profilesFooter">
+<div id="gadgets-log"></div>
+<div id="footer-collaboration">
+<p>UCSF Profiles is managed by the UCSF 
+                                          <a href="http://ctsi.ucsf.edu" target="_blank">Clinical and Translational Science Institute (CTSI)</a>, 
+                                          part of the Clinical and Translational Science Award program funded by the National Center for Advancing 
+                                          Translational Sciences (Grant Number UL1 TR000004) at the National Institutes of Health (NIH).</p>
+</div>
+<div id="footer-contact">
+<ul>
+<li><a href="http://profiles.ucsf.edu/">Home</a></li>
+<li><a href="mailto:profiles@ucsf.edu">Contact us</a></li>
+</ul>
+</div>
+<div id="footer-copyright">
+<p>Copyright ©<span id="copyright-year"></span> The Regents of the University of California. 
+                                           All Rights Reserved.</p>
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+UpadateAllCTC('ctcFirst', true);Sys.Application.initialize();
+//]]>
+</script>
+
+<div id="backtotop">
+<a href="#">
+<img alt="Back to TOP" border="0" height="62" src="http://profiles.ucsf.edu/framework/images/backtotop.gif" width="25"/>
+</a>
+</div>
+<script type="text/javascript">
+    setTimeout(function () {
+        var a = document.createElement("script");
+        var b = document.getElementsByTagName("script")[0];
+        a.src = document.location.protocol + "//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/2559.js?" + Math.floor(new Date().getTime() / 3600000);
+        a.async = true; a.type = "text/javascript"; b.parentNode.insertBefore(a, b)
+    }, 1);
+</script>
+<script src="https://qeryz.com/survey/js/qryz_v3.2.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var qRz = qRz || [];
+    (function() {
+        setTimeout(function(){
+            var qryz_plks = document.createElement('div');
+            qryz_plks.id = 'qryz_plks';
+            qryz_plks.className = 'qryz_plks';
+            document.body.appendChild(qryz_plks);
+            qryzInit2('2511');
+        },0);
+    })();
+</script>
+
+<div id="ctl00_pnlNavBarSearch">
+<form action="http://profiles.ucsf.edu/Search/Default.aspx?" id="navbarsearch">
+<input name="searchtype" type="hidden" value="everything"/>
+<input name="exactphrase" type="hidden" value="false"/>
+<input id="searchterm" name="searchfor" type="text" value=""/><input name="ClassGroupURI" type="hidden" value="http://profiles.catalyst.harvard.edu/ontology/prns!ClassGroupPeople"/><input id="navbarsubmit" type="submit" value=""/>
+</form>
+</div>
+

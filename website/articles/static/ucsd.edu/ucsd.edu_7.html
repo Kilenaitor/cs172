@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<title>UC San Diego Break Things Better</title>
+<!-- CSS -->
+<link href="_resources/css/jquery.fullPage.min.css" rel="stylesheet" type="text/css"/>
+<link href="_resources/css/parallax.css" rel="stylesheet" type="text/css"/>
+<link href="_resources/css/styles.css?v=3.0" rel="stylesheet">
+<link href="favicon.ico" rel="icon">
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3258953, 2016-07-29T14:19:53-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: BrixSansBlack by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brix-sans/black/
+ * 
+ * Webfont: BrixSansBold by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brix-sans/bold/
+ * 
+ * Webfont: BrixSansRegular by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brix-sans/regular/
+ * 
+ * Webfont: BrixSansBold-Italic by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brix-sans/bold-italic/
+ * 
+ * Webfont: BrixSansBlack-Italic by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brix-sans/black-italic/
+ * 
+ * Webfont: BrixSansRegular-Italic by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brix-sans/italic/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3258953
+ * Licensed pageviews: 1,000,000
+ * Webfonts copyright: Copyright (c) 2014 by Hannes von Doehren, Livius Dietzel. All
+ * rights reserved.
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+-->
+<link href="_resources/fonts/brix_sans/brix_sans.css" rel="stylesheet" type="text/css">
+<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="_resources/scripts/jquery.fullPage.js" type="text/javascript"></script>
+<script src="_resources/scripts/examples.js" type="text/javascript"></script>
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('.loader').fadeOut();
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+    //]]>
+	</script>
+</link></link></link></meta></meta></meta></meta></head>
+<body id="wbtb-mainpage">
+<!-- Preloader -->
+<div id="preloader">
+<div id="status"> </div>
+<div class="loader"></div>
+</div>
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<!-- Google Tag Manager -->
+<noscript><iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-K826VG" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K826VG');</script>
+<!-- End Google Tag Manager -->
+<!-- Static navbar -->
+<nav class="navbar navbar-fixed-top">
+<div class="header-wrap container-fluid">
+<!-- Medium & Large Version -->
+<div class="row hidden-xs hidden-sm">
+<div class="col-lg-2 col-md-3">
+<span><a href="http://www.ucsd.edu/">&lt; VISIT UCSD.EDU</a></span>
+</div>
+<div class="col-lg-4 col-lg-offset-1 col-md-3 logo-lg">
+<a href="#home"><img src="_resources/img/ucsd-logo-wht.svg"/></a>
+</div>
+<div class="col-lg-5 col-md-6">
+<ul id="menu">
+<li id="myBtn6">Share</li>
+<li id="myBtn3">Connect</li>
+<li id="myBtn2">About</li>
+<li><a href="https://admissions.ucsd.edu/next/ready.html"><button class="apply-btn"><span aria-hidden="true" class="glyphicon glyphicon-ok"></span> Apply Now</button></a></li>
+</ul>
+</div>
+</div>
+<!-- Small & Extra Small Version -->
+<div class="row hidden-md hidden-lg">
+<div class="col-sm-9 col-xs-9 logo-sm">
+<a href="#home"><img src="_resources/img/ucsd-logo-wht.svg"/></a>
+</div>
+<div class="col-sm-3 col-xs-3">
+<span aria-hidden="true" class="glyphicon glyphicon-menu-hamburger" id="myBtn1"></span>
+</div>
+</div>
+</div>
+</nav>
+<!-- <video class="hidden-xs hidden-sm hidden-md" muted loop autoplay>
+  <source src="video/video-bg-temp.webm" type="video/webm">
+</video> -->
+<div id="fullpage">
+<div class="section first-section" id="section0">
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-12 col-lg-12">
+<h1 class="BrixSansBlack">We Break Things Better.</h1>
+<div class="row slide-sub-title">
+<p class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">And we do it by looking at the world in a different way, with the courage to dissect convention and shake up the traditional.</p>
+</div>
+<div id="myBtn">
+<img alt="watch-reel" src="_resources/img/reel.png"/>
+<h4>WATCH REEL</h4>
+</div>
+</div>
+</div>
+</div>
+<div class="arrow-bounce"><a href="#about"><img src="_resources/img/arrow.png"/></a></div>
+</div>
+<div class="section fp-auto-height-responsive" id="section1">
+<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+<h2>How Do We Break Things Better? <br/>Let us break it down for you.</h2>
+<p>We believe that a little bit of mischief can do a whole lot of good for the world. That's why sometimes we break from the ordinary to do breakthrough work. It's why alumnus Suman Kanuganti hacked Google Glass to create a device that allows the blind to see. Why Professor of Literature Rae Armantrout dismantled and reassembled the English language to confront crisis through verse. And why Professor of NanoEngineering Darren Lipomi deconstructed molecules to make stretchable electronics that are practically indestructible. We're not causing all this mayhem because we're reckless. We're breaking things because we're not afraid to make them better.</p>
+</div>
+<div class="arrow-bounce hidden-xs hidden-sm hidden-md"><a href="#storiesOne"><img src="_resources/img/arrow.png"/></a></div>
+</div>
+<div class="section fp-auto-height-responsive" id="section2">
+<!-- <img src="_resources/img/bg_street_temp.jpg" class="hidden-lg"/> -->
+<div class="scene-img-cont">
+<div class="hidden-xs hidden-sm hiddenn-md" id="granny"></div>
+<div class="hidden-xs hidden-sm hiddenn-md" id="vendor"></div>
+<div class="hidden-xs hidden-sm hiddenn-md" id="girl-goat"></div>
+<div class="scene-hover-container">
+<div class="hidden-xs hidden-sm hiddenn-md granny-gore-story" id="myBtn4-granny"></div>
+<div class="hidden-xs hidden-sm hiddenn-md vendor-ram-story" id="myBtn4-vendor"></div>
+<div class="hidden-xs hidden-sm hiddenn-md girlgoat-nie-story" id="myBtn4-girlgoat"></div>
+<!-- <div id="myBtn2-birds" class="hidden-xs hidden-sm hiddenn-md birds-ajs-story"></div> -->
+</div>
+</div>
+<div class="blur-bg-street"></div>
+<!-- <img src="_resources/img/bg-scene-temp.jpg" style="width:100%"/> -->
+<div class="scene-container hidden-sm hidden-xs hiddenn-md" id="container">
+<ul class="scene" id="scene">
+<li class="layer" data-depth="0.25"><img src="_resources/img/PIGEON_1.png"/></li>
+<li class="layer" data-depth="0.50"><img src="_resources/img/PIGEON_3.png"/></li>
+<li class="layer" data-depth="0.75"><img src="_resources/img/PIGEON_4.png"/></li>
+<li class="layer" data-depth="1.00"><img src="_resources/img/PIGEON_2.png"/></li>
+</ul>
+</div>
+<div class="hidden-xs hidden-sm articlePopup-1 granny-gore-story">
+<h4>Exposing Missing Histories</h4>
+<p>CLICK TO READ</p>
+</div>
+<div class="hidden-xs hidden-sm articlePopup-2 vendor-ram-story">
+<h4>Science Gets Spiritual</h4>
+<p>CLICK TO READ</p>
+</div>
+<div class="hidden-xs hidden-sm articlePopup-3 girlgoat-nie-story">
+<h4>A Wireless War on Poverty</h4>
+<p>CLICK TO READ</p>
+</div>
+<div class="hidden-xs hidden-sm articlePopup-4 birds-ajs-story">
+<h4>Feminist Lit Takes Flight</h4>
+<p>CLICK TO READ</p>
+</div>
+<button class="hidden-xs hidden-sm hidden-md" id="myBtn5">ALL BREAKERS</button>
+<div class="arrow-bounce hidden-xs hidden-sm hidden-md"><a href="#stats"><img src="_resources/img/arrow.png"/></a></div>
+</div>
+<div class="art-thum"><div class="col-xs-12 hidden-md hidden-lg hidden-sm article-thumbs-mobile">
+<div class="row birds-ajs-story-menu">
+<div class="col-sm-4 col-xs-4 col-lg-4">
+<img src="_resources/img/birds.jpg"/>
+</div>
+<div class="col-sm-8 col-xs-8 col-lg-8">
+<h3 id="myBtn4">Feminist Lit Takes Flight</h3>
+<p class="hidden-xs hidden-sm"><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row granny-gore-story-menu">
+<div class="col-sm-4 col-xs-4 col-lg-4">
+<img src="_resources/img/grandma.jpg"/>
+</div>
+<div class="col-sm-8 col-xs-8 col-lg-8">
+<h3>Exposing Missing Histories</h3>
+<p class="hidden-xs hidden-sm"><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row vendor-ram-story-menu">
+<div class="col-sm-4 col-xs-4 col-lg-4">
+<img src="_resources/img/indian.jpg"/>
+</div>
+<div class="col-sm-8 col-xs-8 col-lg-8">
+<h3>Science Gets Spiritual</h3>
+<p class="hidden-xs hidden-sm"><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row girlgoat-nie-story-menu">
+<div class="col-sm-4 col-xs-4 col-lg-4">
+<img src="_resources/img/woman.jpg"/>
+</div>
+<div class="col-sm-8 col-xs-8 col-lg-8">
+<h3>A Wireless War on Poverty</h3>
+<p class="hidden-xs hidden-sm"><a href="#">Read</a></p>
+</div>
+</div>
+</div>
+<div class="article-thumbs-mobile2 col-sm-6 col-md-6 hidden-lg hidden-xs">
+<div class="row birds-ajs-story-menu">
+<div class="col-sm-4 col-md-4 col-xs-4 col-lg-4">
+<img src="_resources/img/birds.jpg"/>
+</div>
+<div class="col-sm-8 col-md-8 col-xs-8 col-lg-8">
+<h3 id="myBtn4">Feminist Lit Takes Flight</h3>
+<p class="hidden-xs hidden-sm"><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row granny-gore-story-menu">
+<div class="col-sm-4 col-md-4 col-xs-4 col-lg-4">
+<img src="_resources/img/grandma.jpg"/>
+</div>
+<div class="col-sm-8 col-md-8 col-xs-8 col-lg-8">
+<h3>Exposing Missing Histories</h3>
+<p class="hidden-xs hidden-sm"><a href="#">Read</a></p>
+</div>
+</div>
+</div>
+<div class="article-thumbs-mobile col-sm-6 col-md-6 hidden-lg hidden-xs">
+<div class="row vendor-ram-story-menu">
+<div class="col-sm-4 col-md-4 col-xs-4 col-lg-4">
+<img src="_resources/img/indian.jpg"/>
+</div>
+<div class="col-sm-8 col-md-8 col-xs-8 col-lg-8">
+<h3>Science Gets Spiritual</h3>
+<p class="hidden-xs hidden-sm"><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row girlgoat-nie-story-menu">
+<div class="col-sm-4 col-md-4 col-xs-4 col-lg-4">
+<img src="_resources/img/woman.jpg"/>
+</div>
+<div class="col-sm-8 col-md-8 col-xs-8 col-lg-8">
+<h3>A Wireless War on Poverty</h3>
+<p class="hidden-xs hidden-sm"><a href="#">Read</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="section fp-auto-height-responsive" id="section3">
+<div class="scene-img-cont">
+<div class="hidden-xs hidden-sm hiddenn-md" id="ee1"></div>
+<div class="hidden-xs hidden-sm hiddenn-md" id="ee2"></div>
+<div class="hidden-xs hidden-sm hiddenn-md" id="ee3"></div>
+<div class="hidden-xs hidden-sm hiddenn-md" id="ee4"></div>
+<div class="scene-hover-container">
+<div class="hidden-xs hidden-sm hiddenn-md money-rarm-story" id="eep3"></div>
+<div class="hidden-xs hidden-sm hiddenn-md showgirl-bri-story" id="eep2"></div>
+<div class="hidden-xs hidden-sm hiddenn-md girl-lmc-story" id="eep1"></div>
+<div class="hidden-xs hidden-sm hiddenn-md keytar-rey-story" id="eep4"></div>
+</div>
+</div>
+<!-- <div class="scene-hover-container">
+			<div id="eep3" class="hidden-xs hidden-sm hiddenn-md money-rarm-story"></div>
+			<div id="eep2" class="hidden-xs hidden-sm hiddenn-md showgirl-bri-story"></div>
+			<div id="eep1" class="hidden-xs hidden-sm hiddenn-md girl-lmc-story"></div>
+			<div id="eep4" class="hidden-xs hidden-sm hiddenn-md keytar-rey-story"></div>
+		</div> -->
+<div class="blur-bg-elevator"></div>
+<div class="scene-container2 hidden-sm hidden-xs hiddenn-md" id="container2">
+<ul class="scene2" id="scene2">
+<li class="layer" data-depth="0.50" id="money-bot"><img src="_resources/img/money_bottom.png"/></li>
+<li class="layer" data-depth="0.80" id="money-mid"><img src="_resources/img/money_middle.png"/></li>
+<li class="layer" data-depth="1.00" id="money-top"><img src="_resources/img/money_top.png"/></li>
+</ul>
+</div>
+<div class="hidden-xs hidden-sm articlePopup-5 girl-lmc-story" id="myBtn4_">
+<h4>Lessons From a Brutal Past</h4>
+<p>CLICK TO READ</p>
+</div>
+<div class="hidden-xs hidden-sm articlePopup-6 showgirl-bri-story" id="myBtn4_">
+<h4>A Revolution in Set Design</h4>
+<p>CLICK TO READ</p>
+</div>
+<div class="hidden-xs hidden-sm articlePopup-7 money-rarm-story" id="myBtn4-_">
+<h4>Excess and Poetic Justice</h4>
+<p>CLICK TO READ</p>
+</div>
+<div class="hidden-xs hidden-sm articlePopup-8 keytar-rey-story" id="myBtn4--_">
+<h4>Marching to Different Beats</h4>
+<p>CLICK TO READ</p>
+</div>
+<button class="hidden-xs hidden-sm hidden-md" id="myBtn5_">ALL BREAKERS</button>
+<div class="arrow-bounce hidden-xs hidden-sm hidden-md"><a href="#stats"><img src="_resources/img/arrow.png"/></a></div>
+</div>
+<!-- Mobile Articles -->
+<div class="art-thum"><div class="article-thumbs-mobile col-xs-12 hidden-md hidden-lg hidden-sm">
+<div class="row girl-lmc-story-menu">
+<div class="col-sm-4 col-xs-4 col-lg-4">
+<img src="_resources/img/girl.jpg"/>
+</div>
+<div class="col-sm-8 col-xs-8 col-lg-8">
+<h3 id="myBtn4">Lessons From a Brutal Past</h3>
+<p class="hidden-xs hidden-sm"><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row keytar-rey-story-menu">
+<div class="col-sm-4 col-xs-4 col-lg-4">
+<img src="_resources/img/guitarman.jpg"/>
+</div>
+<div class="col-sm-8 col-xs-8 col-lg-8">
+<h3>Marching to Different Beats</h3>
+<p class="hidden-xs hidden-sm"><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row money-rarm-story-menu">
+<div class="col-sm-4 col-xs-4 col-lg-4">
+<img src="_resources/img/moneyman.jpg"/>
+</div>
+<div class="col-sm-8 col-xs-8 col-lg-8">
+<h3>Excess and Poetic Justice</h3>
+<p class="hidden-xs hidden-sm"><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row showgirl-bri-story-menu">
+<div class="col-sm-4 col-xs-4 col-lg-4">
+<img src="_resources/img/showgirl.jpg"/>
+</div>
+<div class="col-sm-8 col-xs-8 col-lg-8">
+<h3>A Revolution in Set Design</h3>
+<p class="hidden-xs hidden-sm"><a href="#">Read</a></p>
+</div>
+</div>
+</div>
+<div class="article-thumbs-mobile2 col-sm-6 col-md-6 hidden-lg hidden-xs">
+<div class="row girl-lmc-story-menu">
+<div class="col-sm-4 col-md-4 col-xs-4 col-lg-4">
+<img src="_resources/img/girl.jpg"/>
+</div>
+<div class="col-sm-8 col-md-8 col-xs-8 col-lg-8">
+<h3 id="myBtn4">Lessons From a Brutal Past</h3>
+<p class="hidden-xs hidden-sm"><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row keytar-rey-story-menu">
+<div class="col-sm-4 col-md-4 col-xs-4 col-lg-4">
+<img src="_resources/img/guitarman.jpg"/>
+</div>
+<div class="col-sm-8 col-md-8 col-xs-8 col-lg-8">
+<h3>Marching to Different Beats</h3>
+<p class="hidden-xs hidden-sm"><a href="#">Read</a></p>
+</div>
+</div>
+</div>
+<div class="article-thumbs-mobile col-sm-6 col-md-6 hidden-lg hidden-xs">
+<div class="row money-rarm-story-menu">
+<div class="col-sm-4 col-md-4 col-xs-4 col-lg-4">
+<img src="_resources/img/moneyman.jpg"/>
+</div>
+<div class="col-sm-8 col-md-8 col-xs-8 col-lg-8">
+<h3>Excess and Poetic Justice</h3>
+<p class="hidden-xs hidden-sm"><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row showgirl-bri-story-menu">
+<div class="col-sm-4 col-md-4 col-xs-4 col-lg-4">
+<img src="_resources/img/showgirl.jpg"/>
+</div>
+<div class="col-sm-8 col-md-8 col-xs-8 col-lg-8">
+<h3>A Revolution in Set Design</h3>
+<p class="hidden-xs hidden-sm"><a href="#">Read</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="section fp-auto-height-responsive fp-table stats-section" id="section4">
+<div class="fp-tableCell">
+<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+<h2>Now let's<br class="hidden-md hidden-lg"/> break down the numbers.</h2>
+<p>How are we doing? A quick look at some facts and figures.</p>
+</div>
+<div class="slide">
+<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+<div class="slider-content">
+<div class="row">
+<div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+<img src="_resources/img/ucsd_btb_top10.png"/>
+</div>
+<div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+<p>Voted a <strong>Top 10 public university</strong> in the nation for <strong>over a decade</strong> running. <em>(U.S. News &amp; World Report, 2016)</em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slide">
+<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+<div class="slider-content">
+<div class="row">
+<div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+<img src="_resources/img/ucsd_btb_1b.png"/>
+</div>
+<div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+<p>Received over <strong>$1 billion in research funding</strong> five out of the last seven years.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slide">
+<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+<div class="slider-content">
+<div class="row">
+<div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+<img src="_resources/img/number1.png"/>
+</div>
+<div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+<p>Recognized as the <strong>nation’s top university for enrolling and graduating women</strong> with STEM majors. <em>(BestColleges.com, 2016)</em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slide">
+<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+<div class="slider-content">
+<div class="row">
+<div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+<img src="_resources/img/ucsd_btb_14th.png"/>
+</div>
+<div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+<p>Ranked <strong>14th best university in the world</strong> and <strong>12th best among all U.S. universities</strong>. <em>(Academic Ranking of World Universities, Center for World-Class Universities at Shanghai)</em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slide">
+<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+<div class="slider-content">
+<div class="row">
+<div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+<img src="_resources/img/ucsd_btb_top10.png"/>
+</div>
+<div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+<p><strong>29</strong> of our undergraduate and graduate programs and disciplines hold <strong>Top 10 rankings</strong> nationally or globally.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="arrow-bounce hidden-xs hidden-sm hidden-md"><a href="#stayinTouch"><img src="_resources/img/arrow.png"/></a></div>
+</div>
+<!-- <div class="bullet-navv"></div> -->
+</div>
+<div class="section fp-auto-height-responsive" id="section5">
+<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+<h2>Connect With Us</h2>
+<p>Like who we are and what we are doing? Follow us on your favorite social media outlet below.</p>
+<br/>
+<h4 class="hidden-md hidden-lg">FOLLOW US:</h4>
+<ul class="social-media">
+<li class="hidden-xs hidden-sm"><h4>FOLLOW US:</h4></li>
+<li><a href="https://www.facebook.com/UCSanDiego/"><img alt="facebook" src="_resources/img/share-fb.jpg"/></a></li>
+<li><a href="https://www.twitter.com/ucsandiego/"><img alt="twitter" src="_resources/img/share-inst.jpg"/></a></li>
+<li><a href="https://www.linkedin.com/company/university-of-california-at-san-diego"><img alt="linked" src="_resources/img/share-in.jpg"/></a></li>
+<li><a href="http://admissions.ucsd.edu/contact/contact-form.html"><img alt="email" src="_resources/img/share-em.jpg"/></a></li>
+</ul>
+</div>
+<!-- 		<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-3">
+			<h2>Want to find out more?</h2>
+			<p>Fill out the info below to learn more about our campus, our programs, and our army of Breakers.</p>
+			<form class="contact-us" action="">
+				<input type="text" name="FullName" placeholder="*Full Name"><br>
+				<input type="text" name="Email" placeholder="*Email"><br>
+				<p>I am...</p><br/><select name="cars">
+				    <option value="alumni">Alumni</option>
+				    <option value="current-student">Current Student</option>
+				    <option value="faculty">Faculty</option>
+				    <option value="parent">Parent</option>
+			    </select>
+				<button class="wht-bg"><input type="submit" value="I'M ALL FOR IT!" style="color:#006a99"></button>
+			</form>
+		</div> -->
+</div>
+</div>
+<!-- The Video Popup Modal -->
+<div class="modal" id="videoModal">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="m-modal-body">
+<span class="close">×</span>
+<iframe allowfullscreen="" frameborder="0" height="auto" max-width="950px" width="100%"></iframe>
+</div>
+</div>
+</div>
+<!-- The Mobile Menu Popup Modal -->
+<div class="modal1" id="menuModal">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="menu-modal-body">
+<span class="close1">×</span>
+<div>
+<h3 id="myBtn6m">SHARE</h3>
+<h3 id="myBtn3m">CONNECT</h3>
+<h3 id="myBtn2m">ABOUT</h3></div>
+<div>
+<a href="https://admissions.ucsd.edu/next/ready.html"><button class="apply-btn"><span aria-hidden="true" class="glyphicon glyphicon-ok"></span> Apply Now</button></a>
+<h3><a href="http://www.ucsd.edu/">&lt; VISIT UCSD.EDU</a></h3>
+</div>
+</div>
+</div>
+</div>
+<!-- LightBox About Popup -->
+<div class="modal2" id="aboutModal">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="about-modal-body">
+<span class="close2">×</span>
+<div class="col-sm-12 col-md-6 col-lg-5 col-lg-offset-1">
+<h3 class="hidden-xs hidden-sm">About UC San Diego</h3>
+<h2 class="hidden-md hidden-lg">About UC San Diego</h2>
+<p>It all starts with curiosity. A need to take things apart and touch what makes them tick, to tear down conventional wisdom. Not with abandon, but with conviction, purpose, and drive. Because we know we can create something better.  This audacity is what connects us, motivates us, and pushes us—as a university—to break the rules, knowing that impact is a product of risk.  And failure is just a speed bump on the road to greatness. We're nimble. We're brave. We are the future.</p>
+<a href="http://www.ucsd.edu">CONTINUE TO UCSD.EDU &gt;</a>
+</div>
+<div class="col-sm-12 col-md-6 col-lg-5 col-lg-offset-1">
+<br/>
+<h3>Questions? <br/>We have answers.</h3>
+<ul>
+<li><a href="http://ucsd.edu/about/index.html">WHO ARE WE?</a></li>
+<li><a href="http://ucsd.edu/academics.html">WHAT PROGRAMS ARE AVAILABLE?</a></li>
+<li><a href="http://ucsd.edu/campus-life/index.html">CAMPUS LIFE</a></li>
+<!-- <li><a href="http://www.ucsd.edu/learn/research/index.html">RESEARCH AND INNOVATION</a></li> -->
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- LightBox Info Popup -->
+<div class="modal3" id="infoModal">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="info-modal-body">
+<span class="close3">×</span>
+<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+<h2>Connect With Us</h2>
+<p>Like who we are and what we are doing? Follow us on your favorite social media outlet below.</p>
+<br/>
+<h4 class="hidden-md hidden-lg">FOLLOW US:</h4>
+<ul class="social-media">
+<li class="hidden-xs hidden-sm"><h4>FOLLOW US:</h4></li>
+<li><a href="https://www.facebook.com/UCSanDiego/"><img alt="facebook" src="_resources/img/share-fb.jpg"/></a></li>
+<li><a href="https://www.twitter.com/ucsandiego/"><img alt="twitter" src="_resources/img/share-inst.jpg"/></a></li>
+<li><a href="https://www.linkedin.com/company/university-of-california-at-san-diego"><img alt="linked" src="_resources/img/share-in.jpg"/></a></li>
+<li><a href="http://admissions.ucsd.edu/contact/contact-form.html"><img alt="email" src="_resources/img/share-em.jpg"/></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- LightBox Share Popup -->
+<div class="modal6" id="shareModal">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="share-modal-body">
+<span class="close6">×</span>
+<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+<h2>Share your experience</h2>
+<p>Like who we are and what we are doing? Post to your favorite social media outlet below.</p>
+<br/>
+<!-- 		<h4 class="hidden-md hidden-lg">SPREAD THE WORD:</h4>
+			<ul class="social-media">
+				<li class="hidden-xs hidden-sm"><h4>SPREAD THE WORD:</h4></li>
+				<li><img src="_resources/img/share-fb.jpg"/></li>
+				<li><img src="_resources/img/share-inst.jpg"/></li>
+				<li><img src="_resources/img/share-in.jpg"/></li>
+				<li><img src="_resources/img/share-em.jpg"/></li>
+			</ul> -->
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div><h4 class="">SPREAD THE WORD:</h4><div class="addthis_inline_share_toolbox"></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="white-bg">
+	 
+</div>
+<!-- LightBox Article Test Popup -->
+<div class="modalRARM" id="articleRARM">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="article-modal-body single-article">
+<span class="close4">×</span>
+<div class="bg-color hidden-sm hidden-xs"></div>
+<div class="col-sm-12 col-md-4 col-lg-4 article-thumbs hidden-sm hidden-xs">
+<h5 class="close-x">&lt; BACK TO THE SCENE</h5>
+<h5>How we break things better</h5>
+<div class="scrollable">
+<div class="row girl-lmc-story-menu">
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/girl.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>Lessons From a Brutal Past</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row keytar-rey-story-menu">
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/guitarman.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>Marching to Different Beats</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row money-rarm-story-menu">
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/moneyman.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>Excess and Poetic Justice</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row showgirl-bri-story-menu">
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/showgirl.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>A Revolution in Set Design</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-12 col-md-8 col-lg-8 article-content">
+<div class="row">
+<div class="col-sm-12 col-md-9 col-lg-9">
+<h3>Excess and Poetic Justice</h3>
+<p><em><strong>UC San Diego Pulitzer Prize-Winning Poet Turns Verse Inside-Out</strong></em></p>
+<h5 style="display:inline">RAE ARMANTROUT</h5>   |   <span>Professor Emerita of Writing,</span> <a href="http://literature.ucsd.edu/">Department of Literature</a>
+</div>
+<div class="col-lg-2 col-md-2 hidden-sm hidden-xs"><img src="_resources/img/moneyman.jpg"/></div>
+</div>
+<br/>
+<div class="row main-body">
+<div class="col-sm-12 col-lg-12">
+<p>So what does a Pulitzer Prize-winning poet do after calling out the 2008 financial crisis with a book of poems, "Money Shot," that explores how capitalism pervades our everyday lives? She keeps writing verse about whatever is around her in a crisp and creative way. Her latest poetry compilations, consistent with this method, include, "Partly: New and Selected Poems, 2001 - 2015" (Wesleyan University Press, 2016), and, "Itself," (Wesleyan University Press, 2015). She is Professor Emerita of Writing at UC San Diego, Rae Armantrout.</p>
+<p>One of the founders of the West Coast group of Language poets and winner of the 2010 Pulitzer Prize for her "Versed" collection, Armantrout is known for her distinctive lyrical voice and attention to the domestic.</p>
+<img src="_resources/img/r-armantrout.jpg"/>
+<br/>
+<br/>
+<p> "If I watch something on television, if I hear news in the car, if I hear certain phrases being bandied about, or if I see things happening to my friends . . . of course that is going to get into my work," said Armantrout. "I like to write about the intersection of the public and the private, or what is left of the private, in our lives, and to bring those aspects of reality together." </p>
+<p>According to critic Stephen Burt, Armantrout turns lyric inside-out by embodying broad questions and concerns within individual words and by arranging small clusters of phrases that muster meaningful conflict.</p>
+<p>"From these techniques, Armantrout has become one of the most recognizable, and one of the best, poets of her generation," writes Burt. </p>
+<p>According to a recent <a href="http://www.publishersweekly.com/978-0-8195-7655-2" target="_blank">Publisher's Weekly Poetry Review</a>, Armantrout's, "Partly: New and Selected Poems, 2001 - 2015," is considered a formidable collection that offers a look at her evolution as a poet, as well as her language-centered style. Her steady approach includes short lines, crisp divisions and segmentation that upends meaning. For example: "I may want to lie still / and think about my choices," she writes in "Partly." </p>
+<p><a href="http://thereadbooks.com/partly-new-and-selected-poems-2001-2015-29441289" target="_blank">Thereadbooks.com</a> states, "Rae Armantrout's poetry comprises one of the most refined and visionary bodies of work written over the last 40 years. These potent, compact meditations on our complicated times reveal her observant sensibility, lively intellect and emotional complexity. . . 'Partly' affirms Armantrout's reputation as one of our sharpest and most innovative writers." </p>
+<p>In her collection, "Itself," Armantrout's poems "read like necklaces," according to Katie Hibner of <a href="http://www.siblinijournal.com/single-post/2015/07/03/Review-Itself-by-Rae-Armantrout" target="_blank">Siblini art + literature journal</a>, who describes them as "long strands of concept beaded with gems of minimalistic verse." </p>
+<p>"Armantrout is perhaps one of the most sensitive writers I have encountered," asserts Hibner. "As if she is delicately concocting an elixir, Armantrout pours extracts of a myriad of themes into each piece." </p>
+<p>Armantrout has written that she thinks her poetry involves an equal counterweight of assertion and doubt. </p>
+<p>"It's a Cheshire poetics, one that points two ways then vanishes in the blur of what is seen and what is seeing, what can be known and what it is to know. That double-bind," Armantrout notes.</p>
+<p>Guggenheim Fellow in Poetry (2008) and Recipient of National Book Critics Circle Award, Armantrout has taught writing in the <a href="http://literature.ucsd.edu/" target="_blank">Department of Literature</a> at UC San Diego for more than 20 years. Her poems are telegenically "regional" filled with bungalows, newscasters and swimming pools, yet they ring with an immaterial clarity that quietly subsumes her readers and listeners in a radical and eerily funny vision.</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-lg-8 col-md-8 art-bottom-links">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-xs-12">
+<h5>LEARN MORE:</h5>
+<a href="http://literature.ucsd.edu/">Department of Literature</a>
+</div>
+<div class="col-lg-7 col-md-7 col-xs-12" style="display:inline-flex"><h5 style="margin-top:2rem">SHARE:</h5><div class="addthis_inline_share_toolbox"></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- LightBox Article Test Popup -->
+<div class="modalAJS" id="articleAJS">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="article-modal-body single-article">
+<span class="close4">×</span>
+<div class="bg-color hidden-sm hidden-xs"></div>
+<div class="col-sm-12 col-md-4 col-lg-4 article-thumbs hidden-sm hidden-xs">
+<!-- this left menu content is hidden here -->
+</div>
+<div class="col-sm-12 col-md-8 col-lg-8 article-content">
+<div class="row">
+<div class="col-sm-12 col-md-9 col-lg-9">
+<h3>Feminist Lit Takes Flight</h3>
+<p><em><strong>UC San Diego Writer Invents Stories by Mixing the Sacred and Profane</strong></em></p>
+<h5 style="display:inline">ANNA JOY SPRINGER</h5>   |   <span>Associate Professor of Writing,</span> <a href="http://literature.ucsd.edu/">Department of Literature</a>
+</div>
+<div class="col-lg-2 col-md-2 hidden-sm hidden-xs"><img src="_resources/img/birds.jpg"/></div>
+</div>
+<br/>
+<div class="row main-body">
+<div class="col-sm-12 col-lg-12">
+<p>
+				    Blend world literature and culture and the University of California San Diego Department of Literature emerges. Add experimental prose, feminist ethics,
+				    graphic texts, Buddhism and punk rock and associate professor of writing, Anna Joy Springer, comes forth.
+				</p>
+<p>
+				    A singer/songwriter-turned-academic, Springer once led the punk band, “Blatz,”—a group that sprung from The 924 Gilman Street Project and Lookout! Records,
+				    along with Green Day. She even sang with The Gr'ups and Cypher in the Snow, and she toured with Sister Spit, a bold, spoken-word group of female writers.
+				    Her credits also include publications: “The Birdwisher,” (Birds of Lace Press, 2009), “The Vicious Red Relic, Love” (Jaded Ibis Press, 2011) and published
+				    excerpts from, “Thieves with Tiny Eyes.”
+				</p>
+<p>
+				    An artistic prose writer, Springer is known for creating “grotesques”—hybrid texts that mix the sacred and the profane to elicit intense reader
+				    experiences.
+				</p>
+<!-- <img src="_resources/img/test2.jpg"/>
+					<p class="article-pic-desc"><em>A physicist by training, Burney designs, implements and evaluates technologies for poverty  alleviation and agricultural adaptation. Much of her current research focuses on the developing world. Photo by Marshall Burke.</em></p> -->
+<p>
+				    “I’m not here to lighten it up,” she said in an interview with the San Diego Union-Tribune. “That’s what literature is for—to explore the profundities of
+				    the human experience, the depths of grief and love and how difficult it is to be fully human with each other.”
+				</p>
+<p>
+				    Springer’s “The Vicious Red Relic, Love,” for example, is a series of connected stories and drawings about love and loss, and trauma and forgiveness. It is
+				    what American Book Review calls, “a trauma memoir of losing her bipolar lover to AIDS and, in so doing, creates a unique literary form, one that ignores
+				    the often fraught line between truth and fiction in pursuit of something more elusive."
+				</p>
+<p>
+				    According to <a href="https://muse.jhu.edu/article/489899">Project Muse</a>, Springer’s text criticizes the traditions of both memoir and fabulism while
+				    revealing the ways we use myth to control the chaos around us. Part training/survival guide and time machine, the story, set in 1990s San Francisco, mixes
+				feminism, deviance, punk rock and Sumerian literature into a brew of post-Reagan/Bush neoliberalism and AIDs sorrow. It is what    <a href="http://www.lambdaliterary.org/reviews/12/30/the-vicious-red-relic-love-by-anna-joy-springer/">Lambda Literary</a>, refers to as “a hauntingly
+				    important contribution to LGBTQ literature that chronicles a time and place in truly innovative ways…a marvel of contemporary queer literature.”
+				</p>
+<p>
+				    “The Birdwisher,” another example of Springer’s innovation, is a novella about the adventures of a gumshoe pigeon who tries to solve the mystery of the
+				murderous mutilation of several birds. “Strange, grotesque, noir and rendered in gorgeous inventive prose,” according to    <a href="http://www.goodreads.com/book/show/8369895-the-birdwisher">GoodReads</a>, the story opens with a young woman cutting herself with corroded
+				    scissors, followed by a bird that flies into her window and dies. The narrative then explores the events that led to the characters’ encounter at that
+				    moment.
+				</p>
+<p>
+				    “The very best life writing lives in uncertainty, within the raging heart of a great and terrible doubt,” Springer has been known to say.
+				</p>
+<p>
+				    Anna Joy Springer received her MFA in Literary Arts from Brown University and truly loves teaching courses in experimental writing, graphic texts and
+				    postmodern feminist literatures at UC San Diego.
+				</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-lg-8 col-md-8 art-bottom-links">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-xs-12">
+<h5>LEARN MORE:</h5>
+<a href="http://literature.ucsd.edu/">Department of Literature</a>
+</div>
+<div class="col-lg-7 col-md-7 col-xs-12" style="display:inline-flex"><h5 style="margin-top:2rem">SHARE:</h5><div class="addthis_inline_share_toolbox"></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- LightBox Article Test Popup -->
+<div class="modalRAM" id="articleRAM">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="article-modal-body single-article">
+<span class="close4">×</span>
+<div class="bg-color hidden-sm hidden-xs"></div>
+<div class="col-sm-12 col-md-4 col-lg-4 article-thumbs hidden-sm hidden-xs">
+<!-- this left menu content is hidden here -->
+</div>
+<div class="col-sm-12 col-md-8 col-lg-8 article-content">
+<div class="row">
+<div class="col-sm-12 col-md-9 col-lg-9">
+<h3>Science Gets Spiritual</h3>
+<p><em><strong>Iconoclastic Researcher’s Most Contrary Move? Breaking Down the Wall Between Science and Religion</strong></em></p>
+<h5 style="display:inline; text-transform:uppercase">Veerabhadran Ramanathan</h5>   |   <span>Distinguished Professor of Atmospheric and Climate Sciences,</span> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a>
+</div>
+<div class="col-lg-2 col-md-2 hidden-sm hidden-xs"><img src="_resources/img/indian.jpg"/></div>
+</div>
+<br/>
+<div class="row main-body">
+<div class="col-sm-12 col-lg-12">
+<p>Veerabhadran Ramanathan taps into the moral authority of spiritual leaders to say what scientists can’t about climate change.</p>
+<p>
+					    He had conquered some of the most challenging questions in atmospheric physics, his global-scale ambition evident in the ones he had chosen to consider in
+					    the first place. But Veerabhadran Ramanathan was floored by the simplest question about global warming: What are you doing about it in your personal life?
+					</p>
+<p>
+					    The query from a young student in 2007 permanently bent the trajectory of the climate and atmospheric scientist’s 40-year career. Now Ramanathan – who
+					    earned renown in the 1970s after discovering the major greenhouse effect of the chemical used in refrigerators – has traded expansive field campaigns for
+					    missions of persuasion. In doing so, he has broken down the centuries-old barrier between science and religion to make an argument that environmental
+					    stewardship and social justice are intertwined goals.
+					</p>
+<img src="_resources/img/v-ramanathan.jpg"/>
+<br/>
+<br/>
+<p>
+					    “As scientists, we don’t have the moral authority to tell people what to do but spiritual leaders do,” he said. “It was a personal realization that as a
+					    community, (scientists) have not tapped into an important resource for solving major environmental problems.”
+					</p>
+<p>
+					    Ramanathan has been a member of the Pontifical Academy of Sciences since 2004 after having been invited by Pope John Paul II. He has leveraged his status
+					    to convene groundbreaking gatherings of physical and social scientists to examine all dimensions of the human problem of climate change, one that the
+					    world’s three billion poorest people had little to do with creating but who bear the greatest brunt of its consequences. He has shared with Pope Francis
+					    and the Dalai Lama alike his hope that they would use their positions to encourage greater care of the environment among their followers.
+					</p>
+<p>
+					    On the research front, he has turned a project studying the climate effect of lessening pollution into a public health campaign and vehicle for empowerment
+					    for the poorest of the poor in his native India. His Project Surya makes scientists out of women who are cleaning the air around their homes by replacing
+					    dirty wood-burning stoves with cleaner ones and documenting the change. That work earns them credits in carbon markets. He argues that controlling
+					    pollution like this, along with curbing emissions of methane and refrigerant gases can within months produce a measurable slowing of the pace of global
+					    warming.
+					</p>
+<p>
+					    And the scientist who came to America more than 50 years ago with dreams of buying a Cadillac now drives an electric vehicle. He leaves it home as often as
+					    not so he can walk to work, all so that if he ever meets his young questioner again, he’ll finally have an answer for her.
+					</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-lg-8 col-md-8 art-bottom-links">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-xs-12">
+<h5>LEARN MORE:</h5>
+<a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a>
+</div>
+<div class="col-lg-7 col-md-7 col-xs-12" style="display:inline-flex"><h5 style="margin-top:2rem">SHARE:</h5><div class="addthis_inline_share_toolbox"></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- LightBox Article Test Popup -->
+<div class="modalGOR" id="articleGOR">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="article-modal-body single-article">
+<span class="close4">×</span>
+<div class="bg-color hidden-sm hidden-xs"></div>
+<div class="col-sm-12 col-md-4 col-lg-4 article-thumbs hidden-sm hidden-xs">
+<!-- this left menu content is hidden here -->
+</div>
+<div class="col-sm-12 col-md-8 col-lg-8 article-content">
+<div class="row">
+<div class="col-sm-12 col-md-9 col-lg-9">
+<h3>Exposing Missing Histories</h3>
+<p><em><strong>Ethnic Studies Professor Reshapes Understanding of Yesterday and Today</strong></em></p>
+<h5 style="display:inline; text-transform:uppercase">Dayo Gore</h5>   |   <span>Associate Professor,</span> <a href="http://www.ethnicstudies.ucsd.edu/">Department of Ethnic Studies and Program in Critical Gender Studies</a>
+</div>
+<div class="col-lg-2 col-md-2 hidden-sm hidden-xs"><img src="_resources/img/grandma.jpg"/></div>
+</div>
+<br/>
+<div class="row main-body">
+<div class="col-sm-12 col-lg-12">
+<p>
+				    For some, history is a collection of dates strung on a timeline. Think grandma’s pearls. Yawn. Not so with Dayo Gore. An associate professor of ethnic and
+				    critical gender studies at UC San Diego, Gore is taking apart the traditional narrative: What was left out, and who, and why? By finding and telling the
+				    stories of black women radicals that have been forgotten or repressed, she isn’t just restringing the same old necklace with a couple of new beads. She is
+				    reshaping our understanding of yesterday – and today.
+				</p>
+<p>
+				“Writing about the past, I’m always informed by the present,” Gore said in a    <a href="https://www.youtube.com/watch?v=58s8gBmAxsM">recent UC San Diego &amp; You talk</a>. “I live in the present. The questions I’m interested in are
+				    shaped by the present.”
+				</p>
+<img src="_resources/img/dayo-gore.jpg"/>
+<br/>
+<br/>
+<p>
+				    In her latest book project, Gore is studying African American women’s transnational travels and activism in “the long 20th century,” 1890 through 1990. Of
+				    particular interest to Gore at the moment is looking at the 1960s – a period which includes the Civil Rights Movement at home and major decolonization
+				    efforts around the world. She is looking through a contemporary lens, examining that time period’s “transnational activism in the age of Obama and of
+				    globalization.”
+				</p>
+<p>
+				    One of the women figuring in Gore’s current research is labor activist Vicki Garvin, who left the U.S. first for Nigeria in 1961, then went to Ghana and
+				    China by 1964. Living in Shanghai, Garvin found herself in the midst of a key historical moment, what the Chinese call “The Great Proletarian Cultural
+				    Revolution.” Gore is investigating, in part, how Garvin tries to build solidarity between African American activists and people in China, not through
+				    state-to-state diplomacy but through personal relationships.
+				</p>
+<p>
+				    Garvin also figured in Gore’s 2011 book “
+				    <a href="http://ucsandiegobookstore.com/p-44024-radicalism-at-the-crossroads.aspx">
+				        Radicalism at the Crossroads: African American Women Activists in the Cold War
+				    </a>
+				    .” You’ve probably heard of Rosa Parks, who refused to go to the back of a Montgomery bus in 1955. But, quick: Name some other activist black women from
+				    that time? You might be hard-pressed. “Radicalism at the Crossroads” aims to change that. In addition to Garvin, the book includes such activists as
+				    Claudia Jones, Beulah Richardson and Thelma Dale.
+				</p>
+<p>
+				    “An exciting work of historical recovery,” in the words of its publisher, the book “unearths and examines a dynamic, extended network of black radical
+				    women, … [who] were part of a black left that laid much of the groundwork for both the Civil Rights Movement of the 1960s and later strains of black
+				    radicalism.”
+				</p>
+<p>
+				    Notes H-Net Reviews: “What really shines through – and what constitutes the major scholarly contribution – is Gore’s excavation of crucial foundations of
+				    the more familiar civil rights stories.”
+				</p>
+<p>
+				    Gore, who received her Ph.D. in history from New York University and previously taught at the University of Massachusetts-Amherst, joined UC San Diego’s
+				    Department of Ethnic Studies in 2012. She joined, in part she says, because of how interdisciplinary the department is. She describes it “as one of the
+				    premier departments in the nation that looks at race relationally, intersectionally and transnationally.” The interdisciplinary framework is helping her
+				    build on her innovative work about race and African American identity and how these ideas also intersect with and shape ideas of gender, sexuality, power
+				    and politics.
+				</p>
+<p>
+				With fellow Ethnic Studies professor Sara Clarke Kaplan, Gore co-founded the    <a href="http://af-amstudies.ucsd.edu/bsp/index.html">Black Studies Project</a> at UC San Diego. A campus-wide interdisciplinary research collaborative,
+				    the project connects faculty, graduate and undergraduate students who are producing cutting-edge scholarship on black life, culture and experiences. The
+				    program’s goal is to bring Black Studies research, teaching and public education to the forefront of the campus’ intellectual life.
+				</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-lg-8 col-md-8 art-bottom-links">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-xs-12">
+<h5>LEARN MORE:</h5>
+<a href="Department of Ethnic Studies and Program in Critical Gender Studies - http://www.ethnicstudies.ucsd.edu/">Department of Ethnic Studies and Program in Critical Gender Studies</a>
+</div>
+<div class="col-lg-7 col-md-7 col-xs-12" style="display:inline-flex"><h5 style="margin-top:2rem">SHARE:</h5><div class="addthis_inline_share_toolbox"></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- LightBox Article Test Popup -->
+<div class="modalSC1Menu hidden-sm" id="articleSC1Menu">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="article-modal-body single-article">
+<span class="close4">×</span>
+<div class="bg-color hidden-sm hidden-xs"></div>
+<div class="col-sm-12 col-md-4 col-lg-4 article-thumbs hidden-sm hidden-xs">
+<h5 class="close-x">&lt; BACK TO THE SCENE</h5>
+<h5>How we break things better</h5>
+<div class="scrollable">
+<div class="row granny-gore-story-menu">
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/grandma.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>Exposing Missing Histories</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row girlgoat-nie-story-menu">
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/woman.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>A Wireless War on Poverty</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row birds-ajs-story-menu">
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/birds.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>Feminist Lit Takes Flight</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row vendor-ram-story-menu">
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/indian.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>Science Gets Spiritual</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-12 col-md-8 col-lg-8 article-content">
+<!-- content here -->
+</div>
+</div>
+</div>
+</div>
+<!-- LightBox Article Test Popup -->
+<div class="modalGOR3" id="articleGOR3">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="article-modal-body single-article">
+<span class="close4">×</span>
+<div class="bg-color hidden-sm hidden-xs"></div>
+<div class="col-sm-12 col-md-4 col-lg-4 article-thumbs hidden-sm hidden-xs">
+<!-- this left menu content is hidden here -->
+</div>
+<div class="col-sm-12 col-md-8 col-lg-8 article-content">
+<div class="row">
+<div class="col-sm-12 col-md-9 col-lg-9">
+<h3>Exposing Missing Histories</h3>
+<p><em><strong>Ethnic Studies Professor Reshapes Understanding of Yesterday and Today</strong></em></p>
+<h5 style="display:inline; text-transform:uppercase">Dayo Gore</h5>   |   <span>Associate Professor,</span> <a href="http://www.ethnicstudies.ucsd.edu/">Department of Ethnic Studies and Program in Critical Gender Studies </a>
+</div>
+<div class="col-lg-2 col-md-2 hidden-sm hidden-xs"><img src="_resources/img/grandma.jpg"/></div>
+</div>
+<br/>
+<div class="row main-body">
+<div class="col-sm-12 col-lg-12">
+<p>
+				    For some, history is a collection of dates strung on a timeline. Think grandma’s pearls. Yawn. Not so with Dayo Gore. An associate professor of ethnic and
+				    critical gender studies at UC San Diego, Gore is taking apart the traditional narrative: What was left out, and who, and why? By finding and telling the
+				    stories of black women radicals that have been forgotten or repressed, she isn’t just restringing the same old necklace with a couple of new beads. She is
+				    reshaping our understanding of yesterday – and today.
+				</p>
+<p>
+				“Writing about the past, I’m always informed by the present,” Gore said in a    <a href="https://www.youtube.com/watch?v=58s8gBmAxsM">recent UC San Diego &amp; You talk</a>. “I live in the present. The questions I’m interested in are
+				    shaped by the present.”
+				</p>
+<img src="_resources/img/dayo-gore.jpg"/>
+<br/>
+<br/>
+<p>
+				    In her latest book project, Gore is studying African American women’s transnational travels and activism in “the long 20th century,” 1890 through 1990. Of
+				    particular interest to Gore at the moment is looking at the 1960s – a period which includes the Civil Rights Movement at home and major decolonization
+				    efforts around the world. She is looking through a contemporary lens, examining that time period’s “transnational activism in the age of Obama and of
+				    globalization.”
+				</p>
+<p>
+				    One of the women figuring in Gore’s current research is labor activist Vicki Garvin, who left the U.S. first for Nigeria in 1961, then went to Ghana and
+				    China by 1964. Living in Shanghai, Garvin found herself in the midst of a key historical moment, what the Chinese call “The Great Proletarian Cultural
+				    Revolution.” Gore is investigating, in part, how Garvin tries to build solidarity between African American activists and people in China, not through
+				    state-to-state diplomacy but through personal relationships.
+				</p>
+<p>
+				    Garvin also figured in Gore’s 2011 book “
+				    <a href="http://ucsandiegobookstore.com/p-44024-radicalism-at-the-crossroads.aspx">
+				        Radicalism at the Crossroads: African American Women Activists in the Cold War
+				    </a>
+				    .” You’ve probably heard of Rosa Parks, who refused to go to the back of a Montgomery bus in 1955. But, quick: Name some other activist black women from
+				    that time? You might be hard-pressed. “Radicalism at the Crossroads” aims to change that. In addition to Garvin, the book includes such activists as
+				    Claudia Jones, Beulah Richardson and Thelma Dale.
+				</p>
+<p>
+				    “An exciting work of historical recovery,” in the words of its publisher, the book “unearths and examines a dynamic, extended network of black radical
+				    women, … [who] were part of a black left that laid much of the groundwork for both the Civil Rights Movement of the 1960s and later strains of black
+				    radicalism.”
+				</p>
+<p>
+				    Notes H-Net Reviews: “What really shines through – and what constitutes the major scholarly contribution – is Gore’s excavation of crucial foundations of
+				    the more familiar civil rights stories.”
+				</p>
+<p>
+				    Gore, who received her Ph.D. in history from New York University and previously taught at the University of Massachusetts-Amherst, joined UC San Diego’s
+				    Department of Ethnic Studies in 2012. She joined, in part she says, because of how interdisciplinary the department is. She describes it “as one of the
+				    premier departments in the nation that looks at race relationally, intersectionally and transnationally.” The interdisciplinary framework is helping her
+				    build on her innovative work about race and African American identity and how these ideas also intersect with and shape ideas of gender, sexuality, power
+				    and politics.
+				</p>
+<p>
+				With fellow Ethnic Studies professor Sara Clarke Kaplan, Gore co-founded the    <a href="http://af-amstudies.ucsd.edu/bsp/index.html">Black Studies Project</a> at UC San Diego. A campus-wide interdisciplinary research collaborative,
+				    the project connects faculty, graduate and undergraduate students who are producing cutting-edge scholarship on black life, culture and experiences. The
+				    program’s goal is to bring Black Studies research, teaching and public education to the forefront of the campus’ intellectual life.
+				</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-lg-8 col-md-8 art-bottom-links">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-xs-12">
+<h5>LEARN MORE:</h5>
+<a href="#">School of International Relations and Pacific Studies (IR/PS)</a><br/>
+<a href="#">Policy Design and Evaluation Laboratory (PDEL)</a>
+</div>
+<div class="col-lg-7 col-md-7 col-xs-12" style="display:inline-flex"><h5 style="margin-top:2rem">SHARE:</h5><div class="addthis_inline_share_toolbox"></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- LightBox Article Test Popup -->
+<div class="modalGOR4" id="articleGOR4">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="article-modal-body single-article">
+<span class="close4">×</span>
+<div class="bg-color hidden-sm hidden-xs"></div>
+<div class="col-sm-12 col-md-4 col-lg-4 article-thumbs hidden-sm hidden-xs">
+</div>
+<div class="col-sm-12 col-md-8 col-lg-8 article-content">
+<div class="row">
+<div class="col-sm-12 col-md-9 col-lg-9">
+<h3>4444444</h3>
+<p><em><strong>Iconoclastic Researcher’s Most Contrary Move? Breaking Down the Wall Between Science and Religion</strong></em></p>
+<h5 style="display:inline; text-transform:uppercase">Dayo Gore</h5>   |   <a>UCSD Associate Professor of Ethnic and Critical Gender Studies</a>
+</div>
+<div class="col-lg-2 col-md-2 hidden-sm hidden-xs"><img src="_resources/img/grandma.jpg"/></div>
+</div>
+<br/>
+<div class="row main-body">
+<div class="col-sm-12 col-lg-12">
+<p>
+				    For some, history is a collection of dates strung on a timeline. Think grandma’s pearls. Yawn. Not so with Dayo Gore. An associate professor of ethnic and
+				    critical gender studies at UC San Diego, Gore is taking apart the traditional narrative: What was left out, and who, and why? By finding and telling the
+				    stories of black women radicals that have been forgotten or repressed, she isn’t just restringing the same old necklace with a couple of new beads. She is
+				    reshaping our understanding of yesterday – and today.
+				</p>
+<p>
+				“Writing about the past, I’m always informed by the present,” Gore said in a    <a href="https://www.youtube.com/watch?v=58s8gBmAxsM">recent UC San Diego &amp; You talk</a>. “I live in the present. The questions I’m interested in are
+				    shaped by the present.”
+				</p>
+<img src="_resources/img/dayo-gore.jpg"/>
+<br/>
+<br/>
+<p>
+				    In her latest book project, Gore is studying African American women’s transnational travels and activism in “the long 20th century,” 1890 through 1990. Of
+				    particular interest to Gore at the moment is looking at the 1960s – a period which includes the Civil Rights Movement at home and major decolonization
+				    efforts around the world. She is looking through a contemporary lens, examining that time period’s “transnational activism in the age of Obama and of
+				    globalization.”
+				</p>
+<p>
+				    One of the women figuring in Gore’s current research is labor activist Vicki Garvin, who left the U.S. first for Nigeria in 1961, then went to Ghana and
+				    China by 1964. Living in Shanghai, Garvin found herself in the midst of a key historical moment, what the Chinese call “The Great Proletarian Cultural
+				    Revolution.” Gore is investigating, in part, how Garvin tries to build solidarity between African American activists and people in China, not through
+				    state-to-state diplomacy but through personal relationships.
+				</p>
+<p>
+				    Garvin also figured in Gore’s 2011 book “
+				    <a href="http://ucsandiegobookstore.com/p-44024-radicalism-at-the-crossroads.aspx">
+				        Radicalism at the Crossroads: African American Women Activists in the Cold War
+				    </a>
+				    .” You’ve probably heard of Rosa Parks, who refused to go to the back of a Montgomery bus in 1955. But, quick: Name some other activist black women from
+				    that time? You might be hard-pressed. “Radicalism at the Crossroads” aims to change that. In addition to Garvin, the book includes such activists as
+				    Claudia Jones, Beulah Richardson and Thelma Dale.
+				</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-lg-8 col-md-8 art-bottom-links">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-xs-12">
+<h5>LEARN MORE:</h5>
+<a href="#">School of International Relations and Pacific Studies (IR/PS)</a><br/>
+<a href="#">Policy Design and Evaluation Laboratory (PDEL)</a>
+</div>
+<div class="col-lg-7 col-md-7 col-xs-12" style="display:inline-flex"><h5 style="margin-top:2rem">SHARE:</h5><div class="addthis_inline_share_toolbox"></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- LightBox Article Test Popup -->
+<div class="modalBRI" id="articleBRI">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="article-modal-body single-article">
+<span class="close4">×</span>
+<div class="bg-color hidden-sm hidden-xs"></div>
+<div class="col-sm-12 col-md-4 col-lg-4 article-thumbs hidden-sm hidden-xs">
+<!-- hidden menu -->
+</div>
+<div class="col-sm-12 col-md-8 col-lg-8 article-content">
+<div class="row">
+<div class="col-sm-12 col-md-9 col-lg-9">
+<h3>A Revolution in Set Design</h3>
+<p><em><strong>UC San Diego Set Designer Lights the Way with Perspective</strong></em></p>
+<h5 style="display:inline; text-transform:uppercase">Robert Brill</h5>   |   <span>Professor, Design,</span> <a href="http://theatre.ucsd.edu/">Department of Theatre and Dance</a>
+</div>
+<div class="col-lg-2 col-md-2 hidden-sm hidden-xs"><img src="_resources/img/showgirl.jpg"/></div>
+</div>
+<br/>
+<div class="row main-body">
+<div class="col-sm-12 col-lg-12">
+<p>
+					    From the “Great White Way” to his alma mater’s motto, “Let there be light,” acclaimed set-designer Robert Brill has returned to the University of
+					    California San Diego. First a student, then an alumnus (1988) and now a faculty member in the Department of Theatre and Dance, Brill enlightens audiences
+					    with his immersive, award-winning set designs that have been featured on and off Broadway, in every major U.S. city and internationally for three decades.
+					</p>
+<p>
+					    One of Brill’s signature designs was recently part of Golden Gate Theatre’s, “Cabaret,” described by David John Chavez of Bay Area Plays as “sultry and
+					    sleek,” with its two-level set exemplifying the “immersive theatre concept,” where actors remain on stage performing all activities from audience warm-ups
+					    to playing instruments in scenes.
+					</p>
+<img src="_resources/img/robert-brill.jpg"/>
+<br/>
+<br/>
+<p>
+					    When not busy on Broadway or at other venues, Brill, a leading figure in American theater, teaches set design and manages curriculum design for UC San
+					    Diego’s M.F.A. scenic design program. He also is responsible for recruiting, admitting, mentoring and supervising M.F.A. scenic design students.
+					    Importantly, he is involved in the Department of Theatre and Dance’s season selection process and production supervision.
+					</p>
+<p>
+					    “There’s no right or wrong when it comes to the creative process, only finding a different perspective,” offered Brill, adding that his best advice to
+					    students is to allow failure, which he deems as important as success.
+					</p>
+<p>
+					    And success is something Brill knows about. His creative career has drawn numerous drama distinctions, including two Tony-Award nominations, the Michael
+					    Merritt Award for Excellence in Design, notoriety as a founding member of Sledgehammer Theatre and first artist-in-residence at La Jolla Playhouse. In
+					    fact, by returning to the university in 2015, Brill also returned in part to the playhouse, which shares a unique partnership with the university. The
+					    separate but collaborative organizations provide UC San Diego students valuable training in all aspects of theatre practice. Consequently, the university
+					    graduates promising artists who can flourish in the industry, which is what makes the Department of Theatre and Dance one of the nation’s top programs.
+					</p>
+<p>
+					    “I am eager to be at the creative epicenter of these dynamic institutions,” admitted Brill, who has designed nearly 20 production sets for the playhouse.
+					    “This is such a wonderful opportunity to return to San Diego, an area that for the past 30 years has had a profound influence on the trajectory of my life
+					    and my career.”
+					</p>
+<p>
+					    Former chair of the Department of Theatre and Dance Jim Carmody said, “Robert Brill’s appointment is a major addition to our faculty that will solidify our
+					    reputation as a top national program for the next generation. His national network of connections will be an asset for new student recruitment and in
+					    placing graduates in the professional world.”
+					</p>
+<p>
+					    Navigating the professional theater world is something else Brills knows about. His several production credits include: “Assassins,” (Broadway) for which
+					    he received a Tony nomination; the critically acclaimed revival of “Cabaret” at the Kit Kat Club and Studio 54; recent Broadway revivals of “Jesus Christ
+					    Superstar” and “Guys and Dolls,” for which he received a Tony nomination. His work was also featured in Christopher Plummer’s, “A Word for Two (Stratford
+					    Festival and Ahmanson Theater); the Broadway-bound musical, “Robin and the Seven Hoods,” directed by Casey Nicholaw (Old Globe); “Sinatra: His Voice. His
+					    World. His Way” (Radio City Music Hall); “American in Paris” (Boston Ballet); “The Wiz” (La Jolla Playhouse); “Wozzeck” (San Diego Opera) and numerous
+					    others.
+					</p>
+<p>
+					    The <a href="http://theatre.ucsd.edu/">Department of Theatre and Dance</a> is among the nation’s top theater training programs. It is one of six
+					departments in the <a href="http://artsandhumanities.ucsd.edu/">Division of Arts and Humanities</a> at UC San Diego. It welcomes support through its    <a href="http://theatre.ucsd.edu/giving/index.htm">Student Productions Fund</a> which helps to ensure the continuation of the exciting work that its
+					    students create.
+					</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-md-8 col-lg-8 art-bottom-links">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-xs-12">
+<h5>LEARN MORE:</h5>
+<a href="http://theatre.ucsd.edu/">Department of Theatre and Dance</a>
+</div>
+<div class="col-lg-7 col-md-7 col-xs-12" style="display:inline-flex"><h5 style="margin-top:2rem">SHARE:</h5><div class="addthis_inline_share_toolbox"></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- LightBox Article Test Popup -->
+<div class="modalSC2Menu" id="articleSC2Menu">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="article-modal-body single-article">
+<span class="close4">×</span>
+<div class="bg-color hidden-sm hidden-xs"></div>
+<div class="col-sm-12 col-md-4 col-lg-4 article-thumbs hidden-sm hidden-xs">
+<h5 class="close-x">&lt; BACK TO THE SCENE</h5>
+<h5>How we break things better</h5>
+<div class="scrollable">
+<div class="row girl-lmc-story-menu">
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/girl.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>Lessons From a Brutal Past</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row keytar-rey-story-menu">
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/guitarman.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>Marching to Different Beats</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row money-rarm-story-menu">
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/moneyman.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>Excess and Poetic Justice</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row showgirl-bri-story-menu">
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/showgirl.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>A Revolution in Set Design</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-12 col-md-8 col-lg-8 article-content">
+<!-- content here -->
+</div>
+</div>
+</div>
+</div>
+<!-- LightBox Article Test Popup -->
+<div class="modalNIE" id="articleNIE">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="article-modal-body single-article">
+<span class="close4">×</span>
+<div class="bg-color hidden-sm hidden-xs"></div>
+<div class="col-sm-12 col-md-4 col-lg-4 article-thumbs hidden-sm hidden-xs">
+<!-- this left menu content is hidden here -->
+</div>
+<div class="col-sm-12 col-md-8 col-lg-8 article-content">
+<div class="row">
+<div class="col-sm-12 col-md-9 col-lg-9">
+<h3>A Wireless War on Poverty</h3>
+<p><em><strong>Economist Tries Unconventional Approach to Helping the poor</strong></em></p>
+<h5 style="display:inline; text-transform:uppercase">Paul Niehaus</h5>   |   <span>Associate Professor,</span> <a href="http://economics.ucsd.edu/">Department of Economics</a>
+</div>
+<div class="col-lg-2 col-md-2 hidden-sm hidden-xs"><img src="_resources/img/woman.jpg"/></div>
+</div>
+<br/>
+<div class="row main-body">
+<div class="col-sm-12 col-lg-12">
+<p>
+				    GiveDirectly is a nonprofit that does something radical – almost heretical – in the world of international charity: It gives cash directly to those who
+				    need it without any strings attached.
+				</p>
+<p>
+				    Each donation is about $1,000, deposited through a mobile banking system, straight to a recipient’s cell phone. In Kenya, where the group began operations,
+				    this is equivalent to a year’s wages. The windfall is not a loan. And what’s required in return is exactly nothing.
+				</p>
+<p>
+				    Paul Niehaus, an associate professor of economics in UC San Diego’s Division of Social Sciences, is one of GiveDirectly’s co-founders. He and three other
+				    development economists started GiveDirectly in 2008 while they were still graduate students at Harvard and MIT. Cash transfers have been gaining popularity
+				    in development circles since about 2000. Today, about a billion people in developing nations receive monetary aid, but it is usually conditional. Niehaus
+				    and his colleagues wondered: What would happen if they just let impoverished people decide how to spend their cash?
+				</p>
+<img src="_resources/img/paul-niehaus.jpg"/>
+<!-- 	<p class="article-pic-desc"><em>A physicist by training, Burney designs, implements and evaluates technologies for poverty  alleviation and agricultural adaptation. Much of her current research focuses on the developing world. Photo by Marshall Burke.</em></p> -->
+<br/>
+<br/>
+<p>
+				    “I believe we should be putting more money and more power directly into the hands of the poor,” writes Niehaus in a blog post. “When given the chance, they
+				    have a consistent track record, across dozens of rigorous studies, of using money sensibly to improve their own lives.”
+				</p>
+<p>
+				    “Poor people have good ideas,” he adds when interviewed. “And they need to be part of the conversation.”
+				</p>
+<p>
+				    That sentiment goes against the popular stereotype of the poor as feckless and irresponsible. And a typical first response to the idea, Niehaus says, is
+				    often: “That’s crazy.” Yet it’s also winning the group a lot of enthusiasm and support.
+				</p>
+<p>
+				    GiveDirectly has been operating since 2011. Within two years, GiveWell – a leading charity evaluator that looks not only at financials but also at “how
+				    much good a given program accomplishes” per dollar spent – rated GiveDirectly among its top charities. About 91 cents of every dollar that GiveDirectly
+				    gets is sent on to the poor. GiveWell, Google.org and Good Ventures are among GiveDirectly’s lead funders and partners. In 2013, Foreign Policy magazine
+				    named Niehaus and the other GiveDirectly co-founders “Leading Global Thinkers.”
+				</p>
+<p>
+				    How GiveDirectly works is simple. People donate on the <a href="http://www.givedirectly.org/">organization’s website</a>. GiveDirectly uses publicly
+				    available data and field workers on the ground to identify poor households. After verifying a recipient’s eligibility through a set of independent checks,
+				    GiveDirectly sends the donation through a mobile banking system and, typically, alerts the recipient by text message.
+				</p>
+<p>
+				    The recipient then gets to choose how to spend the money.
+				</p>
+<p>
+				    Common uses of the cash in Kenya have included installing a tin roof to replace a home’s thatched one and starting or expanding a business. Businesses have
+				    ranged from rearing chickens to vending soap to operating a motorcycle taxi service. (No, they don’t blow the money on drugs. No, they don’t stop working.)
+				</p>
+<p>
+				    National and international reporters who have visited with recipients write glowingly about what they’ve witnessed.<strong> </strong>But even better than
+				    anecdotes or plaudits, Niehaus says, is the backing of evidence from independent, third-party research.
+				</p>
+<p>
+				    GiveDirectly publicly announces independent assessments that are in the works so it “can be held accountable for the results.” One randomized controlled
+				trial, the gold standard in both science and medicine, was recently    <a href="https://www.princeton.edu/~joha/publications/Haushofer_Shapiro_UCT_2016.04.25.pdf">published</a>. Evaluating the effects of GiveDirectly donations
+				    on recipients, the study finds that “unconditional cash transfers have significant impacts on economic outcomes and psychological wellbeing.”
+				</p>
+<p>
+				    Niehaus doesn’t see unconditional cash transfers as a panacea or the only solution to poverty. Conditions have their place. As do other forms of aid. But
+				    he thinks they are an important additional tool for development schemes, and the evidence that they are effective is mounting.
+				</p>
+<p>
+				    “Catch phrases seem intuitive,” Niehaus says. “‘Teach a man to fish’…and so on. But reality is there isn’t much evidence our fishing lessons work.”
+				    Sometimes, Niehaus suggests, when the reason for poverty is little more than being born in Africa, giving a man, or woman, a fish may be the way to go.
+				</p>
+<p>
+				    In the future, Niehaus hopes the GiveDirectly model – being evidence-based and doing more good than it costs – will be a benchmark for charitable giving.
+				</p>
+<p>
+				    Right now, GiveDirectly is trying out another wild idea. They’re going beyond the occasional donation and running a historic policy experiment on the
+				    notion of a universal basic income. What happens if you guarantee poor people enough money to live on for 10 years? Will they lose incentive? Or get more
+				    education? Become better parents or take more risks as entrepreneurs? Stay tuned.
+				</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-lg-8 col-md-8 art-bottom-links">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-xs-12">
+<h5>LEARN MORE:</h5>
+<a href="http://economics.ucsd.edu/">Department of Economics</a>
+</div>
+<div class="col-lg-7 col-md-7 col-xs-12" style="display:inline-flex"><h5 style="margin-top:2rem">SHARE:</h5><div class="addthis_inline_share_toolbox"></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- LightBox Article Test Popup -->
+<div class="modalREY" id="articleREY">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="article-modal-body single-article">
+<span class="close4">×</span>
+<div class="bg-color hidden-sm hidden-xs"></div>
+<div class="col-sm-12 col-md-4 col-lg-4 article-thumbs hidden-sm hidden-xs">
+<!-- hidden menu -->
+</div>
+<div class="col-sm-12 col-md-8 col-lg-8 article-content">
+<div class="row">
+<div class="col-sm-12 col-md-9 col-lg-9">
+<h3>Marching to Different Beats</h3>
+<p><em><strong>UC San Diego Composer Soars with Science and Technology</strong></em></p>
+<h5 style="display:inline; text-transform:uppercase">Roger Reynolds</h5>   |   <span>University Professor, Composition,</span> <a href="http://musicweb.ucsd.edu/">Department of Music</a>
+</div>
+<div class="col-lg-2 col-md-2 hidden-sm hidden-xs"><img src="_resources/img/guitarman.jpg"/></div>
+</div>
+<br/>
+<div class="row main-body">
+<div class="col-sm-12 col-lg-12">
+<p>
+				    Composer Roger Reynolds’ “FLiGHT,” which premieres Oct. 30-31 at the Park Avenue Armory in New York City, is the latest landmark in a career distinguished
+				    by a quest for new modes of making music. It combines spoken word, musical performance, computer sound processing and video to create an immersive
+				    multimedia experience.
+				</p>
+<p>
+				    “FLiGHT” is sure to create a buzz among contemporary music followers. As acclaim for his music has increased through several decades, Reynolds has become a
+				    pillar of the University of California San Diego’s Department of Music faculty—perhaps the most visible artist from a program built on innovation.
+				</p>
+<img src="_resources/img/roger-reynolds.jpg"/>
+<br/>
+<br/>
+<p>
+				    “Roger's free and open approach inspires our young composers, performers and computer musicians,” said Department of Music Chair Rand Steiger. “He
+				    motivates them to reach higher.”
+				</p>
+<p>
+				    FLiGHT is performed by the JACK Quartet, with sound design and computer music by Paul Hembree, who completed his Ph.D. (’15) in composition and computer
+				    music at UC San Diego, and video by Ross Karre, who graduated from UC San Diego with an MFA (’11) in visual art-film and video; as well as an MA (’07) and
+				    DMA (’09) in percussion performance. Hembree exemplies the music department’s unconventional parameters.
+				</p>
+<p>
+				    “Some of what I do is similar to sound design in theater, when we build the sonic fabric of multimedia sections. But the algorithms we create behave more
+				    like instruments and can be played as such,” explained Hembree. “In that sense my role is as a kind of chamber musician performing alongside the JACK
+				    Quartet.”
+				</p>
+<p>
+				    Reynolds said that FLiGHT began with a four-part structure of Imagining, Preparing, Experience and Perspective. The story of human flight is told through a
+				    spoken-word text drawn from sources such as Plato and Ovid, Virgil and Shelley, the Wright brothers and Amelia Earhart, Gertrude Stein, Ralph Ellison, and
+				    astronaut Michael Collins. Reynolds also included excerpts from the Ramayana, the ancient Indian epic poem, as well as ancient Chinese texts suggested by
+				    UC San Diego Emeritus Professor of Literature Wai-lim Yip. The narrative is delivered by UC San Diego actors recruited and directed by the Department of
+				    Theatre and Dance’s Robert Castro.
+				</p>
+<p>
+				    As a student, Reynolds earned an undergraduate degree in engineering physics and worked briefly in the defense industry. As his interests shifted, he
+				    returned to the university for a master’s degree in musical composition. He began to compose seriously at age 25 and spent seven years traveling through
+				    Europe and Asia where he experienced music of various cultures and artists.
+				</p>
+<p>
+				    In 1965, at the invitation of Muir College Provost John Stewart, Reynolds visited UC San Diego. Stewart was building new music, visual arts and theater
+				    programs. He told Reynolds that the music department would be non-traditional, not bound by conventional curriculum and methodologies.
+				</p>
+<p>
+				    “It was obvious that UC San Diego could be remarkable,” said Reynolds, who came to campus as a Regents Lecturer in 1968, joined the faculty the following
+				    year and soon spearheaded the creation of the Center for Music Experiment to explore collaboration and new technologies.
+				</p>
+<p>
+				    As technologies continued to evolve, Reynolds found new ways to harness them for remarkable works such as “Seasons,” “Sanctuary,” and “george WASHINGTON.”
+				    In his current “FLiGHT,” sound travels through three dimensions as images slide across multiple screens and spoken-word sections intertwine with the JACK
+				    Quartet’s performance.
+				</p>
+<p>
+				    Reynolds’ work has proven consistently captivating. Evidence of his impact is abundant. Over the years he has won Guggenheim, Fulbright, National Endowment
+				    for the Arts and National Institute of Letters awards. He was awarded the Pulitzer Prize in 1989 for “Whispers Out of Time,” which was inspired by poet
+				    John Ashbery’s “Self-Portrait in a Convex Mirror.”
+				</p>
+<p>
+				From 2007 to 2009, Reynolds was the first composer-in-residence in the UC San Diego division of Calit2. He has an online archive at the    <a href="http://memory.loc.gov/diglib/ihas/loc.natlib.ihas.200152703/default.html">Library of Congress</a>. In 2009, the UC Board of Regents appointed him
+				    “University Professor,” the highest faculty honor.
+				</p>
+<p>
+				    Undoubtedly, there is more to come. Reynolds is planning additional performances of FLiGHT, possibly including one at UC San Diego. At 82, he exudes
+				    youthful vitality with no plans to retire.
+				</p>
+<p>
+				    “With stimulating colleagues, gifted and challenging graduate students from all over the world, and the superb facilities of UC San Diego’s Conrad Prebys
+				    Music Center,” Reynolds said, “there seems every reason to continue making whatever contributions I can to our internationally unique Music Department.”
+				</p>
+<p>
+				Since he joined the university, Reynolds has performed worldwide and mentored generations of young composers. UC San Diego’s    <a href="http://musicweb.ucsd.edu/">Department of Music</a> celebrated his 80th birthday in 2015 with a concert, symposium and multimedia installation in
+				his honor. Learn more about Reynolds on his <a href="http://www.rogerreynolds.com/index.html">webpage</a> and by viewing the trailer to    <a href="https://vimeo.com/133510454">FLiGHT</a>.
+				</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-lg-8 col-md-8 art-bottom-links">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-xs-12">
+<h5>LEARN MORE:</h5>
+<a href="http://musicweb.ucsd.edu/">Department of Music</a>
+</div>
+<div class="col-lg-7 col-md-7 col-xs-12" style="display:inline-flex"><h5 style="margin-top:2rem">SHARE:</h5><div class="addthis_inline_share_toolbox"></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- LightBox Article Test Popup -->
+<div class="modalLMC" id="articleLMC">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="article-modal-body single-article">
+<span class="close4">×</span>
+<div class="bg-color hidden-sm hidden-xs"></div>
+<div class="col-sm-12 col-md-4 col-lg-4 article-thumbs hidden-sm hidden-xs">
+<!-- hidden menu -->
+</div>
+<div class="col-sm-12 col-md-8 col-lg-8 article-content">
+<div class="row">
+<div class="col-sm-12 col-md-9 col-lg-9">
+<h3>Lessons From a Brutal Past</h3>
+<p><em><strong>UC San Diego Humanities Professor Builds Cybersphere to Tackle a World Problem</strong></em></p>
+<h5 style="display:inline">LUIS MARTIN-CABRERA</h5>   |   <span>Associate Professor of Peninsular and Latin American Literature and Culture,</span> <a href="http://literature.ucsd.edu/">Department of Literature</a>
+</div>
+<div class="col-lg-2 col-md-2 hidden-sm hidden-xs"><img src="_resources/img/girl.jpg"/></div>
+</div>
+<br/>
+<div class="row main-body">
+<div class="col-sm-12 col-lg-12">
+<p>
+					    University of California San Diego’s Luis Martin-Cabrera, associate professor in the Department of Literature, is investigating the lives of indigenous
+					    people residing in the “Saudi Arabia of Lithium.” This is a region that encompasses Argentina, Bolivia and Chile, where lithium—a key component in
+					    rechargeable batteries for laptops and cell phones—is actively mined and changing the landscape and the lives of the communities there.
+					</p>
+<p>
+					    As a 2016 Whiting Foundation Public Engagement Fellow, Martin-Cabrera will receive funding for six consecutive months of leave to work on his ambitious,
+					    public-facing project with two main goals: 1) to collect testimonials from the Kolla, Aymara and Quechua communities who have lived in the lithium triangle
+					    for generations and 2) to construct a public cybersphere that connects these historically subjugated communities to other actors—companies, consumers,
+					    governments, NGOs, etc., involved in lithium extraction on both hemispheres.
+					</p>
+<!-- <img src="_resources/img/test2.jpg"/>
+					<p class="article-pic-desc"><em>A physicist by training, Burney designs, implements and evaluates technologies for poverty  alleviation and agricultural adaptation. Much of her current research focuses on the developing world. Photo by Marshall Burke.</em></p> -->
+<p>
+					    “As a specialist in Latin American culture, I am very pleased to see that the Whiting Foundation is showing interest in this region that possesses 85
+					    percent of the world’s lithium reserves, and yet is one of the poorest and most unequal regions of the globe,” Martin-Cabrera said. “I see this as a
+					    once-in-a-lifetime opportunity to connect worlds that tend to be apart from each other using the unique vantage point of the humanities, which can be part
+					    of the solution.”
+					</p>
+<p>
+					    An expert in Peninsular and Latin American literature, Martin-Cabrera said that he feels extremely happy and proud to represent UC San Diego in this
+					    project that places the accent on both the value of public education and the humanities to resolve world challenges.
+					</p>
+<p>
+					    “This public cybersphere should lead to a better understanding of the human and ecological consequences of lithium extraction,” said Martin-Cabrera, who
+					    noted that when we turn on our computers or cellphones, we rarely think about the origin of the batteries that power them. “So this is an opportunity to
+					    make those connections, to think about the origin of these minerals and the effect that its extraction has on the environment and the communities south of
+					    the border. Hopefully, this dialogue will lead to more sustainable alternatives or will, at the very least, tame our unchecked cyber-utopianism.”
+					</p>
+<p>
+					    “This is an amazing opportunity of support from the Whiting Foundation for Luis, whose work represents the powerful impact of humanist-scholars on the
+					    common good,” said Division of Arts and Humanities Dean Cristina Della Coletta. “Successes like these are wonderful to share with our students so they
+					    understand just how vital a humanities education can be.”
+					</p>
+<p>
+					    Martin-Cabrera and seven other fellows selected from a variety of schools across the nation will convene in the summers of 2016 and 2017 to plan and
+					discuss their work, talk with senior scholars who are experienced public humanists and participate in an intensive one-day workshop with the    <a href="http://www.theopedproject.org/">OpEd Project</a>. Each fellow will also receive an additional stipend to cover project costs such as travel,
+					    collaboration, technology and training.
+					</p>
+<p>
+					    With expertise in subject areas that include English, American studies, classics, history, global studies, environmental humanities and African-American
+					    studies, the fellows were selected for projects that broadly impact certain public audiences. Besides Martin-Cabrera’s project, others include: an “app”
+					    delivering rich historical context to important American cultural sites; a collection of oral histories of diverse Brooklyn residents; a series of
+					    exhibitions created by prisoners; and a podcast of the looting of antiquities. Despite the diversity in projects, the goal of each is the same—to
+					    effectively communicate the knowledge and expertise gained from in-depth study of the humanities to a larger, public audience.
+					</p>
+<p>
+					    According to the Whiting Foundation, the purpose of this inaugural fellowship is to bring attention to the unique and profound work of humanities
+					    scholars—award-winning documentaries, groundbreaking books, acclaimed podcasts and informative websites—that draws on and requires the deep thinking,
+					    historical and contextual expertise and rich analysis of the humanities to inform our daily modern lives.
+					</p>
+<p>
+					    The <a href="http://literature.ucsd.edu">UC San Diego Department of Literature</a> is listed among the top 40 programs nationally, according to education
+					rankings by U.S. News &amp; World Report. It is one of six departments in the    <a href="http://artsandhumanities.ucsd.edu/">Division of Arts and Humanities</a> at UC San Diego.
+					</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-lg-8 col-md-8 art-bottom-links">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-xs-12">
+<h5>LEARN MORE:</h5>
+<a href="http://literature.ucsd.edu/">Department of Literature</a>
+</div>
+<div class="col-lg-7 col-md-7 col-xs-12" style="display:inline-flex"><h5 style="margin-top:2rem">SHARE:</h5><div class="addthis_inline_share_toolbox"></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ALL Articles Lighbox Popup -->
+<div class="modal5" id="allModal">
+<!-- Modal content -->
+<div class="m-modal-content">
+<div class="article-modal-body">
+<span class="close5">×</span>
+<!-- <div class="bg-color"></div> -->
+<!-- column one -->
+<h4>ALL BREAKERS</h4>
+<div class="col-sm-12 col-md-6 col-lg-4 article-thumbs">
+<div class="row birds-ajs-story"><!-- id="myBtn4-1" -->
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/birds.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>Feminist Lit Takes Flight</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row granny-gore-story">
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/grandma.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>Exposing Missing Histories</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row vendor-ram-story"> <!-- id="myBtn4-3" -->
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/indian.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>Science Gets Spiritual</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+</div>
+<!-- column two -->
+<div class="col-sm-12 col-md-6 col-lg-4 article-thumbs">
+<div class="row girl-lmc-story"> <!-- id="myBtn4-5" -->
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/girl.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>Lessons From a Brutal Past</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row keytar-rey-story"> <!-- id="myBtn4-6" -->
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/guitarman.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>Marching to Different Beats</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row money-rarm-story"> <!-- id="myBtn4-7" -->
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/moneyman.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>Excess and Poetic Justice</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+</div>
+<!-- column three -->
+<div class="col-sm-12 col-md-6 col-lg-4 article-thumbs">
+<div class="row girlgoat-nie-story"><!-- id="myBtn4-4" -->
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/woman.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>A Wireless War on Poverty</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+<div class="row showgirl-bri-story"> <!-- id="myBtn4-8" -->
+<div class="col-sm-4 col-lg-4">
+<img src="_resources/img/showgirl.jpg"/>
+</div>
+<div class="col-sm-8 col-lg-8">
+<h3>A Revolution in Set Design</h3>
+<p><a href="#">Read</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="_resources/scripts/custom.min.js" type="text/javascript"></script>
+<script src="_resources/scripts/parallax.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+	// Parallax Scene
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	var scene2 = document.getElementById('scene2');
+	var parallax2 = new Parallax(scene2);
+
+	if ( $(window).width() > 1024) {
+		function comment(element){
+			    element.wrap(function() {
+			        return '<!--' + this.outerHTML + '"-->';
+			    });
+			}
+
+		comment($('.art-thum'));
+	} 
+
+
+</script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e3725330883c366" type="text/javascript"></script>
+</body>
+</html>
