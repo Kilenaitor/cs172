@@ -4,7 +4,10 @@ Web Crawler and Parser
 First, install dependencies <br />
 `pip3 install -r requirements.txt`
 
-Next, start the webserver <br />
-`python3 website/manage.py runserver`
+Change directories into the website dir
+`cd website`
 
-Then, visit localhost and you should be presented with the homepage.
+Next, start the webserver <br />
+`python3 manage.py runserver`
+
+Then, visit `localhost:8000` and you should be presented with the homepage.
