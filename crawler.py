@@ -118,7 +118,7 @@ class Crawler():
 
         # Download to dir
         with open("{}/{}_{}.html".format(domainDir, domain, i),'w') as fid:
-            fid.write(str(html))
+            fid.write(str(soup))
 
         # Mark the page as visited
         self.visited_links.add(link.url)
@@ -134,8 +134,10 @@ class Crawler():
                 continue
 
             # Filter out or fix malformed/incomplete links
+            if url.startswith('//'):
+                url = scheme + domain + url[2:]
             if url.startswith('/'):
-                url = scheme + domain + url
+                url = scheme + domain + url[1:]
 
             if not url.startswith('http://'):
                 continue
