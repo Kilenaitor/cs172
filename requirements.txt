@@ -2,7 +2,7 @@
 bs4 == 0.0.1
 
 # Used for making requests
-urllib3 == 1.18
+urllib3 == 1.26.5
 
 # Used for indexing and parsing documents
 Whoosh == 2.7.4
