@@ -8,4 +8,4 @@ urllib3 == 1.18
 Whoosh == 2.7.4
 
 # Used for web framework
-Django == 1.10.3
+Django == 2.2.24
